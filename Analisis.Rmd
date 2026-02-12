@@ -1,0 +1,62 @@
+---
+title: "Proyecto 1"
+author: Bryan Martínez, Adriana Palacios, Brandon Rivera, Javier Benítez, y Pedro
+  Avila
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+```
+
+## Situación Problemática
+
+
+---
+
+## Problema Científico
+
+
+---
+
+## Objetivos
+
+
+---
+
+## Descripción de los Datos 
+
+```{r}
+matrimonios_depto <- read_csv("matrimonios_depto_mes.csv", show_col_types = FALSE)
+matrimonios_edad  <- read_csv("matrimonios_edad.csv", show_col_types = FALSE)
+
+divorcios_depto <- read_csv("divorcios_depto_mes.csv", show_col_types = FALSE)
+divorcios_edad  <- read_csv("divorcios_edad.csv", show_col_types = FALSE)
+```
+
+
+--
+
+## Análisis Exploratorio
+
+### Exploración de Variables Númericas PEDRITO PEDRITO PEDRITO
+
+(Medidas de tendencia central, distribución y orden. (todas las variables tienen que tener una análisis sobre los resultados, se debe incluir histogramas, boxplots o gráficos de dispersión, uno como mínimo y explicarlo). Para cada una hay que describir su distribución (sacarle su p-value)
+Si o si piden analizar las variables por tecnicas de estadistica descriptiva, tener graficos, y sacar la distribucion.)
+
+---
+
+### Exploración de Variables Categóricas BENITEZ BENITEZ BENITEZ
+
+Tablas de frecuencia
+Gráficos de barra para cada una
+
+---
+
+### Relaciones entre Variables
+
+(este es un poquito peculiar, por como estan los datos, se me ocurre que vean si existe una relación entre la cantidad de casamientos con el rango de edad de la novia o del hombre, y luego, ver si hay una relación entre la cantidad de divorcios y los rangos de edades de los novios/novias).
+
+---
