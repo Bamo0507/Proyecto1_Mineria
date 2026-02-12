@@ -135,7 +135,15 @@ dim(divorcios_edad)
 
 Hay 1878 observaciones y 4 variables.
 
-### **Operaciones de Limpieza Realizadas** BRYAN BRYAN BRYAN
+### **Operaciones de Limpieza Realizadas**
+
+Al explorar las opciones de descarga de datos disponibles en la plataforma del INE, se observó que gran parte de la información se ofrece en formato .sav, lo cual requiere software de IBM o procesos adicionales para manipularlos. Para facilitar el análisis, se decidió utilizar los libros de Excel disponibles para las estadísticas de matrimonios y divorcios.
+
+Los archivos descargados contenían múltiples hojas y tablas cruzadas que no se encontraban en un formato que se pudiera utilizar directamente para análisis en R. Por esta razón, se realizó un proceso de limpieza. Primero, se seleccionaron únicamente las hojas asociadas a rangos de edad y distribución por departamento en todos los libros de matrimonios y divorcios.
+
+Después, se transformaron las tablas cruzadas a un formato que permitiera el análisis estadístico. La idea era que en cada observación se pudiera identificar sencillamente los datos para un año determinado, logrando reconocer el departamento, rangos de edad de los novios, y la cantidad de un evento (matrimonio o divorcio). Asimismo, se estandarizaron varios datos, pues en varias ocasiones se redactaba de forma distinta, por ejemplo, habían matrimonios o divorcios que ocurrían después de los 65 años, y en algunos documentos aparecía como 65 y mas, y en otros correctamente escrito como 65 y más.
+
+Finalmente, los datos procesados fueron exportados a archivos CSV para facilitar su manipulación y análisis en R.
 
 ---
 
