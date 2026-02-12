@@ -51,10 +51,93 @@ divorcios_depto <- read_csv("divorcios_depto_mes.csv", show_col_types = FALSE)
 divorcios_edad  <- read_csv("divorcios_edad.csv", show_col_types = FALSE)
 ```
 
+### **Significado y tipo de cada variable**
 
+Para el análisis de los datos, se estará trabajando con cuatro datasets con información desde 2009 hasta 2022:
 
+- matrimonios_depto_mes: matrimonios registrados en cada mes acorde a cada departamento.
+- matrimonios_edad: matrimonios que ocurrieron en diferentes rangos de edad.
+- divorcios_depto: divorcios almacenados por mes para cada departamento.
+- divorcios_edad: divorcios acontecidos en diferentes rangos de edad.
 
---
+#### **Variables Compartidas en Todos los Datasets**
+
+**anio**
+
+- Representa el año en que fue registrada la observación.
+- La variable es cuantitativa discreta.
+
+**valor**
+
+- Número de veces que ocurrió un evento, dependiendo del dataset, este puede representar cantidad de matrimonios o divorcios.
+- La variable es cuantitativa discreta.
+
+#### **Variables Compartidas en Datasets con Datos Departamentales**
+
+**nivel_geo**
+
+- Se utiliza para indicar si la observación es de un departamento en específico, o si se tiene registrada a nivel nacional.
+- La variable es cualitativa nominal.
+
+**departamento**
+
+- Es el departamento en donde se registró la observación; este valor puede estar vacío cuando el registro corresponde al total nacional.
+- La variable es cualitativa nominal.
+
+**mes**
+
+- Muestra el número de mes al que corresponden los datos de la observación.
+- La variable es cualitativa ordinal; aunque se representa como un número en el dataset, se utiliza para indicar la posición del mes dentro del año y no como una magnitud numérica.
+
+#### **Variables Compartidas en Datasets con Datos de Edades**
+
+**edad_mujer_grupo**
+
+- Rango de edad al que pertenece la novia/mujer de la observación.
+- La variable es cualitativa ordinal.
+
+**edad_hombre_grupo**
+
+- Rango de edad al que pertence el novio/hombre de la observación.
+- La variable es cualitativa ordinal.
+
+### **Cantidad de Variables y Observaciones**
+
+**Matrimonios por departamento:**
+
+```{r}
+dim(matrimonios_depto)
+```
+
+Se tienen 4186 observaciones y 5 variables.
+
+**Matrimonios por rangos de edad:**
+
+```{r}
+dim(matrimonios_edad)
+```
+
+Hay 2191 observaciones y 4 variables.
+
+**Divorcios por departamento:**
+
+```{r}
+dim(divorcios_depto)
+```
+
+Se tienen 4186 observaciones y 5 variables.
+
+**Divorcios por rangos de edad:**
+
+```{r}
+dim(divorcios_edad)
+```
+
+Hay 1878 observaciones y 4 variables.
+
+### **Operaciones de Limpieza Realizadas** BRYAN BRYAN BRYAN
+
+---
 
 ## **Análisis Exploratorio**
 
