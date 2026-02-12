@@ -11,22 +11,37 @@ knitr::opts_chunk$set(echo = TRUE)
 library(readr)
 ```
 
-## Situación Problemática
+## **Situación Problemática**
 
+En los últimos años se ha vuelto común escuchar que el matrimonio y la formación de una familia ya no forman parte de los planes de muchas personas, o que estas decisiones se están postergando a edades más avanzadas. Asimismo, se percibe que las relaciones de pareja tienden a adoptar formas distintas a las tradicionales, ahora vemos a más personas que buscan convivir con una pareja sin matrimonio o bajo compromisos legales.
 
----
+Sin embargo, estas percepciones sociales no siempre son evidentes o respaldadas con información verídica. En particular, no se conoce con certeza si en Guatemala ha ocurrido una disminución en los matrimonios, un aumento en los divorcios, o cambios significativos en la edad a la que las personas deciden casarse o divorciarse. Tampoco es claro si estos posibles cambios se presentan de manera uniforme en todo el país o si existen departamentos en donde existan diferencias relevantes.
 
-## Problema Científico
-
-
----
-
-## Objetivos
-
+Al tener acceso a datos oficiales por parte de la INE sobre matrimonios y divorcios en Guatemala, surge la necesidad de analizar estos datos para tratar de responder a estas interrogantes. Buscando identificar diferentes patrones a lo largo de la última decada y media. Por medio de nuestro análisis seremos capaces de contrastar las percepciones sociales con datos reales, y comprender si realmente ha ocurrido un cambio en la dinámica de los matrimonios y divorcios guatemaltecos.
 
 ---
 
-## Descripción de los Datos 
+## **Problema Científico - ADRIANA ADRIANA ADRIANA**
+
+Enuncia el problema científico que se desprende de la situación planteada. Comprende bien cuál es el problema. La idea es que en base a la idea planteada anteriormente, se pueda justificar con algún artículo la presencia de patrones peculiares en el matrimonio/divorcio en los últimos años, o que hablen acerca de las percepciones sociales. Incluir 2 citas como mínimo, citar y colocar referencias en APA-7 al final. La idea es justificar con datos puntuales, por qué la investigación que estamos realizando es relevante. 
+
+---
+
+## **Objetivos**
+
+**Objetivo General**
+
+Analizar los datos de matrimonios y divorcios en Guatemala con el fin de identificar patrones demográficos y diferencias entre departamentos, y evaluar si se han producido cambios en la dinámica de estos eventos a lo largo del período analizado.
+
+**Objetivos Específicos**
+
+1. Examinar la distribución de los matrimonios y divorcios según los rangos de edad de las personas, con el propósito de identificar posibles variaciones en las edades en las que ocurren estos eventos.
+
+2. Analizar la distribución de matrimonios y divorcios por departamento, con el fin de detectar la existencia de patrones regionales relevantes.
+
+---
+
+## **Descripción de los Datos**
 
 ```{r}
 matrimonios_depto <- read_csv("matrimonios_depto_mes.csv", show_col_types = FALSE)
@@ -37,25 +52,27 @@ divorcios_edad  <- read_csv("divorcios_edad.csv", show_col_types = FALSE)
 ```
 
 
+
+
 --
 
-## Análisis Exploratorio
+## **Análisis Exploratorio**
 
-### Exploración de Variables Númericas PEDRITO PEDRITO PEDRITO
+### **Exploración de Variables Númericas PEDRITO PEDRITO PEDRITO**
 
 (Medidas de tendencia central, distribución y orden. (todas las variables tienen que tener una análisis sobre los resultados, se debe incluir histogramas, boxplots o gráficos de dispersión, uno como mínimo y explicarlo). Para cada una hay que describir su distribución (sacarle su p-value)
 Si o si piden analizar las variables por tecnicas de estadistica descriptiva, tener graficos, y sacar la distribucion.)
 
 ---
 
-### Exploración de Variables Categóricas BENITEZ BENITEZ BENITEZ
+### **Exploración de Variables Categóricas BENITEZ BENITEZ BENITEZ**
 
 Tablas de frecuencia
 Gráficos de barra para cada una
 
 ---
 
-### Relaciones entre Variables
+### **Relaciones entre Variables**
 
 (este es un poquito peculiar, por como estan los datos, se me ocurre que vean si existe una relación entre la cantidad de casamientos con el rango de edad de la novia o del hombre, y luego, ver si hay una relación entre la cantidad de divorcios y los rangos de edades de los novios/novias).
 
