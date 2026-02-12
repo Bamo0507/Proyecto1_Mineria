@@ -1,0 +1,4187 @@
+anio,nivel_geo,departamento,mes,valor
+2009,departamento,Alta Verapaz,1,8
+2009,departamento,Alta Verapaz,2,18
+2009,departamento,Alta Verapaz,3,10
+2009,departamento,Alta Verapaz,4,8
+2009,departamento,Alta Verapaz,5,10
+2009,departamento,Alta Verapaz,6,5
+2009,departamento,Alta Verapaz,7,12
+2009,departamento,Alta Verapaz,8,10
+2009,departamento,Alta Verapaz,9,9
+2009,departamento,Alta Verapaz,10,12
+2009,departamento,Alta Verapaz,11,16
+2009,departamento,Alta Verapaz,12,11
+2009,departamento,Alta Verapaz,,129
+2009,departamento,Baja Verapaz,1,4
+2009,departamento,Baja Verapaz,2,3
+2009,departamento,Baja Verapaz,3,7
+2009,departamento,Baja Verapaz,4,8
+2009,departamento,Baja Verapaz,5,8
+2009,departamento,Baja Verapaz,6,2
+2009,departamento,Baja Verapaz,7,9
+2009,departamento,Baja Verapaz,8,3
+2009,departamento,Baja Verapaz,9,6
+2009,departamento,Baja Verapaz,10,6
+2009,departamento,Baja Verapaz,11,7
+2009,departamento,Baja Verapaz,12,3
+2009,departamento,Baja Verapaz,,66
+2009,departamento,Chimaltenango,1,7
+2009,departamento,Chimaltenango,2,6
+2009,departamento,Chimaltenango,3,5
+2009,departamento,Chimaltenango,4,5
+2009,departamento,Chimaltenango,5,5
+2009,departamento,Chimaltenango,6,5
+2009,departamento,Chimaltenango,7,4
+2009,departamento,Chimaltenango,8,4
+2009,departamento,Chimaltenango,9,3
+2009,departamento,Chimaltenango,10,3
+2009,departamento,Chimaltenango,11,4
+2009,departamento,Chimaltenango,12,5
+2009,departamento,Chimaltenango,,56
+2009,departamento,Chiquimula,1,6
+2009,departamento,Chiquimula,2,9
+2009,departamento,Chiquimula,3,11
+2009,departamento,Chiquimula,4,8
+2009,departamento,Chiquimula,5,9
+2009,departamento,Chiquimula,6,7
+2009,departamento,Chiquimula,7,8
+2009,departamento,Chiquimula,8,6
+2009,departamento,Chiquimula,9,2
+2009,departamento,Chiquimula,10,6
+2009,departamento,Chiquimula,11,10
+2009,departamento,Chiquimula,12,9
+2009,departamento,Chiquimula,,91
+2009,departamento,El Progreso,1,1
+2009,departamento,El Progreso,2,10
+2009,departamento,El Progreso,3,4
+2009,departamento,El Progreso,4,4
+2009,departamento,El Progreso,5,5
+2009,departamento,El Progreso,6,0
+2009,departamento,El Progreso,7,5
+2009,departamento,El Progreso,8,4
+2009,departamento,El Progreso,9,4
+2009,departamento,El Progreso,10,3
+2009,departamento,El Progreso,11,5
+2009,departamento,El Progreso,12,2
+2009,departamento,El Progreso,,47
+2009,departamento,Escuintla,1,11
+2009,departamento,Escuintla,2,15
+2009,departamento,Escuintla,3,13
+2009,departamento,Escuintla,4,15
+2009,departamento,Escuintla,5,14
+2009,departamento,Escuintla,6,18
+2009,departamento,Escuintla,7,8
+2009,departamento,Escuintla,8,14
+2009,departamento,Escuintla,9,11
+2009,departamento,Escuintla,10,12
+2009,departamento,Escuintla,11,12
+2009,departamento,Escuintla,12,17
+2009,departamento,Escuintla,,160
+2009,departamento,Guatemala,1,35
+2009,departamento,Guatemala,2,64
+2009,departamento,Guatemala,3,99
+2009,departamento,Guatemala,4,78
+2009,departamento,Guatemala,5,99
+2009,departamento,Guatemala,6,114
+2009,departamento,Guatemala,7,93
+2009,departamento,Guatemala,8,82
+2009,departamento,Guatemala,9,89
+2009,departamento,Guatemala,10,82
+2009,departamento,Guatemala,11,91
+2009,departamento,Guatemala,12,98
+2009,departamento,Guatemala,,1024
+2009,departamento,Huehuetenango,1,5
+2009,departamento,Huehuetenango,2,7
+2009,departamento,Huehuetenango,3,7
+2009,departamento,Huehuetenango,4,6
+2009,departamento,Huehuetenango,5,7
+2009,departamento,Huehuetenango,6,13
+2009,departamento,Huehuetenango,7,7
+2009,departamento,Huehuetenango,8,3
+2009,departamento,Huehuetenango,9,7
+2009,departamento,Huehuetenango,10,3
+2009,departamento,Huehuetenango,11,12
+2009,departamento,Huehuetenango,12,7
+2009,departamento,Huehuetenango,,84
+2009,departamento,Izabal,1,15
+2009,departamento,Izabal,2,2
+2009,departamento,Izabal,3,8
+2009,departamento,Izabal,4,17
+2009,departamento,Izabal,5,6
+2009,departamento,Izabal,6,9
+2009,departamento,Izabal,7,6
+2009,departamento,Izabal,8,3
+2009,departamento,Izabal,9,4
+2009,departamento,Izabal,10,4
+2009,departamento,Izabal,11,6
+2009,departamento,Izabal,12,6
+2009,departamento,Izabal,,86
+2009,departamento,Jalapa,1,7
+2009,departamento,Jalapa,2,10
+2009,departamento,Jalapa,3,4
+2009,departamento,Jalapa,4,9
+2009,departamento,Jalapa,5,3
+2009,departamento,Jalapa,6,10
+2009,departamento,Jalapa,7,6
+2009,departamento,Jalapa,8,3
+2009,departamento,Jalapa,9,7
+2009,departamento,Jalapa,10,4
+2009,departamento,Jalapa,11,8
+2009,departamento,Jalapa,12,8
+2009,departamento,Jalapa,,79
+2009,departamento,Jutiapa,1,10
+2009,departamento,Jutiapa,2,13
+2009,departamento,Jutiapa,3,12
+2009,departamento,Jutiapa,4,15
+2009,departamento,Jutiapa,5,10
+2009,departamento,Jutiapa,6,14
+2009,departamento,Jutiapa,7,4
+2009,departamento,Jutiapa,8,14
+2009,departamento,Jutiapa,9,5
+2009,departamento,Jutiapa,10,22
+2009,departamento,Jutiapa,11,7
+2009,departamento,Jutiapa,12,14
+2009,departamento,Jutiapa,,140
+2009,departamento,Petén,1,2
+2009,departamento,Petén,2,7
+2009,departamento,Petén,3,3
+2009,departamento,Petén,4,6
+2009,departamento,Petén,5,1
+2009,departamento,Petén,6,5
+2009,departamento,Petén,7,3
+2009,departamento,Petén,8,8
+2009,departamento,Petén,9,3
+2009,departamento,Petén,10,2
+2009,departamento,Petén,11,7
+2009,departamento,Petén,12,5
+2009,departamento,Petén,,52
+2009,departamento,Quetzaltenango,1,5
+2009,departamento,Quetzaltenango,2,16
+2009,departamento,Quetzaltenango,3,22
+2009,departamento,Quetzaltenango,4,24
+2009,departamento,Quetzaltenango,5,12
+2009,departamento,Quetzaltenango,6,14
+2009,departamento,Quetzaltenango,7,16
+2009,departamento,Quetzaltenango,8,18
+2009,departamento,Quetzaltenango,9,14
+2009,departamento,Quetzaltenango,10,13
+2009,departamento,Quetzaltenango,11,16
+2009,departamento,Quetzaltenango,12,13
+2009,departamento,Quetzaltenango,,183
+2009,departamento,Quiché,1,5
+2009,departamento,Quiché,2,10
+2009,departamento,Quiché,3,16
+2009,departamento,Quiché,4,7
+2009,departamento,Quiché,5,2
+2009,departamento,Quiché,6,5
+2009,departamento,Quiché,7,5
+2009,departamento,Quiché,8,7
+2009,departamento,Quiché,9,8
+2009,departamento,Quiché,10,3
+2009,departamento,Quiché,11,13
+2009,departamento,Quiché,12,7
+2009,departamento,Quiché,,88
+2009,departamento,Retalhuleu,1,8
+2009,departamento,Retalhuleu,2,7
+2009,departamento,Retalhuleu,3,10
+2009,departamento,Retalhuleu,4,13
+2009,departamento,Retalhuleu,5,8
+2009,departamento,Retalhuleu,6,6
+2009,departamento,Retalhuleu,7,14
+2009,departamento,Retalhuleu,8,10
+2009,departamento,Retalhuleu,9,3
+2009,departamento,Retalhuleu,10,17
+2009,departamento,Retalhuleu,11,6
+2009,departamento,Retalhuleu,12,9
+2009,departamento,Retalhuleu,,111
+2009,departamento,Sacatepéquez,1,8
+2009,departamento,Sacatepéquez,2,6
+2009,departamento,Sacatepéquez,3,9
+2009,departamento,Sacatepéquez,4,4
+2009,departamento,Sacatepéquez,5,10
+2009,departamento,Sacatepéquez,6,15
+2009,departamento,Sacatepéquez,7,9
+2009,departamento,Sacatepéquez,8,5
+2009,departamento,Sacatepéquez,9,4
+2009,departamento,Sacatepéquez,10,5
+2009,departamento,Sacatepéquez,11,7
+2009,departamento,Sacatepéquez,12,11
+2009,departamento,Sacatepéquez,,93
+2009,departamento,San Marcos,1,6
+2009,departamento,San Marcos,2,15
+2009,departamento,San Marcos,3,17
+2009,departamento,San Marcos,4,7
+2009,departamento,San Marcos,5,7
+2009,departamento,San Marcos,6,9
+2009,departamento,San Marcos,7,8
+2009,departamento,San Marcos,8,13
+2009,departamento,San Marcos,9,8
+2009,departamento,San Marcos,10,8
+2009,departamento,San Marcos,11,16
+2009,departamento,San Marcos,12,6
+2009,departamento,San Marcos,,120
+2009,departamento,Santa Rosa,1,14
+2009,departamento,Santa Rosa,2,20
+2009,departamento,Santa Rosa,3,6
+2009,departamento,Santa Rosa,4,2
+2009,departamento,Santa Rosa,5,11
+2009,departamento,Santa Rosa,6,10
+2009,departamento,Santa Rosa,7,7
+2009,departamento,Santa Rosa,8,7
+2009,departamento,Santa Rosa,9,8
+2009,departamento,Santa Rosa,10,7
+2009,departamento,Santa Rosa,11,9
+2009,departamento,Santa Rosa,12,6
+2009,departamento,Santa Rosa,,107
+2009,departamento,Sololá,1,3
+2009,departamento,Sololá,2,5
+2009,departamento,Sololá,3,0
+2009,departamento,Sololá,4,2
+2009,departamento,Sololá,5,1
+2009,departamento,Sololá,6,3
+2009,departamento,Sololá,7,4
+2009,departamento,Sololá,8,5
+2009,departamento,Sololá,9,3
+2009,departamento,Sololá,10,1
+2009,departamento,Sololá,11,1
+2009,departamento,Sololá,12,2
+2009,departamento,Sololá,,30
+2009,departamento,Suchitepéquez,1,6
+2009,departamento,Suchitepéquez,2,13
+2009,departamento,Suchitepéquez,3,7
+2009,departamento,Suchitepéquez,4,12
+2009,departamento,Suchitepéquez,5,5
+2009,departamento,Suchitepéquez,6,18
+2009,departamento,Suchitepéquez,7,6
+2009,departamento,Suchitepéquez,8,13
+2009,departamento,Suchitepéquez,9,7
+2009,departamento,Suchitepéquez,10,12
+2009,departamento,Suchitepéquez,11,5
+2009,departamento,Suchitepéquez,12,9
+2009,departamento,Suchitepéquez,,113
+2009,departamento,Totonicapán,1,4
+2009,departamento,Totonicapán,2,3
+2009,departamento,Totonicapán,3,3
+2009,departamento,Totonicapán,4,4
+2009,departamento,Totonicapán,5,3
+2009,departamento,Totonicapán,6,6
+2009,departamento,Totonicapán,7,2
+2009,departamento,Totonicapán,8,1
+2009,departamento,Totonicapán,9,3
+2009,departamento,Totonicapán,10,1
+2009,departamento,Totonicapán,11,6
+2009,departamento,Totonicapán,12,3
+2009,departamento,Totonicapán,,39
+2009,departamento,Zacapa,1,5
+2009,departamento,Zacapa,2,3
+2009,departamento,Zacapa,3,12
+2009,departamento,Zacapa,4,10
+2009,departamento,Zacapa,5,10
+2009,departamento,Zacapa,6,8
+2009,departamento,Zacapa,7,5
+2009,departamento,Zacapa,8,18
+2009,departamento,Zacapa,9,5
+2009,departamento,Zacapa,10,10
+2009,departamento,Zacapa,11,12
+2009,departamento,Zacapa,12,8
+2009,departamento,Zacapa,,106
+2009,pais,,1,175
+2009,pais,,2,262
+2009,pais,,3,285
+2009,pais,,4,264
+2009,pais,,5,246
+2009,pais,,6,296
+2009,pais,,7,241
+2009,pais,,8,251
+2009,pais,,9,213
+2009,pais,,10,236
+2009,pais,,11,276
+2009,pais,,12,259
+2009,pais,,,3004
+2010,departamento,Alta Verapaz,1,9
+2010,departamento,Alta Verapaz,2,6
+2010,departamento,Alta Verapaz,3,15
+2010,departamento,Alta Verapaz,4,11
+2010,departamento,Alta Verapaz,5,7
+2010,departamento,Alta Verapaz,6,14
+2010,departamento,Alta Verapaz,7,9
+2010,departamento,Alta Verapaz,8,13
+2010,departamento,Alta Verapaz,9,12
+2010,departamento,Alta Verapaz,10,7
+2010,departamento,Alta Verapaz,11,11
+2010,departamento,Alta Verapaz,12,14
+2010,departamento,Alta Verapaz,,128
+2010,departamento,Baja Verapaz,1,2
+2010,departamento,Baja Verapaz,2,6
+2010,departamento,Baja Verapaz,3,8
+2010,departamento,Baja Verapaz,4,5
+2010,departamento,Baja Verapaz,5,1
+2010,departamento,Baja Verapaz,6,12
+2010,departamento,Baja Verapaz,7,4
+2010,departamento,Baja Verapaz,8,5
+2010,departamento,Baja Verapaz,9,8
+2010,departamento,Baja Verapaz,10,14
+2010,departamento,Baja Verapaz,11,5
+2010,departamento,Baja Verapaz,12,4
+2010,departamento,Baja Verapaz,,74
+2010,departamento,Chimaltenango,1,2
+2010,departamento,Chimaltenango,2,5
+2010,departamento,Chimaltenango,3,1
+2010,departamento,Chimaltenango,4,3
+2010,departamento,Chimaltenango,5,2
+2010,departamento,Chimaltenango,6,4
+2010,departamento,Chimaltenango,7,6
+2010,departamento,Chimaltenango,8,4
+2010,departamento,Chimaltenango,9,3
+2010,departamento,Chimaltenango,10,2
+2010,departamento,Chimaltenango,11,2
+2010,departamento,Chimaltenango,12,2
+2010,departamento,Chimaltenango,,36
+2010,departamento,Chiquimula,1,3
+2010,departamento,Chiquimula,2,5
+2010,departamento,Chiquimula,3,4
+2010,departamento,Chiquimula,4,5
+2010,departamento,Chiquimula,5,7
+2010,departamento,Chiquimula,6,5
+2010,departamento,Chiquimula,7,9
+2010,departamento,Chiquimula,8,16
+2010,departamento,Chiquimula,9,5
+2010,departamento,Chiquimula,10,5
+2010,departamento,Chiquimula,11,8
+2010,departamento,Chiquimula,12,10
+2010,departamento,Chiquimula,,82
+2010,departamento,El Progreso,1,4
+2010,departamento,El Progreso,2,20
+2010,departamento,El Progreso,3,2
+2010,departamento,El Progreso,4,8
+2010,departamento,El Progreso,5,4
+2010,departamento,El Progreso,6,5
+2010,departamento,El Progreso,7,2
+2010,departamento,El Progreso,8,4
+2010,departamento,El Progreso,9,4
+2010,departamento,El Progreso,10,2
+2010,departamento,El Progreso,11,6
+2010,departamento,El Progreso,12,5
+2010,departamento,El Progreso,,66
+2010,departamento,Escuintla,1,13
+2010,departamento,Escuintla,2,13
+2010,departamento,Escuintla,3,17
+2010,departamento,Escuintla,4,19
+2010,departamento,Escuintla,5,17
+2010,departamento,Escuintla,6,16
+2010,departamento,Escuintla,7,13
+2010,departamento,Escuintla,8,19
+2010,departamento,Escuintla,9,12
+2010,departamento,Escuintla,10,17
+2010,departamento,Escuintla,11,22
+2010,departamento,Escuintla,12,11
+2010,departamento,Escuintla,,189
+2010,departamento,Guatemala,1,90
+2010,departamento,Guatemala,2,113
+2010,departamento,Guatemala,3,122
+2010,departamento,Guatemala,4,94
+2010,departamento,Guatemala,5,97
+2010,departamento,Guatemala,6,94
+2010,departamento,Guatemala,7,137
+2010,departamento,Guatemala,8,170
+2010,departamento,Guatemala,9,161
+2010,departamento,Guatemala,10,138
+2010,departamento,Guatemala,11,137
+2010,departamento,Guatemala,12,122
+2010,departamento,Guatemala,,1475
+2010,departamento,Huehuetenango,1,5
+2010,departamento,Huehuetenango,2,10
+2010,departamento,Huehuetenango,3,5
+2010,departamento,Huehuetenango,4,6
+2010,departamento,Huehuetenango,5,11
+2010,departamento,Huehuetenango,6,11
+2010,departamento,Huehuetenango,7,8
+2010,departamento,Huehuetenango,8,12
+2010,departamento,Huehuetenango,9,3
+2010,departamento,Huehuetenango,10,5
+2010,departamento,Huehuetenango,11,8
+2010,departamento,Huehuetenango,12,7
+2010,departamento,Huehuetenango,,91
+2010,departamento,Izabal,1,14
+2010,departamento,Izabal,2,20
+2010,departamento,Izabal,3,8
+2010,departamento,Izabal,4,9
+2010,departamento,Izabal,5,5
+2010,departamento,Izabal,6,9
+2010,departamento,Izabal,7,12
+2010,departamento,Izabal,8,11
+2010,departamento,Izabal,9,7
+2010,departamento,Izabal,10,16
+2010,departamento,Izabal,11,12
+2010,departamento,Izabal,12,13
+2010,departamento,Izabal,,136
+2010,departamento,Jalapa,1,6
+2010,departamento,Jalapa,2,7
+2010,departamento,Jalapa,3,9
+2010,departamento,Jalapa,4,2
+2010,departamento,Jalapa,5,6
+2010,departamento,Jalapa,6,9
+2010,departamento,Jalapa,7,8
+2010,departamento,Jalapa,8,10
+2010,departamento,Jalapa,9,6
+2010,departamento,Jalapa,10,6
+2010,departamento,Jalapa,11,6
+2010,departamento,Jalapa,12,5
+2010,departamento,Jalapa,,80
+2010,departamento,Jutiapa,1,17
+2010,departamento,Jutiapa,2,9
+2010,departamento,Jutiapa,3,12
+2010,departamento,Jutiapa,4,16
+2010,departamento,Jutiapa,5,17
+2010,departamento,Jutiapa,6,19
+2010,departamento,Jutiapa,7,8
+2010,departamento,Jutiapa,8,20
+2010,departamento,Jutiapa,9,12
+2010,departamento,Jutiapa,10,10
+2010,departamento,Jutiapa,11,29
+2010,departamento,Jutiapa,12,11
+2010,departamento,Jutiapa,,180
+2010,departamento,Petén,1,6
+2010,departamento,Petén,2,6
+2010,departamento,Petén,3,10
+2010,departamento,Petén,4,6
+2010,departamento,Petén,5,6
+2010,departamento,Petén,6,17
+2010,departamento,Petén,7,7
+2010,departamento,Petén,8,3
+2010,departamento,Petén,9,7
+2010,departamento,Petén,10,13
+2010,departamento,Petén,11,4
+2010,departamento,Petén,12,5
+2010,departamento,Petén,,90
+2010,departamento,Quetzaltenango,1,10
+2010,departamento,Quetzaltenango,2,19
+2010,departamento,Quetzaltenango,3,24
+2010,departamento,Quetzaltenango,4,13
+2010,departamento,Quetzaltenango,5,15
+2010,departamento,Quetzaltenango,6,15
+2010,departamento,Quetzaltenango,7,21
+2010,departamento,Quetzaltenango,8,20
+2010,departamento,Quetzaltenango,9,18
+2010,departamento,Quetzaltenango,10,19
+2010,departamento,Quetzaltenango,11,20
+2010,departamento,Quetzaltenango,12,17
+2010,departamento,Quetzaltenango,,211
+2010,departamento,Quiché,1,7
+2010,departamento,Quiché,2,4
+2010,departamento,Quiché,3,12
+2010,departamento,Quiché,4,7
+2010,departamento,Quiché,5,6
+2010,departamento,Quiché,6,6
+2010,departamento,Quiché,7,8
+2010,departamento,Quiché,8,3
+2010,departamento,Quiché,9,7
+2010,departamento,Quiché,10,8
+2010,departamento,Quiché,11,11
+2010,departamento,Quiché,12,5
+2010,departamento,Quiché,,84
+2010,departamento,Retalhuleu,1,6
+2010,departamento,Retalhuleu,2,5
+2010,departamento,Retalhuleu,3,5
+2010,departamento,Retalhuleu,4,10
+2010,departamento,Retalhuleu,5,11
+2010,departamento,Retalhuleu,6,8
+2010,departamento,Retalhuleu,7,8
+2010,departamento,Retalhuleu,8,10
+2010,departamento,Retalhuleu,9,12
+2010,departamento,Retalhuleu,10,9
+2010,departamento,Retalhuleu,11,10
+2010,departamento,Retalhuleu,12,5
+2010,departamento,Retalhuleu,,99
+2010,departamento,Sacatepéquez,1,5
+2010,departamento,Sacatepéquez,2,4
+2010,departamento,Sacatepéquez,3,8
+2010,departamento,Sacatepéquez,4,6
+2010,departamento,Sacatepéquez,5,14
+2010,departamento,Sacatepéquez,6,7
+2010,departamento,Sacatepéquez,7,6
+2010,departamento,Sacatepéquez,8,14
+2010,departamento,Sacatepéquez,9,4
+2010,departamento,Sacatepéquez,10,6
+2010,departamento,Sacatepéquez,11,6
+2010,departamento,Sacatepéquez,12,6
+2010,departamento,Sacatepéquez,,86
+2010,departamento,San Marcos,1,7
+2010,departamento,San Marcos,2,9
+2010,departamento,San Marcos,3,11
+2010,departamento,San Marcos,4,11
+2010,departamento,San Marcos,5,9
+2010,departamento,San Marcos,6,10
+2010,departamento,San Marcos,7,12
+2010,departamento,San Marcos,8,10
+2010,departamento,San Marcos,9,14
+2010,departamento,San Marcos,10,9
+2010,departamento,San Marcos,11,13
+2010,departamento,San Marcos,12,6
+2010,departamento,San Marcos,,121
+2010,departamento,Santa Rosa,1,5
+2010,departamento,Santa Rosa,2,7
+2010,departamento,Santa Rosa,3,7
+2010,departamento,Santa Rosa,4,4
+2010,departamento,Santa Rosa,5,6
+2010,departamento,Santa Rosa,6,8
+2010,departamento,Santa Rosa,7,7
+2010,departamento,Santa Rosa,8,7
+2010,departamento,Santa Rosa,9,5
+2010,departamento,Santa Rosa,10,15
+2010,departamento,Santa Rosa,11,11
+2010,departamento,Santa Rosa,12,6
+2010,departamento,Santa Rosa,,88
+2010,departamento,Sololá,1,5
+2010,departamento,Sololá,2,1
+2010,departamento,Sololá,3,3
+2010,departamento,Sololá,4,4
+2010,departamento,Sololá,5,3
+2010,departamento,Sololá,6,0
+2010,departamento,Sololá,7,4
+2010,departamento,Sololá,8,4
+2010,departamento,Sololá,9,5
+2010,departamento,Sololá,10,3
+2010,departamento,Sololá,11,6
+2010,departamento,Sololá,12,0
+2010,departamento,Sololá,,38
+2010,departamento,Suchitepéquez,1,7
+2010,departamento,Suchitepéquez,2,6
+2010,departamento,Suchitepéquez,3,15
+2010,departamento,Suchitepéquez,4,9
+2010,departamento,Suchitepéquez,5,11
+2010,departamento,Suchitepéquez,6,12
+2010,departamento,Suchitepéquez,7,10
+2010,departamento,Suchitepéquez,8,7
+2010,departamento,Suchitepéquez,9,12
+2010,departamento,Suchitepéquez,10,15
+2010,departamento,Suchitepéquez,11,10
+2010,departamento,Suchitepéquez,12,13
+2010,departamento,Suchitepéquez,,127
+2010,departamento,Totonicapán,1,2
+2010,departamento,Totonicapán,2,2
+2010,departamento,Totonicapán,3,7
+2010,departamento,Totonicapán,4,6
+2010,departamento,Totonicapán,5,1
+2010,departamento,Totonicapán,6,3
+2010,departamento,Totonicapán,7,2
+2010,departamento,Totonicapán,8,6
+2010,departamento,Totonicapán,9,3
+2010,departamento,Totonicapán,10,9
+2010,departamento,Totonicapán,11,5
+2010,departamento,Totonicapán,12,5
+2010,departamento,Totonicapán,,51
+2010,departamento,Zacapa,1,9
+2010,departamento,Zacapa,2,6
+2010,departamento,Zacapa,3,10
+2010,departamento,Zacapa,4,6
+2010,departamento,Zacapa,5,13
+2010,departamento,Zacapa,6,7
+2010,departamento,Zacapa,7,11
+2010,departamento,Zacapa,8,13
+2010,departamento,Zacapa,9,6
+2010,departamento,Zacapa,10,11
+2010,departamento,Zacapa,11,13
+2010,departamento,Zacapa,12,8
+2010,departamento,Zacapa,,113
+2010,pais,,1,234
+2010,pais,,2,283
+2010,pais,,3,315
+2010,pais,,4,260
+2010,pais,,5,269
+2010,pais,,6,291
+2010,pais,,7,312
+2010,pais,,8,381
+2010,pais,,9,326
+2010,pais,,10,339
+2010,pais,,11,355
+2010,pais,,12,280
+2010,pais,,,3645
+2011,departamento,Alta Verapaz,1,15
+2011,departamento,Alta Verapaz,2,9
+2011,departamento,Alta Verapaz,3,14
+2011,departamento,Alta Verapaz,4,23
+2011,departamento,Alta Verapaz,5,22
+2011,departamento,Alta Verapaz,6,17
+2011,departamento,Alta Verapaz,7,8
+2011,departamento,Alta Verapaz,8,11
+2011,departamento,Alta Verapaz,9,13
+2011,departamento,Alta Verapaz,10,15
+2011,departamento,Alta Verapaz,11,21
+2011,departamento,Alta Verapaz,12,10
+2011,departamento,Alta Verapaz,,178
+2011,departamento,Baja Verapaz,1,3
+2011,departamento,Baja Verapaz,2,10
+2011,departamento,Baja Verapaz,3,7
+2011,departamento,Baja Verapaz,4,3
+2011,departamento,Baja Verapaz,5,5
+2011,departamento,Baja Verapaz,6,7
+2011,departamento,Baja Verapaz,7,3
+2011,departamento,Baja Verapaz,8,3
+2011,departamento,Baja Verapaz,9,3
+2011,departamento,Baja Verapaz,10,6
+2011,departamento,Baja Verapaz,11,3
+2011,departamento,Baja Verapaz,12,7
+2011,departamento,Baja Verapaz,,60
+2011,departamento,Chimaltenango,1,3
+2011,departamento,Chimaltenango,2,7
+2011,departamento,Chimaltenango,3,8
+2011,departamento,Chimaltenango,4,4
+2011,departamento,Chimaltenango,5,5
+2011,departamento,Chimaltenango,6,10
+2011,departamento,Chimaltenango,7,5
+2011,departamento,Chimaltenango,8,6
+2011,departamento,Chimaltenango,9,6
+2011,departamento,Chimaltenango,10,5
+2011,departamento,Chimaltenango,11,5
+2011,departamento,Chimaltenango,12,1
+2011,departamento,Chimaltenango,,65
+2011,departamento,Chiquimula,1,4
+2011,departamento,Chiquimula,2,10
+2011,departamento,Chiquimula,3,10
+2011,departamento,Chiquimula,4,8
+2011,departamento,Chiquimula,5,9
+2011,departamento,Chiquimula,6,9
+2011,departamento,Chiquimula,7,15
+2011,departamento,Chiquimula,8,15
+2011,departamento,Chiquimula,9,13
+2011,departamento,Chiquimula,10,6
+2011,departamento,Chiquimula,11,8
+2011,departamento,Chiquimula,12,5
+2011,departamento,Chiquimula,,112
+2011,departamento,El Progreso,1,2
+2011,departamento,El Progreso,2,9
+2011,departamento,El Progreso,3,6
+2011,departamento,El Progreso,4,2
+2011,departamento,El Progreso,5,4
+2011,departamento,El Progreso,6,6
+2011,departamento,El Progreso,7,4
+2011,departamento,El Progreso,8,8
+2011,departamento,El Progreso,9,6
+2011,departamento,El Progreso,10,13
+2011,departamento,El Progreso,11,7
+2011,departamento,El Progreso,12,11
+2011,departamento,El Progreso,,78
+2011,departamento,Escuintla,1,25
+2011,departamento,Escuintla,2,17
+2011,departamento,Escuintla,3,13
+2011,departamento,Escuintla,4,25
+2011,departamento,Escuintla,5,19
+2011,departamento,Escuintla,6,22
+2011,departamento,Escuintla,7,18
+2011,departamento,Escuintla,8,16
+2011,departamento,Escuintla,9,21
+2011,departamento,Escuintla,10,20
+2011,departamento,Escuintla,11,25
+2011,departamento,Escuintla,12,11
+2011,departamento,Escuintla,,232
+2011,departamento,Guatemala,1,109
+2011,departamento,Guatemala,2,136
+2011,departamento,Guatemala,3,150
+2011,departamento,Guatemala,4,143
+2011,departamento,Guatemala,5,161
+2011,departamento,Guatemala,6,151
+2011,departamento,Guatemala,7,159
+2011,departamento,Guatemala,8,158
+2011,departamento,Guatemala,9,170
+2011,departamento,Guatemala,10,152
+2011,departamento,Guatemala,11,144
+2011,departamento,Guatemala,12,108
+2011,departamento,Guatemala,,1741
+2011,departamento,Huehuetenango,1,10
+2011,departamento,Huehuetenango,2,15
+2011,departamento,Huehuetenango,3,12
+2011,departamento,Huehuetenango,4,6
+2011,departamento,Huehuetenango,5,15
+2011,departamento,Huehuetenango,6,9
+2011,departamento,Huehuetenango,7,9
+2011,departamento,Huehuetenango,8,6
+2011,departamento,Huehuetenango,9,13
+2011,departamento,Huehuetenango,10,12
+2011,departamento,Huehuetenango,11,12
+2011,departamento,Huehuetenango,12,8
+2011,departamento,Huehuetenango,,127
+2011,departamento,Izabal,1,4
+2011,departamento,Izabal,2,8
+2011,departamento,Izabal,3,8
+2011,departamento,Izabal,4,11
+2011,departamento,Izabal,5,10
+2011,departamento,Izabal,6,13
+2011,departamento,Izabal,7,9
+2011,departamento,Izabal,8,17
+2011,departamento,Izabal,9,13
+2011,departamento,Izabal,10,14
+2011,departamento,Izabal,11,10
+2011,departamento,Izabal,12,3
+2011,departamento,Izabal,,120
+2011,departamento,Jalapa,1,7
+2011,departamento,Jalapa,2,7
+2011,departamento,Jalapa,3,11
+2011,departamento,Jalapa,4,6
+2011,departamento,Jalapa,5,10
+2011,departamento,Jalapa,6,14
+2011,departamento,Jalapa,7,10
+2011,departamento,Jalapa,8,13
+2011,departamento,Jalapa,9,7
+2011,departamento,Jalapa,10,8
+2011,departamento,Jalapa,11,4
+2011,departamento,Jalapa,12,6
+2011,departamento,Jalapa,,103
+2011,departamento,Jutiapa,1,18
+2011,departamento,Jutiapa,2,14
+2011,departamento,Jutiapa,3,18
+2011,departamento,Jutiapa,4,11
+2011,departamento,Jutiapa,5,10
+2011,departamento,Jutiapa,6,19
+2011,departamento,Jutiapa,7,13
+2011,departamento,Jutiapa,8,17
+2011,departamento,Jutiapa,9,28
+2011,departamento,Jutiapa,10,21
+2011,departamento,Jutiapa,11,8
+2011,departamento,Jutiapa,12,19
+2011,departamento,Jutiapa,,196
+2011,departamento,Petén,1,5
+2011,departamento,Petén,2,6
+2011,departamento,Petén,3,6
+2011,departamento,Petén,4,7
+2011,departamento,Petén,5,10
+2011,departamento,Petén,6,10
+2011,departamento,Petén,7,5
+2011,departamento,Petén,8,9
+2011,departamento,Petén,9,10
+2011,departamento,Petén,10,7
+2011,departamento,Petén,11,6
+2011,departamento,Petén,12,7
+2011,departamento,Petén,,88
+2011,departamento,Quetzaltenango,1,36
+2011,departamento,Quetzaltenango,2,22
+2011,departamento,Quetzaltenango,3,18
+2011,departamento,Quetzaltenango,4,17
+2011,departamento,Quetzaltenango,5,22
+2011,departamento,Quetzaltenango,6,23
+2011,departamento,Quetzaltenango,7,13
+2011,departamento,Quetzaltenango,8,19
+2011,departamento,Quetzaltenango,9,28
+2011,departamento,Quetzaltenango,10,24
+2011,departamento,Quetzaltenango,11,20
+2011,departamento,Quetzaltenango,12,16
+2011,departamento,Quetzaltenango,,258
+2011,departamento,Quiché,1,6
+2011,departamento,Quiché,2,11
+2011,departamento,Quiché,3,13
+2011,departamento,Quiché,4,13
+2011,departamento,Quiché,5,6
+2011,departamento,Quiché,6,8
+2011,departamento,Quiché,7,6
+2011,departamento,Quiché,8,4
+2011,departamento,Quiché,9,11
+2011,departamento,Quiché,10,12
+2011,departamento,Quiché,11,8
+2011,departamento,Quiché,12,12
+2011,departamento,Quiché,,110
+2011,departamento,Retalhuleu,1,10
+2011,departamento,Retalhuleu,2,12
+2011,departamento,Retalhuleu,3,5
+2011,departamento,Retalhuleu,4,4
+2011,departamento,Retalhuleu,5,8
+2011,departamento,Retalhuleu,6,13
+2011,departamento,Retalhuleu,7,9
+2011,departamento,Retalhuleu,8,11
+2011,departamento,Retalhuleu,9,13
+2011,departamento,Retalhuleu,10,12
+2011,departamento,Retalhuleu,11,6
+2011,departamento,Retalhuleu,12,7
+2011,departamento,Retalhuleu,,110
+2011,departamento,Sacatepéquez,1,1
+2011,departamento,Sacatepéquez,2,8
+2011,departamento,Sacatepéquez,3,4
+2011,departamento,Sacatepéquez,4,7
+2011,departamento,Sacatepéquez,5,7
+2011,departamento,Sacatepéquez,6,17
+2011,departamento,Sacatepéquez,7,5
+2011,departamento,Sacatepéquez,8,3
+2011,departamento,Sacatepéquez,9,7
+2011,departamento,Sacatepéquez,10,8
+2011,departamento,Sacatepéquez,11,3
+2011,departamento,Sacatepéquez,12,11
+2011,departamento,Sacatepéquez,,81
+2011,departamento,San Marcos,1,6
+2011,departamento,San Marcos,2,15
+2011,departamento,San Marcos,3,9
+2011,departamento,San Marcos,4,7
+2011,departamento,San Marcos,5,13
+2011,departamento,San Marcos,6,14
+2011,departamento,San Marcos,7,11
+2011,departamento,San Marcos,8,15
+2011,departamento,San Marcos,9,17
+2011,departamento,San Marcos,10,14
+2011,departamento,San Marcos,11,12
+2011,departamento,San Marcos,12,15
+2011,departamento,San Marcos,,148
+2011,departamento,Santa Rosa,1,16
+2011,departamento,Santa Rosa,2,12
+2011,departamento,Santa Rosa,3,15
+2011,departamento,Santa Rosa,4,9
+2011,departamento,Santa Rosa,5,7
+2011,departamento,Santa Rosa,6,7
+2011,departamento,Santa Rosa,7,5
+2011,departamento,Santa Rosa,8,4
+2011,departamento,Santa Rosa,9,10
+2011,departamento,Santa Rosa,10,7
+2011,departamento,Santa Rosa,11,8
+2011,departamento,Santa Rosa,12,19
+2011,departamento,Santa Rosa,,119
+2011,departamento,Sololá,1,6
+2011,departamento,Sololá,2,4
+2011,departamento,Sololá,3,4
+2011,departamento,Sololá,4,1
+2011,departamento,Sololá,5,4
+2011,departamento,Sololá,6,6
+2011,departamento,Sololá,7,1
+2011,departamento,Sololá,8,3
+2011,departamento,Sololá,9,4
+2011,departamento,Sololá,10,4
+2011,departamento,Sololá,11,2
+2011,departamento,Sololá,12,5
+2011,departamento,Sololá,,44
+2011,departamento,Suchitepéquez,1,15
+2011,departamento,Suchitepéquez,2,13
+2011,departamento,Suchitepéquez,3,13
+2011,departamento,Suchitepéquez,4,11
+2011,departamento,Suchitepéquez,5,11
+2011,departamento,Suchitepéquez,6,8
+2011,departamento,Suchitepéquez,7,15
+2011,departamento,Suchitepéquez,8,10
+2011,departamento,Suchitepéquez,9,14
+2011,departamento,Suchitepéquez,10,18
+2011,departamento,Suchitepéquez,11,22
+2011,departamento,Suchitepéquez,12,12
+2011,departamento,Suchitepéquez,,162
+2011,departamento,Totonicapán,1,4
+2011,departamento,Totonicapán,2,4
+2011,departamento,Totonicapán,3,7
+2011,departamento,Totonicapán,4,4
+2011,departamento,Totonicapán,5,7
+2011,departamento,Totonicapán,6,5
+2011,departamento,Totonicapán,7,6
+2011,departamento,Totonicapán,8,6
+2011,departamento,Totonicapán,9,5
+2011,departamento,Totonicapán,10,8
+2011,departamento,Totonicapán,11,8
+2011,departamento,Totonicapán,12,5
+2011,departamento,Totonicapán,,69
+2011,departamento,Zacapa,1,12
+2011,departamento,Zacapa,2,15
+2011,departamento,Zacapa,3,10
+2011,departamento,Zacapa,4,15
+2011,departamento,Zacapa,5,8
+2011,departamento,Zacapa,6,12
+2011,departamento,Zacapa,7,6
+2011,departamento,Zacapa,8,14
+2011,departamento,Zacapa,9,13
+2011,departamento,Zacapa,10,16
+2011,departamento,Zacapa,11,16
+2011,departamento,Zacapa,12,6
+2011,departamento,Zacapa,,143
+2011,pais,,1,317
+2011,pais,,2,364
+2011,pais,,3,361
+2011,pais,,4,337
+2011,pais,,5,373
+2011,pais,,6,400
+2011,pais,,7,335
+2011,pais,,8,368
+2011,pais,,9,425
+2011,pais,,10,402
+2011,pais,,11,358
+2011,pais,,12,304
+2011,pais,,,4344
+2012,departamento,Alta Verapaz,1,19
+2012,departamento,Alta Verapaz,2,19
+2012,departamento,Alta Verapaz,3,11
+2012,departamento,Alta Verapaz,4,21
+2012,departamento,Alta Verapaz,5,7
+2012,departamento,Alta Verapaz,6,17
+2012,departamento,Alta Verapaz,7,15
+2012,departamento,Alta Verapaz,8,12
+2012,departamento,Alta Verapaz,9,10
+2012,departamento,Alta Verapaz,10,12
+2012,departamento,Alta Verapaz,11,16
+2012,departamento,Alta Verapaz,12,16
+2012,departamento,Alta Verapaz,,175
+2012,departamento,Baja Verapaz,1,13
+2012,departamento,Baja Verapaz,2,8
+2012,departamento,Baja Verapaz,3,7
+2012,departamento,Baja Verapaz,4,8
+2012,departamento,Baja Verapaz,5,8
+2012,departamento,Baja Verapaz,6,11
+2012,departamento,Baja Verapaz,7,15
+2012,departamento,Baja Verapaz,8,9
+2012,departamento,Baja Verapaz,9,9
+2012,departamento,Baja Verapaz,10,9
+2012,departamento,Baja Verapaz,11,8
+2012,departamento,Baja Verapaz,12,6
+2012,departamento,Baja Verapaz,,111
+2012,departamento,Chimaltenango,1,11
+2012,departamento,Chimaltenango,2,6
+2012,departamento,Chimaltenango,3,3
+2012,departamento,Chimaltenango,4,4
+2012,departamento,Chimaltenango,5,7
+2012,departamento,Chimaltenango,6,5
+2012,departamento,Chimaltenango,7,11
+2012,departamento,Chimaltenango,8,9
+2012,departamento,Chimaltenango,9,8
+2012,departamento,Chimaltenango,10,3
+2012,departamento,Chimaltenango,11,5
+2012,departamento,Chimaltenango,12,9
+2012,departamento,Chimaltenango,,81
+2012,departamento,Chiquimula,1,14
+2012,departamento,Chiquimula,2,9
+2012,departamento,Chiquimula,3,12
+2012,departamento,Chiquimula,4,15
+2012,departamento,Chiquimula,5,20
+2012,departamento,Chiquimula,6,15
+2012,departamento,Chiquimula,7,6
+2012,departamento,Chiquimula,8,15
+2012,departamento,Chiquimula,9,4
+2012,departamento,Chiquimula,10,10
+2012,departamento,Chiquimula,11,7
+2012,departamento,Chiquimula,12,28
+2012,departamento,Chiquimula,,155
+2012,departamento,El Progreso,1,6
+2012,departamento,El Progreso,2,2
+2012,departamento,El Progreso,3,8
+2012,departamento,El Progreso,4,4
+2012,departamento,El Progreso,5,8
+2012,departamento,El Progreso,6,3
+2012,departamento,El Progreso,7,2
+2012,departamento,El Progreso,8,10
+2012,departamento,El Progreso,9,8
+2012,departamento,El Progreso,10,13
+2012,departamento,El Progreso,11,12
+2012,departamento,El Progreso,12,6
+2012,departamento,El Progreso,,82
+2012,departamento,Escuintla,1,15
+2012,departamento,Escuintla,2,15
+2012,departamento,Escuintla,3,15
+2012,departamento,Escuintla,4,18
+2012,departamento,Escuintla,5,24
+2012,departamento,Escuintla,6,21
+2012,departamento,Escuintla,7,23
+2012,departamento,Escuintla,8,20
+2012,departamento,Escuintla,9,17
+2012,departamento,Escuintla,10,21
+2012,departamento,Escuintla,11,22
+2012,departamento,Escuintla,12,18
+2012,departamento,Escuintla,,229
+2012,departamento,Guatemala,1,220
+2012,departamento,Guatemala,2,161
+2012,departamento,Guatemala,3,175
+2012,departamento,Guatemala,4,177
+2012,departamento,Guatemala,5,129
+2012,departamento,Guatemala,6,168
+2012,departamento,Guatemala,7,203
+2012,departamento,Guatemala,8,177
+2012,departamento,Guatemala,9,173
+2012,departamento,Guatemala,10,192
+2012,departamento,Guatemala,11,140
+2012,departamento,Guatemala,12,129
+2012,departamento,Guatemala,,2044
+2012,departamento,Huehuetenango,1,18
+2012,departamento,Huehuetenango,2,15
+2012,departamento,Huehuetenango,3,15
+2012,departamento,Huehuetenango,4,16
+2012,departamento,Huehuetenango,5,15
+2012,departamento,Huehuetenango,6,12
+2012,departamento,Huehuetenango,7,14
+2012,departamento,Huehuetenango,8,13
+2012,departamento,Huehuetenango,9,10
+2012,departamento,Huehuetenango,10,10
+2012,departamento,Huehuetenango,11,14
+2012,departamento,Huehuetenango,12,13
+2012,departamento,Huehuetenango,,165
+2012,departamento,Izabal,1,13
+2012,departamento,Izabal,2,7
+2012,departamento,Izabal,3,17
+2012,departamento,Izabal,4,15
+2012,departamento,Izabal,5,24
+2012,departamento,Izabal,6,21
+2012,departamento,Izabal,7,23
+2012,departamento,Izabal,8,18
+2012,departamento,Izabal,9,17
+2012,departamento,Izabal,10,16
+2012,departamento,Izabal,11,26
+2012,departamento,Izabal,12,20
+2012,departamento,Izabal,,217
+2012,departamento,Jalapa,1,7
+2012,departamento,Jalapa,2,13
+2012,departamento,Jalapa,3,13
+2012,departamento,Jalapa,4,14
+2012,departamento,Jalapa,5,8
+2012,departamento,Jalapa,6,12
+2012,departamento,Jalapa,7,6
+2012,departamento,Jalapa,8,13
+2012,departamento,Jalapa,9,5
+2012,departamento,Jalapa,10,14
+2012,departamento,Jalapa,11,5
+2012,departamento,Jalapa,12,4
+2012,departamento,Jalapa,,114
+2012,departamento,Jutiapa,1,30
+2012,departamento,Jutiapa,2,20
+2012,departamento,Jutiapa,3,23
+2012,departamento,Jutiapa,4,20
+2012,departamento,Jutiapa,5,20
+2012,departamento,Jutiapa,6,17
+2012,departamento,Jutiapa,7,16
+2012,departamento,Jutiapa,8,27
+2012,departamento,Jutiapa,9,24
+2012,departamento,Jutiapa,10,17
+2012,departamento,Jutiapa,11,20
+2012,departamento,Jutiapa,12,16
+2012,departamento,Jutiapa,,250
+2012,departamento,Petén,1,15
+2012,departamento,Petén,2,11
+2012,departamento,Petén,3,14
+2012,departamento,Petén,4,11
+2012,departamento,Petén,5,7
+2012,departamento,Petén,6,6
+2012,departamento,Petén,7,15
+2012,departamento,Petén,8,14
+2012,departamento,Petén,9,8
+2012,departamento,Petén,10,9
+2012,departamento,Petén,11,12
+2012,departamento,Petén,12,9
+2012,departamento,Petén,,131
+2012,departamento,Quetzaltenango,1,31
+2012,departamento,Quetzaltenango,2,27
+2012,departamento,Quetzaltenango,3,20
+2012,departamento,Quetzaltenango,4,27
+2012,departamento,Quetzaltenango,5,16
+2012,departamento,Quetzaltenango,6,21
+2012,departamento,Quetzaltenango,7,20
+2012,departamento,Quetzaltenango,8,26
+2012,departamento,Quetzaltenango,9,18
+2012,departamento,Quetzaltenango,10,27
+2012,departamento,Quetzaltenango,11,28
+2012,departamento,Quetzaltenango,12,20
+2012,departamento,Quetzaltenango,,281
+2012,departamento,Quiché,1,7
+2012,departamento,Quiché,2,15
+2012,departamento,Quiché,3,10
+2012,departamento,Quiché,4,10
+2012,departamento,Quiché,5,10
+2012,departamento,Quiché,6,7
+2012,departamento,Quiché,7,15
+2012,departamento,Quiché,8,8
+2012,departamento,Quiché,9,4
+2012,departamento,Quiché,10,15
+2012,departamento,Quiché,11,7
+2012,departamento,Quiché,12,7
+2012,departamento,Quiché,,115
+2012,departamento,Retalhuleu,1,15
+2012,departamento,Retalhuleu,2,17
+2012,departamento,Retalhuleu,3,15
+2012,departamento,Retalhuleu,4,11
+2012,departamento,Retalhuleu,5,8
+2012,departamento,Retalhuleu,6,15
+2012,departamento,Retalhuleu,7,8
+2012,departamento,Retalhuleu,8,12
+2012,departamento,Retalhuleu,9,10
+2012,departamento,Retalhuleu,10,9
+2012,departamento,Retalhuleu,11,15
+2012,departamento,Retalhuleu,12,9
+2012,departamento,Retalhuleu,,144
+2012,departamento,Sacatepéquez,1,5
+2012,departamento,Sacatepéquez,2,6
+2012,departamento,Sacatepéquez,3,7
+2012,departamento,Sacatepéquez,4,6
+2012,departamento,Sacatepéquez,5,8
+2012,departamento,Sacatepéquez,6,7
+2012,departamento,Sacatepéquez,7,8
+2012,departamento,Sacatepéquez,8,9
+2012,departamento,Sacatepéquez,9,4
+2012,departamento,Sacatepéquez,10,5
+2012,departamento,Sacatepéquez,11,13
+2012,departamento,Sacatepéquez,12,8
+2012,departamento,Sacatepéquez,,86
+2012,departamento,San Marcos,1,13
+2012,departamento,San Marcos,2,15
+2012,departamento,San Marcos,3,12
+2012,departamento,San Marcos,4,15
+2012,departamento,San Marcos,5,10
+2012,departamento,San Marcos,6,21
+2012,departamento,San Marcos,7,14
+2012,departamento,San Marcos,8,13
+2012,departamento,San Marcos,9,10
+2012,departamento,San Marcos,10,25
+2012,departamento,San Marcos,11,14
+2012,departamento,San Marcos,12,18
+2012,departamento,San Marcos,,180
+2012,departamento,Santa Rosa,1,8
+2012,departamento,Santa Rosa,2,7
+2012,departamento,Santa Rosa,3,6
+2012,departamento,Santa Rosa,4,8
+2012,departamento,Santa Rosa,5,5
+2012,departamento,Santa Rosa,6,12
+2012,departamento,Santa Rosa,7,9
+2012,departamento,Santa Rosa,8,14
+2012,departamento,Santa Rosa,9,10
+2012,departamento,Santa Rosa,10,10
+2012,departamento,Santa Rosa,11,18
+2012,departamento,Santa Rosa,12,11
+2012,departamento,Santa Rosa,,118
+2012,departamento,Sololá,1,3
+2012,departamento,Sololá,2,5
+2012,departamento,Sololá,3,5
+2012,departamento,Sololá,4,2
+2012,departamento,Sololá,5,2
+2012,departamento,Sololá,6,2
+2012,departamento,Sololá,7,5
+2012,departamento,Sololá,8,6
+2012,departamento,Sololá,9,2
+2012,departamento,Sololá,10,4
+2012,departamento,Sololá,11,5
+2012,departamento,Sololá,12,3
+2012,departamento,Sololá,,44
+2012,departamento,Suchitepéquez,1,16
+2012,departamento,Suchitepéquez,2,14
+2012,departamento,Suchitepéquez,3,14
+2012,departamento,Suchitepéquez,4,21
+2012,departamento,Suchitepéquez,5,13
+2012,departamento,Suchitepéquez,6,16
+2012,departamento,Suchitepéquez,7,9
+2012,departamento,Suchitepéquez,8,18
+2012,departamento,Suchitepéquez,9,22
+2012,departamento,Suchitepéquez,10,24
+2012,departamento,Suchitepéquez,11,16
+2012,departamento,Suchitepéquez,12,12
+2012,departamento,Suchitepéquez,,195
+2012,departamento,Totonicapán,1,2
+2012,departamento,Totonicapán,2,5
+2012,departamento,Totonicapán,3,8
+2012,departamento,Totonicapán,4,5
+2012,departamento,Totonicapán,5,10
+2012,departamento,Totonicapán,6,1
+2012,departamento,Totonicapán,7,7
+2012,departamento,Totonicapán,8,7
+2012,departamento,Totonicapán,9,4
+2012,departamento,Totonicapán,10,9
+2012,departamento,Totonicapán,11,11
+2012,departamento,Totonicapán,12,8
+2012,departamento,Totonicapán,,77
+2012,departamento,Zacapa,1,18
+2012,departamento,Zacapa,2,8
+2012,departamento,Zacapa,3,8
+2012,departamento,Zacapa,4,14
+2012,departamento,Zacapa,5,15
+2012,departamento,Zacapa,6,18
+2012,departamento,Zacapa,7,19
+2012,departamento,Zacapa,8,10
+2012,departamento,Zacapa,9,8
+2012,departamento,Zacapa,10,18
+2012,departamento,Zacapa,11,12
+2012,departamento,Zacapa,12,15
+2012,departamento,Zacapa,,163
+2012,pais,,1,499
+2012,pais,,2,405
+2012,pais,,3,418
+2012,pais,,4,442
+2012,pais,,5,374
+2012,pais,,6,428
+2012,pais,,7,463
+2012,pais,,8,460
+2012,pais,,9,385
+2012,pais,,10,472
+2012,pais,,11,426
+2012,pais,,12,385
+2012,pais,,,5157
+2013,departamento,Alta Verapaz,1,13
+2013,departamento,Alta Verapaz,2,13
+2013,departamento,Alta Verapaz,3,8
+2013,departamento,Alta Verapaz,4,19
+2013,departamento,Alta Verapaz,5,22
+2013,departamento,Alta Verapaz,6,16
+2013,departamento,Alta Verapaz,7,8
+2013,departamento,Alta Verapaz,8,12
+2013,departamento,Alta Verapaz,9,14
+2013,departamento,Alta Verapaz,10,17
+2013,departamento,Alta Verapaz,11,13
+2013,departamento,Alta Verapaz,12,11
+2013,departamento,Alta Verapaz,,166
+2013,departamento,Baja Verapaz,1,3
+2013,departamento,Baja Verapaz,2,10
+2013,departamento,Baja Verapaz,3,7
+2013,departamento,Baja Verapaz,4,10
+2013,departamento,Baja Verapaz,5,12
+2013,departamento,Baja Verapaz,6,11
+2013,departamento,Baja Verapaz,7,9
+2013,departamento,Baja Verapaz,8,13
+2013,departamento,Baja Verapaz,9,8
+2013,departamento,Baja Verapaz,10,14
+2013,departamento,Baja Verapaz,11,10
+2013,departamento,Baja Verapaz,12,8
+2013,departamento,Baja Verapaz,,115
+2013,departamento,Chimaltenango,1,0
+2013,departamento,Chimaltenango,2,7
+2013,departamento,Chimaltenango,3,10
+2013,departamento,Chimaltenango,4,9
+2013,departamento,Chimaltenango,5,11
+2013,departamento,Chimaltenango,6,13
+2013,departamento,Chimaltenango,7,9
+2013,departamento,Chimaltenango,8,3
+2013,departamento,Chimaltenango,9,8
+2013,departamento,Chimaltenango,10,11
+2013,departamento,Chimaltenango,11,4
+2013,departamento,Chimaltenango,12,7
+2013,departamento,Chimaltenango,,92
+2013,departamento,Chiquimula,1,13
+2013,departamento,Chiquimula,2,9
+2013,departamento,Chiquimula,3,8
+2013,departamento,Chiquimula,4,5
+2013,departamento,Chiquimula,5,5
+2013,departamento,Chiquimula,6,8
+2013,departamento,Chiquimula,7,24
+2013,departamento,Chiquimula,8,15
+2013,departamento,Chiquimula,9,11
+2013,departamento,Chiquimula,10,17
+2013,departamento,Chiquimula,11,11
+2013,departamento,Chiquimula,12,10
+2013,departamento,Chiquimula,,136
+2013,departamento,El Progreso,1,6
+2013,departamento,El Progreso,2,8
+2013,departamento,El Progreso,3,7
+2013,departamento,El Progreso,4,3
+2013,departamento,El Progreso,5,7
+2013,departamento,El Progreso,6,6
+2013,departamento,El Progreso,7,13
+2013,departamento,El Progreso,8,3
+2013,departamento,El Progreso,9,9
+2013,departamento,El Progreso,10,9
+2013,departamento,El Progreso,11,10
+2013,departamento,El Progreso,12,6
+2013,departamento,El Progreso,,87
+2013,departamento,Escuintla,1,10
+2013,departamento,Escuintla,2,18
+2013,departamento,Escuintla,3,11
+2013,departamento,Escuintla,4,20
+2013,departamento,Escuintla,5,21
+2013,departamento,Escuintla,6,17
+2013,departamento,Escuintla,7,21
+2013,departamento,Escuintla,8,14
+2013,departamento,Escuintla,9,17
+2013,departamento,Escuintla,10,25
+2013,departamento,Escuintla,11,22
+2013,departamento,Escuintla,12,24
+2013,departamento,Escuintla,,220
+2013,departamento,Guatemala,1,135
+2013,departamento,Guatemala,2,171
+2013,departamento,Guatemala,3,188
+2013,departamento,Guatemala,4,201
+2013,departamento,Guatemala,5,222
+2013,departamento,Guatemala,6,198
+2013,departamento,Guatemala,7,211
+2013,departamento,Guatemala,8,224
+2013,departamento,Guatemala,9,229
+2013,departamento,Guatemala,10,160
+2013,departamento,Guatemala,11,178
+2013,departamento,Guatemala,12,144
+2013,departamento,Guatemala,,2261
+2013,departamento,Huehuetenango,1,15
+2013,departamento,Huehuetenango,2,23
+2013,departamento,Huehuetenango,3,20
+2013,departamento,Huehuetenango,4,15
+2013,departamento,Huehuetenango,5,11
+2013,departamento,Huehuetenango,6,13
+2013,departamento,Huehuetenango,7,10
+2013,departamento,Huehuetenango,8,10
+2013,departamento,Huehuetenango,9,13
+2013,departamento,Huehuetenango,10,25
+2013,departamento,Huehuetenango,11,15
+2013,departamento,Huehuetenango,12,12
+2013,departamento,Huehuetenango,,182
+2013,departamento,Izabal,1,12
+2013,departamento,Izabal,2,14
+2013,departamento,Izabal,3,14
+2013,departamento,Izabal,4,16
+2013,departamento,Izabal,5,12
+2013,departamento,Izabal,6,13
+2013,departamento,Izabal,7,12
+2013,departamento,Izabal,8,10
+2013,departamento,Izabal,9,8
+2013,departamento,Izabal,10,10
+2013,departamento,Izabal,11,17
+2013,departamento,Izabal,12,17
+2013,departamento,Izabal,,155
+2013,departamento,Jalapa,1,7
+2013,departamento,Jalapa,2,5
+2013,departamento,Jalapa,3,10
+2013,departamento,Jalapa,4,6
+2013,departamento,Jalapa,5,9
+2013,departamento,Jalapa,6,22
+2013,departamento,Jalapa,7,7
+2013,departamento,Jalapa,8,18
+2013,departamento,Jalapa,9,12
+2013,departamento,Jalapa,10,15
+2013,departamento,Jalapa,11,10
+2013,departamento,Jalapa,12,6
+2013,departamento,Jalapa,,127
+2013,departamento,Jutiapa,1,26
+2013,departamento,Jutiapa,2,29
+2013,departamento,Jutiapa,3,15
+2013,departamento,Jutiapa,4,30
+2013,departamento,Jutiapa,5,34
+2013,departamento,Jutiapa,6,20
+2013,departamento,Jutiapa,7,28
+2013,departamento,Jutiapa,8,24
+2013,departamento,Jutiapa,9,29
+2013,departamento,Jutiapa,10,27
+2013,departamento,Jutiapa,11,26
+2013,departamento,Jutiapa,12,15
+2013,departamento,Jutiapa,,303
+2013,departamento,Petén,1,14
+2013,departamento,Petén,2,8
+2013,departamento,Petén,3,10
+2013,departamento,Petén,4,9
+2013,departamento,Petén,5,20
+2013,departamento,Petén,6,11
+2013,departamento,Petén,7,14
+2013,departamento,Petén,8,15
+2013,departamento,Petén,9,11
+2013,departamento,Petén,10,13
+2013,departamento,Petén,11,13
+2013,departamento,Petén,12,12
+2013,departamento,Petén,,150
+2013,departamento,Quetzaltenango,1,15
+2013,departamento,Quetzaltenango,2,35
+2013,departamento,Quetzaltenango,3,28
+2013,departamento,Quetzaltenango,4,26
+2013,departamento,Quetzaltenango,5,29
+2013,departamento,Quetzaltenango,6,26
+2013,departamento,Quetzaltenango,7,19
+2013,departamento,Quetzaltenango,8,25
+2013,departamento,Quetzaltenango,9,22
+2013,departamento,Quetzaltenango,10,41
+2013,departamento,Quetzaltenango,11,19
+2013,departamento,Quetzaltenango,12,23
+2013,departamento,Quetzaltenango,,308
+2013,departamento,Quiché,1,14
+2013,departamento,Quiché,2,9
+2013,departamento,Quiché,3,14
+2013,departamento,Quiché,4,10
+2013,departamento,Quiché,5,12
+2013,departamento,Quiché,6,11
+2013,departamento,Quiché,7,7
+2013,departamento,Quiché,8,31
+2013,departamento,Quiché,9,9
+2013,departamento,Quiché,10,16
+2013,departamento,Quiché,11,13
+2013,departamento,Quiché,12,5
+2013,departamento,Quiché,,151
+2013,departamento,Retalhuleu,1,10
+2013,departamento,Retalhuleu,2,19
+2013,departamento,Retalhuleu,3,16
+2013,departamento,Retalhuleu,4,11
+2013,departamento,Retalhuleu,5,14
+2013,departamento,Retalhuleu,6,9
+2013,departamento,Retalhuleu,7,23
+2013,departamento,Retalhuleu,8,16
+2013,departamento,Retalhuleu,9,14
+2013,departamento,Retalhuleu,10,23
+2013,departamento,Retalhuleu,11,10
+2013,departamento,Retalhuleu,12,9
+2013,departamento,Retalhuleu,,174
+2013,departamento,Sacatepéquez,1,12
+2013,departamento,Sacatepéquez,2,8
+2013,departamento,Sacatepéquez,3,12
+2013,departamento,Sacatepéquez,4,18
+2013,departamento,Sacatepéquez,5,7
+2013,departamento,Sacatepéquez,6,10
+2013,departamento,Sacatepéquez,7,13
+2013,departamento,Sacatepéquez,8,7
+2013,departamento,Sacatepéquez,9,4
+2013,departamento,Sacatepéquez,10,7
+2013,departamento,Sacatepéquez,11,6
+2013,departamento,Sacatepéquez,12,9
+2013,departamento,Sacatepéquez,,113
+2013,departamento,San Marcos,1,12
+2013,departamento,San Marcos,2,14
+2013,departamento,San Marcos,3,10
+2013,departamento,San Marcos,4,16
+2013,departamento,San Marcos,5,10
+2013,departamento,San Marcos,6,7
+2013,departamento,San Marcos,7,11
+2013,departamento,San Marcos,8,13
+2013,departamento,San Marcos,9,10
+2013,departamento,San Marcos,10,10
+2013,departamento,San Marcos,11,15
+2013,departamento,San Marcos,12,16
+2013,departamento,San Marcos,,144
+2013,departamento,Santa Rosa,1,7
+2013,departamento,Santa Rosa,2,13
+2013,departamento,Santa Rosa,3,11
+2013,departamento,Santa Rosa,4,4
+2013,departamento,Santa Rosa,5,12
+2013,departamento,Santa Rosa,6,6
+2013,departamento,Santa Rosa,7,8
+2013,departamento,Santa Rosa,8,8
+2013,departamento,Santa Rosa,9,11
+2013,departamento,Santa Rosa,10,15
+2013,departamento,Santa Rosa,11,13
+2013,departamento,Santa Rosa,12,11
+2013,departamento,Santa Rosa,,119
+2013,departamento,Sololá,1,6
+2013,departamento,Sololá,2,3
+2013,departamento,Sololá,3,5
+2013,departamento,Sololá,4,9
+2013,departamento,Sololá,5,3
+2013,departamento,Sololá,6,4
+2013,departamento,Sololá,7,5
+2013,departamento,Sololá,8,6
+2013,departamento,Sololá,9,3
+2013,departamento,Sololá,10,2
+2013,departamento,Sololá,11,3
+2013,departamento,Sololá,12,3
+2013,departamento,Sololá,,52
+2013,departamento,Suchitepéquez,1,17
+2013,departamento,Suchitepéquez,2,11
+2013,departamento,Suchitepéquez,3,11
+2013,departamento,Suchitepéquez,4,21
+2013,departamento,Suchitepéquez,5,21
+2013,departamento,Suchitepéquez,6,22
+2013,departamento,Suchitepéquez,7,28
+2013,departamento,Suchitepéquez,8,18
+2013,departamento,Suchitepéquez,9,15
+2013,departamento,Suchitepéquez,10,30
+2013,departamento,Suchitepéquez,11,17
+2013,departamento,Suchitepéquez,12,18
+2013,departamento,Suchitepéquez,,229
+2013,departamento,Totonicapán,1,11
+2013,departamento,Totonicapán,2,7
+2013,departamento,Totonicapán,3,2
+2013,departamento,Totonicapán,4,8
+2013,departamento,Totonicapán,5,12
+2013,departamento,Totonicapán,6,5
+2013,departamento,Totonicapán,7,4
+2013,departamento,Totonicapán,8,5
+2013,departamento,Totonicapán,9,4
+2013,departamento,Totonicapán,10,9
+2013,departamento,Totonicapán,11,6
+2013,departamento,Totonicapán,12,7
+2013,departamento,Totonicapán,,80
+2013,departamento,Zacapa,1,9
+2013,departamento,Zacapa,2,15
+2013,departamento,Zacapa,3,18
+2013,departamento,Zacapa,4,16
+2013,departamento,Zacapa,5,22
+2013,departamento,Zacapa,6,20
+2013,departamento,Zacapa,7,14
+2013,departamento,Zacapa,8,8
+2013,departamento,Zacapa,9,13
+2013,departamento,Zacapa,10,16
+2013,departamento,Zacapa,11,13
+2013,departamento,Zacapa,12,14
+2013,departamento,Zacapa,,178
+2013,pais,,1,367
+2013,pais,,2,449
+2013,pais,,3,435
+2013,pais,,4,482
+2013,pais,,5,528
+2013,pais,,6,468
+2013,pais,,7,498
+2013,pais,,8,498
+2013,pais,,9,474
+2013,pais,,10,512
+2013,pais,,11,444
+2013,pais,,12,387
+2013,pais,,,5542
+2014,departamento,Alta Verapaz,1,14
+2014,departamento,Alta Verapaz,2,6
+2014,departamento,Alta Verapaz,3,19
+2014,departamento,Alta Verapaz,4,9
+2014,departamento,Alta Verapaz,5,18
+2014,departamento,Alta Verapaz,6,10
+2014,departamento,Alta Verapaz,7,17
+2014,departamento,Alta Verapaz,8,11
+2014,departamento,Alta Verapaz,9,9
+2014,departamento,Alta Verapaz,10,12
+2014,departamento,Alta Verapaz,11,7
+2014,departamento,Alta Verapaz,12,7
+2014,departamento,Alta Verapaz,,139
+2014,departamento,Baja Verapaz,1,11
+2014,departamento,Baja Verapaz,2,10
+2014,departamento,Baja Verapaz,3,8
+2014,departamento,Baja Verapaz,4,6
+2014,departamento,Baja Verapaz,5,12
+2014,departamento,Baja Verapaz,6,6
+2014,departamento,Baja Verapaz,7,7
+2014,departamento,Baja Verapaz,8,8
+2014,departamento,Baja Verapaz,9,10
+2014,departamento,Baja Verapaz,10,5
+2014,departamento,Baja Verapaz,11,13
+2014,departamento,Baja Verapaz,12,5
+2014,departamento,Baja Verapaz,,101
+2014,departamento,Chimaltenango,1,8
+2014,departamento,Chimaltenango,2,12
+2014,departamento,Chimaltenango,3,16
+2014,departamento,Chimaltenango,4,10
+2014,departamento,Chimaltenango,5,10
+2014,departamento,Chimaltenango,6,14
+2014,departamento,Chimaltenango,7,14
+2014,departamento,Chimaltenango,8,9
+2014,departamento,Chimaltenango,9,10
+2014,departamento,Chimaltenango,10,8
+2014,departamento,Chimaltenango,11,15
+2014,departamento,Chimaltenango,12,11
+2014,departamento,Chimaltenango,,137
+2014,departamento,Chiquimula,1,15
+2014,departamento,Chiquimula,2,11
+2014,departamento,Chiquimula,3,16
+2014,departamento,Chiquimula,4,9
+2014,departamento,Chiquimula,5,21
+2014,departamento,Chiquimula,6,22
+2014,departamento,Chiquimula,7,12
+2014,departamento,Chiquimula,8,8
+2014,departamento,Chiquimula,9,2
+2014,departamento,Chiquimula,10,12
+2014,departamento,Chiquimula,11,9
+2014,departamento,Chiquimula,12,10
+2014,departamento,Chiquimula,,147
+2014,departamento,El Progreso,1,9
+2014,departamento,El Progreso,2,12
+2014,departamento,El Progreso,3,11
+2014,departamento,El Progreso,4,9
+2014,departamento,El Progreso,5,5
+2014,departamento,El Progreso,6,6
+2014,departamento,El Progreso,7,7
+2014,departamento,El Progreso,8,4
+2014,departamento,El Progreso,9,14
+2014,departamento,El Progreso,10,5
+2014,departamento,El Progreso,11,9
+2014,departamento,El Progreso,12,18
+2014,departamento,El Progreso,,109
+2014,departamento,Escuintla,1,17
+2014,departamento,Escuintla,2,25
+2014,departamento,Escuintla,3,31
+2014,departamento,Escuintla,4,24
+2014,departamento,Escuintla,5,34
+2014,departamento,Escuintla,6,19
+2014,departamento,Escuintla,7,15
+2014,departamento,Escuintla,8,20
+2014,departamento,Escuintla,9,23
+2014,departamento,Escuintla,10,29
+2014,departamento,Escuintla,11,15
+2014,departamento,Escuintla,12,21
+2014,departamento,Escuintla,,273
+2014,departamento,Guatemala,1,139
+2014,departamento,Guatemala,2,196
+2014,departamento,Guatemala,3,190
+2014,departamento,Guatemala,4,177
+2014,departamento,Guatemala,5,195
+2014,departamento,Guatemala,6,245
+2014,departamento,Guatemala,7,189
+2014,departamento,Guatemala,8,140
+2014,departamento,Guatemala,9,146
+2014,departamento,Guatemala,10,192
+2014,departamento,Guatemala,11,234
+2014,departamento,Guatemala,12,137
+2014,departamento,Guatemala,,2180
+2014,departamento,Huehuetenango,1,7
+2014,departamento,Huehuetenango,2,12
+2014,departamento,Huehuetenango,3,23
+2014,departamento,Huehuetenango,4,11
+2014,departamento,Huehuetenango,5,12
+2014,departamento,Huehuetenango,6,16
+2014,departamento,Huehuetenango,7,17
+2014,departamento,Huehuetenango,8,10
+2014,departamento,Huehuetenango,9,19
+2014,departamento,Huehuetenango,10,12
+2014,departamento,Huehuetenango,11,12
+2014,departamento,Huehuetenango,12,13
+2014,departamento,Huehuetenango,,164
+2014,departamento,Izabal,1,10
+2014,departamento,Izabal,2,13
+2014,departamento,Izabal,3,20
+2014,departamento,Izabal,4,15
+2014,departamento,Izabal,5,12
+2014,departamento,Izabal,6,9
+2014,departamento,Izabal,7,11
+2014,departamento,Izabal,8,8
+2014,departamento,Izabal,9,14
+2014,departamento,Izabal,10,14
+2014,departamento,Izabal,11,12
+2014,departamento,Izabal,12,15
+2014,departamento,Izabal,,153
+2014,departamento,Jalapa,1,14
+2014,departamento,Jalapa,2,17
+2014,departamento,Jalapa,3,10
+2014,departamento,Jalapa,4,6
+2014,departamento,Jalapa,5,20
+2014,departamento,Jalapa,6,9
+2014,departamento,Jalapa,7,14
+2014,departamento,Jalapa,8,10
+2014,departamento,Jalapa,9,6
+2014,departamento,Jalapa,10,5
+2014,departamento,Jalapa,11,8
+2014,departamento,Jalapa,12,8
+2014,departamento,Jalapa,,127
+2014,departamento,Jutiapa,1,17
+2014,departamento,Jutiapa,2,34
+2014,departamento,Jutiapa,3,28
+2014,departamento,Jutiapa,4,25
+2014,departamento,Jutiapa,5,34
+2014,departamento,Jutiapa,6,31
+2014,departamento,Jutiapa,7,26
+2014,departamento,Jutiapa,8,28
+2014,departamento,Jutiapa,9,28
+2014,departamento,Jutiapa,10,21
+2014,departamento,Jutiapa,11,29
+2014,departamento,Jutiapa,12,20
+2014,departamento,Jutiapa,,321
+2014,departamento,Petén,1,10
+2014,departamento,Petén,2,10
+2014,departamento,Petén,3,10
+2014,departamento,Petén,4,11
+2014,departamento,Petén,5,14
+2014,departamento,Petén,6,18
+2014,departamento,Petén,7,10
+2014,departamento,Petén,8,9
+2014,departamento,Petén,9,15
+2014,departamento,Petén,10,7
+2014,departamento,Petén,11,4
+2014,departamento,Petén,12,11
+2014,departamento,Petén,,129
+2014,departamento,Quetzaltenango,1,23
+2014,departamento,Quetzaltenango,2,16
+2014,departamento,Quetzaltenango,3,37
+2014,departamento,Quetzaltenango,4,22
+2014,departamento,Quetzaltenango,5,24
+2014,departamento,Quetzaltenango,6,27
+2014,departamento,Quetzaltenango,7,37
+2014,departamento,Quetzaltenango,8,38
+2014,departamento,Quetzaltenango,9,29
+2014,departamento,Quetzaltenango,10,48
+2014,departamento,Quetzaltenango,11,26
+2014,departamento,Quetzaltenango,12,23
+2014,departamento,Quetzaltenango,,350
+2014,departamento,Quiché,1,11
+2014,departamento,Quiché,2,8
+2014,departamento,Quiché,3,18
+2014,departamento,Quiché,4,10
+2014,departamento,Quiché,5,15
+2014,departamento,Quiché,6,20
+2014,departamento,Quiché,7,9
+2014,departamento,Quiché,8,15
+2014,departamento,Quiché,9,13
+2014,departamento,Quiché,10,21
+2014,departamento,Quiché,11,8
+2014,departamento,Quiché,12,10
+2014,departamento,Quiché,,158
+2014,departamento,Retalhuleu,1,16
+2014,departamento,Retalhuleu,2,11
+2014,departamento,Retalhuleu,3,17
+2014,departamento,Retalhuleu,4,10
+2014,departamento,Retalhuleu,5,11
+2014,departamento,Retalhuleu,6,8
+2014,departamento,Retalhuleu,7,20
+2014,departamento,Retalhuleu,8,16
+2014,departamento,Retalhuleu,9,12
+2014,departamento,Retalhuleu,10,6
+2014,departamento,Retalhuleu,11,16
+2014,departamento,Retalhuleu,12,9
+2014,departamento,Retalhuleu,,152
+2014,departamento,Sacatepéquez,1,10
+2014,departamento,Sacatepéquez,2,11
+2014,departamento,Sacatepéquez,3,11
+2014,departamento,Sacatepéquez,4,6
+2014,departamento,Sacatepéquez,5,12
+2014,departamento,Sacatepéquez,6,18
+2014,departamento,Sacatepéquez,7,6
+2014,departamento,Sacatepéquez,8,13
+2014,departamento,Sacatepéquez,9,11
+2014,departamento,Sacatepéquez,10,6
+2014,departamento,Sacatepéquez,11,9
+2014,departamento,Sacatepéquez,12,9
+2014,departamento,Sacatepéquez,,122
+2014,departamento,San Marcos,1,21
+2014,departamento,San Marcos,2,13
+2014,departamento,San Marcos,3,22
+2014,departamento,San Marcos,4,16
+2014,departamento,San Marcos,5,14
+2014,departamento,San Marcos,6,16
+2014,departamento,San Marcos,7,7
+2014,departamento,San Marcos,8,19
+2014,departamento,San Marcos,9,13
+2014,departamento,San Marcos,10,21
+2014,departamento,San Marcos,11,17
+2014,departamento,San Marcos,12,13
+2014,departamento,San Marcos,,192
+2014,departamento,Santa Rosa,1,3
+2014,departamento,Santa Rosa,2,16
+2014,departamento,Santa Rosa,3,8
+2014,departamento,Santa Rosa,4,11
+2014,departamento,Santa Rosa,5,11
+2014,departamento,Santa Rosa,6,12
+2014,departamento,Santa Rosa,7,16
+2014,departamento,Santa Rosa,8,11
+2014,departamento,Santa Rosa,9,12
+2014,departamento,Santa Rosa,10,11
+2014,departamento,Santa Rosa,11,10
+2014,departamento,Santa Rosa,12,3
+2014,departamento,Santa Rosa,,124
+2014,departamento,Sololá,1,5
+2014,departamento,Sololá,2,3
+2014,departamento,Sololá,3,6
+2014,departamento,Sololá,4,4
+2014,departamento,Sololá,5,4
+2014,departamento,Sololá,6,3
+2014,departamento,Sololá,7,5
+2014,departamento,Sololá,8,6
+2014,departamento,Sololá,9,5
+2014,departamento,Sololá,10,7
+2014,departamento,Sololá,11,9
+2014,departamento,Sololá,12,4
+2014,departamento,Sololá,,61
+2014,departamento,Suchitepéquez,1,16
+2014,departamento,Suchitepéquez,2,19
+2014,departamento,Suchitepéquez,3,20
+2014,departamento,Suchitepéquez,4,15
+2014,departamento,Suchitepéquez,5,12
+2014,departamento,Suchitepéquez,6,16
+2014,departamento,Suchitepéquez,7,25
+2014,departamento,Suchitepéquez,8,16
+2014,departamento,Suchitepéquez,9,13
+2014,departamento,Suchitepéquez,10,11
+2014,departamento,Suchitepéquez,11,12
+2014,departamento,Suchitepéquez,12,12
+2014,departamento,Suchitepéquez,,187
+2014,departamento,Totonicapán,1,11
+2014,departamento,Totonicapán,2,5
+2014,departamento,Totonicapán,3,14
+2014,departamento,Totonicapán,4,6
+2014,departamento,Totonicapán,5,9
+2014,departamento,Totonicapán,6,11
+2014,departamento,Totonicapán,7,9
+2014,departamento,Totonicapán,8,4
+2014,departamento,Totonicapán,9,8
+2014,departamento,Totonicapán,10,11
+2014,departamento,Totonicapán,11,6
+2014,departamento,Totonicapán,12,4
+2014,departamento,Totonicapán,,98
+2014,departamento,Zacapa,1,9
+2014,departamento,Zacapa,2,16
+2014,departamento,Zacapa,3,18
+2014,departamento,Zacapa,4,17
+2014,departamento,Zacapa,5,12
+2014,departamento,Zacapa,6,10
+2014,departamento,Zacapa,7,17
+2014,departamento,Zacapa,8,15
+2014,departamento,Zacapa,9,8
+2014,departamento,Zacapa,10,11
+2014,departamento,Zacapa,11,6
+2014,departamento,Zacapa,12,12
+2014,departamento,Zacapa,,151
+2014,pais,,1,396
+2014,pais,,2,476
+2014,pais,,3,553
+2014,pais,,4,429
+2014,pais,,5,511
+2014,pais,,6,546
+2014,pais,,7,490
+2014,pais,,8,418
+2014,pais,,9,420
+2014,pais,,10,475
+2014,pais,,11,486
+2014,pais,,12,375
+2014,pais,,,5575
+2015,departamento,Alta Verapaz,1,8
+2015,departamento,Alta Verapaz,2,16
+2015,departamento,Alta Verapaz,3,14
+2015,departamento,Alta Verapaz,4,14
+2015,departamento,Alta Verapaz,5,11
+2015,departamento,Alta Verapaz,6,7
+2015,departamento,Alta Verapaz,7,14
+2015,departamento,Alta Verapaz,8,8
+2015,departamento,Alta Verapaz,9,15
+2015,departamento,Alta Verapaz,10,12
+2015,departamento,Alta Verapaz,11,12
+2015,departamento,Alta Verapaz,12,9
+2015,departamento,Alta Verapaz,,140
+2015,departamento,Baja Verapaz,1,1
+2015,departamento,Baja Verapaz,2,7
+2015,departamento,Baja Verapaz,3,8
+2015,departamento,Baja Verapaz,4,12
+2015,departamento,Baja Verapaz,5,6
+2015,departamento,Baja Verapaz,6,7
+2015,departamento,Baja Verapaz,7,8
+2015,departamento,Baja Verapaz,8,10
+2015,departamento,Baja Verapaz,9,13
+2015,departamento,Baja Verapaz,10,8
+2015,departamento,Baja Verapaz,11,5
+2015,departamento,Baja Verapaz,12,7
+2015,departamento,Baja Verapaz,,92
+2015,departamento,Chimaltenango,1,9
+2015,departamento,Chimaltenango,2,6
+2015,departamento,Chimaltenango,3,5
+2015,departamento,Chimaltenango,4,10
+2015,departamento,Chimaltenango,5,8
+2015,departamento,Chimaltenango,6,16
+2015,departamento,Chimaltenango,7,9
+2015,departamento,Chimaltenango,8,15
+2015,departamento,Chimaltenango,9,11
+2015,departamento,Chimaltenango,10,10
+2015,departamento,Chimaltenango,11,16
+2015,departamento,Chimaltenango,12,9
+2015,departamento,Chimaltenango,,124
+2015,departamento,Chiquimula,1,10
+2015,departamento,Chiquimula,2,6
+2015,departamento,Chiquimula,3,5
+2015,departamento,Chiquimula,4,6
+2015,departamento,Chiquimula,5,7
+2015,departamento,Chiquimula,6,9
+2015,departamento,Chiquimula,7,17
+2015,departamento,Chiquimula,8,15
+2015,departamento,Chiquimula,9,8
+2015,departamento,Chiquimula,10,14
+2015,departamento,Chiquimula,11,9
+2015,departamento,Chiquimula,12,14
+2015,departamento,Chiquimula,,120
+2015,departamento,El Progreso,1,4
+2015,departamento,El Progreso,2,2
+2015,departamento,El Progreso,3,7
+2015,departamento,El Progreso,4,8
+2015,departamento,El Progreso,5,9
+2015,departamento,El Progreso,6,13
+2015,departamento,El Progreso,7,9
+2015,departamento,El Progreso,8,5
+2015,departamento,El Progreso,9,9
+2015,departamento,El Progreso,10,11
+2015,departamento,El Progreso,11,10
+2015,departamento,El Progreso,12,12
+2015,departamento,El Progreso,,99
+2015,departamento,Escuintla,1,30
+2015,departamento,Escuintla,2,26
+2015,departamento,Escuintla,3,29
+2015,departamento,Escuintla,4,18
+2015,departamento,Escuintla,5,31
+2015,departamento,Escuintla,6,24
+2015,departamento,Escuintla,7,22
+2015,departamento,Escuintla,8,17
+2015,departamento,Escuintla,9,20
+2015,departamento,Escuintla,10,22
+2015,departamento,Escuintla,11,23
+2015,departamento,Escuintla,12,21
+2015,departamento,Escuintla,,283
+2015,departamento,Guatemala,1,143
+2015,departamento,Guatemala,2,169
+2015,departamento,Guatemala,3,199
+2015,departamento,Guatemala,4,175
+2015,departamento,Guatemala,5,228
+2015,departamento,Guatemala,6,161
+2015,departamento,Guatemala,7,199
+2015,departamento,Guatemala,8,331
+2015,departamento,Guatemala,9,194
+2015,departamento,Guatemala,10,211
+2015,departamento,Guatemala,11,173
+2015,departamento,Guatemala,12,151
+2015,departamento,Guatemala,,2334
+2015,departamento,Huehuetenango,1,10
+2015,departamento,Huehuetenango,2,12
+2015,departamento,Huehuetenango,3,20
+2015,departamento,Huehuetenango,4,12
+2015,departamento,Huehuetenango,5,10
+2015,departamento,Huehuetenango,6,20
+2015,departamento,Huehuetenango,7,17
+2015,departamento,Huehuetenango,8,22
+2015,departamento,Huehuetenango,9,12
+2015,departamento,Huehuetenango,10,17
+2015,departamento,Huehuetenango,11,4
+2015,departamento,Huehuetenango,12,17
+2015,departamento,Huehuetenango,,173
+2015,departamento,Izabal,1,12
+2015,departamento,Izabal,2,13
+2015,departamento,Izabal,3,18
+2015,departamento,Izabal,4,16
+2015,departamento,Izabal,5,10
+2015,departamento,Izabal,6,10
+2015,departamento,Izabal,7,14
+2015,departamento,Izabal,8,13
+2015,departamento,Izabal,9,12
+2015,departamento,Izabal,10,16
+2015,departamento,Izabal,11,9
+2015,departamento,Izabal,12,10
+2015,departamento,Izabal,,153
+2015,departamento,Jalapa,1,10
+2015,departamento,Jalapa,2,8
+2015,departamento,Jalapa,3,5
+2015,departamento,Jalapa,4,11
+2015,departamento,Jalapa,5,9
+2015,departamento,Jalapa,6,13
+2015,departamento,Jalapa,7,16
+2015,departamento,Jalapa,8,14
+2015,departamento,Jalapa,9,7
+2015,departamento,Jalapa,10,7
+2015,departamento,Jalapa,11,10
+2015,departamento,Jalapa,12,17
+2015,departamento,Jalapa,,127
+2015,departamento,Jutiapa,1,22
+2015,departamento,Jutiapa,2,20
+2015,departamento,Jutiapa,3,28
+2015,departamento,Jutiapa,4,19
+2015,departamento,Jutiapa,5,20
+2015,departamento,Jutiapa,6,27
+2015,departamento,Jutiapa,7,31
+2015,departamento,Jutiapa,8,28
+2015,departamento,Jutiapa,9,15
+2015,departamento,Jutiapa,10,27
+2015,departamento,Jutiapa,11,20
+2015,departamento,Jutiapa,12,15
+2015,departamento,Jutiapa,,272
+2015,departamento,Peten,1,12
+2015,departamento,Peten,2,20
+2015,departamento,Peten,3,11
+2015,departamento,Peten,4,11
+2015,departamento,Peten,5,10
+2015,departamento,Peten,6,15
+2015,departamento,Peten,7,16
+2015,departamento,Peten,8,13
+2015,departamento,Peten,9,22
+2015,departamento,Peten,10,8
+2015,departamento,Peten,11,16
+2015,departamento,Peten,12,11
+2015,departamento,Peten,,165
+2015,departamento,Quetzaltenango,1,31
+2015,departamento,Quetzaltenango,2,36
+2015,departamento,Quetzaltenango,3,33
+2015,departamento,Quetzaltenango,4,35
+2015,departamento,Quetzaltenango,5,34
+2015,departamento,Quetzaltenango,6,34
+2015,departamento,Quetzaltenango,7,38
+2015,departamento,Quetzaltenango,8,23
+2015,departamento,Quetzaltenango,9,32
+2015,departamento,Quetzaltenango,10,40
+2015,departamento,Quetzaltenango,11,28
+2015,departamento,Quetzaltenango,12,30
+2015,departamento,Quetzaltenango,,394
+2015,departamento,Quiche,1,14
+2015,departamento,Quiche,2,11
+2015,departamento,Quiche,3,14
+2015,departamento,Quiche,4,9
+2015,departamento,Quiche,5,11
+2015,departamento,Quiche,6,13
+2015,departamento,Quiche,7,15
+2015,departamento,Quiche,8,12
+2015,departamento,Quiche,9,18
+2015,departamento,Quiche,10,12
+2015,departamento,Quiche,11,9
+2015,departamento,Quiche,12,6
+2015,departamento,Quiche,,144
+2015,departamento,Retalhuleu,1,10
+2015,departamento,Retalhuleu,2,15
+2015,departamento,Retalhuleu,3,27
+2015,departamento,Retalhuleu,4,18
+2015,departamento,Retalhuleu,5,9
+2015,departamento,Retalhuleu,6,11
+2015,departamento,Retalhuleu,7,25
+2015,departamento,Retalhuleu,8,18
+2015,departamento,Retalhuleu,9,9
+2015,departamento,Retalhuleu,10,12
+2015,departamento,Retalhuleu,11,7
+2015,departamento,Retalhuleu,12,6
+2015,departamento,Retalhuleu,,167
+2015,departamento,Sacatepequez,1,6
+2015,departamento,Sacatepequez,2,14
+2015,departamento,Sacatepequez,3,14
+2015,departamento,Sacatepequez,4,6
+2015,departamento,Sacatepequez,5,10
+2015,departamento,Sacatepequez,6,8
+2015,departamento,Sacatepequez,7,9
+2015,departamento,Sacatepequez,8,9
+2015,departamento,Sacatepequez,9,7
+2015,departamento,Sacatepequez,10,9
+2015,departamento,Sacatepequez,11,5
+2015,departamento,Sacatepequez,12,9
+2015,departamento,Sacatepequez,,106
+2015,departamento,San Marcos,1,12
+2015,departamento,San Marcos,2,15
+2015,departamento,San Marcos,3,16
+2015,departamento,San Marcos,4,11
+2015,departamento,San Marcos,5,20
+2015,departamento,San Marcos,6,25
+2015,departamento,San Marcos,7,8
+2015,departamento,San Marcos,8,16
+2015,departamento,San Marcos,9,25
+2015,departamento,San Marcos,10,25
+2015,departamento,San Marcos,11,16
+2015,departamento,San Marcos,12,20
+2015,departamento,San Marcos,,209
+2015,departamento,Santa Rosa,1,18
+2015,departamento,Santa Rosa,2,13
+2015,departamento,Santa Rosa,3,15
+2015,departamento,Santa Rosa,4,13
+2015,departamento,Santa Rosa,5,12
+2015,departamento,Santa Rosa,6,11
+2015,departamento,Santa Rosa,7,19
+2015,departamento,Santa Rosa,8,13
+2015,departamento,Santa Rosa,9,12
+2015,departamento,Santa Rosa,10,15
+2015,departamento,Santa Rosa,11,18
+2015,departamento,Santa Rosa,12,17
+2015,departamento,Santa Rosa,,176
+2015,departamento,Solola,1,6
+2015,departamento,Solola,2,8
+2015,departamento,Solola,3,7
+2015,departamento,Solola,4,6
+2015,departamento,Solola,5,5
+2015,departamento,Solola,6,4
+2015,departamento,Solola,7,3
+2015,departamento,Solola,8,3
+2015,departamento,Solola,9,4
+2015,departamento,Solola,10,7
+2015,departamento,Solola,11,3
+2015,departamento,Solola,12,13
+2015,departamento,Solola,,69
+2015,departamento,Suchitepequez,1,4
+2015,departamento,Suchitepequez,2,15
+2015,departamento,Suchitepequez,3,9
+2015,departamento,Suchitepequez,4,14
+2015,departamento,Suchitepequez,5,15
+2015,departamento,Suchitepequez,6,18
+2015,departamento,Suchitepequez,7,11
+2015,departamento,Suchitepequez,8,12
+2015,departamento,Suchitepequez,9,9
+2015,departamento,Suchitepequez,10,12
+2015,departamento,Suchitepequez,11,18
+2015,departamento,Suchitepequez,12,14
+2015,departamento,Suchitepequez,,151
+2015,departamento,Totonicapan,1,2
+2015,departamento,Totonicapan,2,8
+2015,departamento,Totonicapan,3,8
+2015,departamento,Totonicapan,4,7
+2015,departamento,Totonicapan,5,4
+2015,departamento,Totonicapan,6,6
+2015,departamento,Totonicapan,7,10
+2015,departamento,Totonicapan,8,12
+2015,departamento,Totonicapan,9,8
+2015,departamento,Totonicapan,10,3
+2015,departamento,Totonicapan,11,8
+2015,departamento,Totonicapan,12,7
+2015,departamento,Totonicapan,,83
+2015,departamento,Zacapa,1,15
+2015,departamento,Zacapa,2,14
+2015,departamento,Zacapa,3,16
+2015,departamento,Zacapa,4,12
+2015,departamento,Zacapa,5,12
+2015,departamento,Zacapa,6,8
+2015,departamento,Zacapa,7,9
+2015,departamento,Zacapa,8,9
+2015,departamento,Zacapa,9,11
+2015,departamento,Zacapa,10,12
+2015,departamento,Zacapa,11,12
+2015,departamento,Zacapa,12,15
+2015,departamento,Zacapa,,145
+2015,pais,,1,389
+2015,pais,,2,454
+2015,pais,,3,508
+2015,pais,,4,443
+2015,pais,,5,491
+2015,pais,,6,460
+2015,pais,,7,519
+2015,pais,,8,618
+2015,pais,,9,473
+2015,pais,,10,510
+2015,pais,,11,431
+2015,pais,,12,430
+2015,pais,,,5726
+2016,departamento,Alta Verapaz,1,5
+2016,departamento,Alta Verapaz,2,9
+2016,departamento,Alta Verapaz,3,19
+2016,departamento,Alta Verapaz,4,4
+2016,departamento,Alta Verapaz,5,11
+2016,departamento,Alta Verapaz,6,7
+2016,departamento,Alta Verapaz,7,10
+2016,departamento,Alta Verapaz,8,8
+2016,departamento,Alta Verapaz,9,13
+2016,departamento,Alta Verapaz,10,12
+2016,departamento,Alta Verapaz,11,9
+2016,departamento,Alta Verapaz,12,13
+2016,departamento,Alta Verapaz,,120
+2016,departamento,Baja Verapaz,1,6
+2016,departamento,Baja Verapaz,2,9
+2016,departamento,Baja Verapaz,3,5
+2016,departamento,Baja Verapaz,4,8
+2016,departamento,Baja Verapaz,5,6
+2016,departamento,Baja Verapaz,6,6
+2016,departamento,Baja Verapaz,7,12
+2016,departamento,Baja Verapaz,8,12
+2016,departamento,Baja Verapaz,9,14
+2016,departamento,Baja Verapaz,10,9
+2016,departamento,Baja Verapaz,11,10
+2016,departamento,Baja Verapaz,12,10
+2016,departamento,Baja Verapaz,,107
+2016,departamento,Chimaltenango,1,4
+2016,departamento,Chimaltenango,2,9
+2016,departamento,Chimaltenango,3,7
+2016,departamento,Chimaltenango,4,8
+2016,departamento,Chimaltenango,5,11
+2016,departamento,Chimaltenango,6,3
+2016,departamento,Chimaltenango,7,7
+2016,departamento,Chimaltenango,8,10
+2016,departamento,Chimaltenango,9,10
+2016,departamento,Chimaltenango,10,18
+2016,departamento,Chimaltenango,11,9
+2016,departamento,Chimaltenango,12,5
+2016,departamento,Chimaltenango,,101
+2016,departamento,Chiquimula,1,19
+2016,departamento,Chiquimula,2,7
+2016,departamento,Chiquimula,3,11
+2016,departamento,Chiquimula,4,8
+2016,departamento,Chiquimula,5,15
+2016,departamento,Chiquimula,6,10
+2016,departamento,Chiquimula,7,9
+2016,departamento,Chiquimula,8,12
+2016,departamento,Chiquimula,9,12
+2016,departamento,Chiquimula,10,13
+2016,departamento,Chiquimula,11,13
+2016,departamento,Chiquimula,12,16
+2016,departamento,Chiquimula,,145
+2016,departamento,El Progreso,1,6
+2016,departamento,El Progreso,2,5
+2016,departamento,El Progreso,3,4
+2016,departamento,El Progreso,4,7
+2016,departamento,El Progreso,5,8
+2016,departamento,El Progreso,6,7
+2016,departamento,El Progreso,7,6
+2016,departamento,El Progreso,8,8
+2016,departamento,El Progreso,9,7
+2016,departamento,El Progreso,10,10
+2016,departamento,El Progreso,11,10
+2016,departamento,El Progreso,12,16
+2016,departamento,El Progreso,,94
+2016,departamento,Escuintla,1,20
+2016,departamento,Escuintla,2,12
+2016,departamento,Escuintla,3,24
+2016,departamento,Escuintla,4,23
+2016,departamento,Escuintla,5,36
+2016,departamento,Escuintla,6,31
+2016,departamento,Escuintla,7,24
+2016,departamento,Escuintla,8,18
+2016,departamento,Escuintla,9,39
+2016,departamento,Escuintla,10,12
+2016,departamento,Escuintla,11,23
+2016,departamento,Escuintla,12,28
+2016,departamento,Escuintla,,290
+2016,departamento,Guatemala,1,138
+2016,departamento,Guatemala,2,195
+2016,departamento,Guatemala,3,272
+2016,departamento,Guatemala,4,178
+2016,departamento,Guatemala,5,205
+2016,departamento,Guatemala,6,209
+2016,departamento,Guatemala,7,151
+2016,departamento,Guatemala,8,180
+2016,departamento,Guatemala,9,215
+2016,departamento,Guatemala,10,238
+2016,departamento,Guatemala,11,145
+2016,departamento,Guatemala,12,154
+2016,departamento,Guatemala,,2280
+2016,departamento,Huehuetenango,1,10
+2016,departamento,Huehuetenango,2,17
+2016,departamento,Huehuetenango,3,18
+2016,departamento,Huehuetenango,4,9
+2016,departamento,Huehuetenango,5,19
+2016,departamento,Huehuetenango,6,16
+2016,departamento,Huehuetenango,7,19
+2016,departamento,Huehuetenango,8,7
+2016,departamento,Huehuetenango,9,11
+2016,departamento,Huehuetenango,10,9
+2016,departamento,Huehuetenango,11,10
+2016,departamento,Huehuetenango,12,26
+2016,departamento,Huehuetenango,,171
+2016,departamento,Izabal,1,11
+2016,departamento,Izabal,2,14
+2016,departamento,Izabal,3,7
+2016,departamento,Izabal,4,20
+2016,departamento,Izabal,5,15
+2016,departamento,Izabal,6,13
+2016,departamento,Izabal,7,6
+2016,departamento,Izabal,8,33
+2016,departamento,Izabal,9,15
+2016,departamento,Izabal,10,15
+2016,departamento,Izabal,11,21
+2016,departamento,Izabal,12,14
+2016,departamento,Izabal,,184
+2016,departamento,Jalapa,1,13
+2016,departamento,Jalapa,2,9
+2016,departamento,Jalapa,3,10
+2016,departamento,Jalapa,4,14
+2016,departamento,Jalapa,5,9
+2016,departamento,Jalapa,6,16
+2016,departamento,Jalapa,7,11
+2016,departamento,Jalapa,8,12
+2016,departamento,Jalapa,9,12
+2016,departamento,Jalapa,10,0
+2016,departamento,Jalapa,11,21
+2016,departamento,Jalapa,12,13
+2016,departamento,Jalapa,,140
+2016,departamento,Jutiapa,1,23
+2016,departamento,Jutiapa,2,19
+2016,departamento,Jutiapa,3,24
+2016,departamento,Jutiapa,4,35
+2016,departamento,Jutiapa,5,15
+2016,departamento,Jutiapa,6,12
+2016,departamento,Jutiapa,7,12
+2016,departamento,Jutiapa,8,20
+2016,departamento,Jutiapa,9,12
+2016,departamento,Jutiapa,10,16
+2016,departamento,Jutiapa,11,13
+2016,departamento,Jutiapa,12,15
+2016,departamento,Jutiapa,,216
+2016,departamento,Peten,1,9
+2016,departamento,Peten,2,13
+2016,departamento,Peten,3,15
+2016,departamento,Peten,4,13
+2016,departamento,Peten,5,9
+2016,departamento,Peten,6,9
+2016,departamento,Peten,7,6
+2016,departamento,Peten,8,17
+2016,departamento,Peten,9,12
+2016,departamento,Peten,10,14
+2016,departamento,Peten,11,11
+2016,departamento,Peten,12,12
+2016,departamento,Peten,,140
+2016,departamento,Quetzaltenango,1,25
+2016,departamento,Quetzaltenango,2,35
+2016,departamento,Quetzaltenango,3,41
+2016,departamento,Quetzaltenango,4,25
+2016,departamento,Quetzaltenango,5,27
+2016,departamento,Quetzaltenango,6,40
+2016,departamento,Quetzaltenango,7,24
+2016,departamento,Quetzaltenango,8,31
+2016,departamento,Quetzaltenango,9,38
+2016,departamento,Quetzaltenango,10,32
+2016,departamento,Quetzaltenango,11,38
+2016,departamento,Quetzaltenango,12,30
+2016,departamento,Quetzaltenango,,386
+2016,departamento,Quiche,1,19
+2016,departamento,Quiche,2,12
+2016,departamento,Quiche,3,6
+2016,departamento,Quiche,4,9
+2016,departamento,Quiche,5,10
+2016,departamento,Quiche,6,14
+2016,departamento,Quiche,7,15
+2016,departamento,Quiche,8,13
+2016,departamento,Quiche,9,18
+2016,departamento,Quiche,10,17
+2016,departamento,Quiche,11,18
+2016,departamento,Quiche,12,8
+2016,departamento,Quiche,,159
+2016,departamento,Retalhuleu,1,16
+2016,departamento,Retalhuleu,2,15
+2016,departamento,Retalhuleu,3,28
+2016,departamento,Retalhuleu,4,16
+2016,departamento,Retalhuleu,5,12
+2016,departamento,Retalhuleu,6,14
+2016,departamento,Retalhuleu,7,16
+2016,departamento,Retalhuleu,8,23
+2016,departamento,Retalhuleu,9,18
+2016,departamento,Retalhuleu,10,22
+2016,departamento,Retalhuleu,11,13
+2016,departamento,Retalhuleu,12,11
+2016,departamento,Retalhuleu,,204
+2016,departamento,Sacatepequez,1,9
+2016,departamento,Sacatepequez,2,5
+2016,departamento,Sacatepequez,3,13
+2016,departamento,Sacatepequez,4,12
+2016,departamento,Sacatepequez,5,16
+2016,departamento,Sacatepequez,6,11
+2016,departamento,Sacatepequez,7,6
+2016,departamento,Sacatepequez,8,9
+2016,departamento,Sacatepequez,9,7
+2016,departamento,Sacatepequez,10,9
+2016,departamento,Sacatepequez,11,9
+2016,departamento,Sacatepequez,12,4
+2016,departamento,Sacatepequez,,110
+2016,departamento,San Marcos,1,18
+2016,departamento,San Marcos,2,12
+2016,departamento,San Marcos,3,18
+2016,departamento,San Marcos,4,17
+2016,departamento,San Marcos,5,15
+2016,departamento,San Marcos,6,22
+2016,departamento,San Marcos,7,12
+2016,departamento,San Marcos,8,20
+2016,departamento,San Marcos,9,19
+2016,departamento,San Marcos,10,21
+2016,departamento,San Marcos,11,20
+2016,departamento,San Marcos,12,21
+2016,departamento,San Marcos,,215
+2016,departamento,Santa Rosa,1,10
+2016,departamento,Santa Rosa,2,9
+2016,departamento,Santa Rosa,3,12
+2016,departamento,Santa Rosa,4,6
+2016,departamento,Santa Rosa,5,16
+2016,departamento,Santa Rosa,6,21
+2016,departamento,Santa Rosa,7,17
+2016,departamento,Santa Rosa,8,18
+2016,departamento,Santa Rosa,9,12
+2016,departamento,Santa Rosa,10,10
+2016,departamento,Santa Rosa,11,8
+2016,departamento,Santa Rosa,12,13
+2016,departamento,Santa Rosa,,152
+2016,departamento,Solola,1,4
+2016,departamento,Solola,2,2
+2016,departamento,Solola,3,3
+2016,departamento,Solola,4,8
+2016,departamento,Solola,5,6
+2016,departamento,Solola,6,7
+2016,departamento,Solola,7,5
+2016,departamento,Solola,8,10
+2016,departamento,Solola,9,5
+2016,departamento,Solola,10,2
+2016,departamento,Solola,11,4
+2016,departamento,Solola,12,5
+2016,departamento,Solola,,61
+2016,departamento,Suchitepequez,1,21
+2016,departamento,Suchitepequez,2,12
+2016,departamento,Suchitepequez,3,15
+2016,departamento,Suchitepequez,4,17
+2016,departamento,Suchitepequez,5,14
+2016,departamento,Suchitepequez,6,13
+2016,departamento,Suchitepequez,7,15
+2016,departamento,Suchitepequez,8,15
+2016,departamento,Suchitepequez,9,8
+2016,departamento,Suchitepequez,10,16
+2016,departamento,Suchitepequez,11,8
+2016,departamento,Suchitepequez,12,13
+2016,departamento,Suchitepequez,,167
+2016,departamento,Totonicapan,1,9
+2016,departamento,Totonicapan,2,9
+2016,departamento,Totonicapan,3,9
+2016,departamento,Totonicapan,4,4
+2016,departamento,Totonicapan,5,8
+2016,departamento,Totonicapan,6,6
+2016,departamento,Totonicapan,7,1
+2016,departamento,Totonicapan,8,7
+2016,departamento,Totonicapan,9,9
+2016,departamento,Totonicapan,10,10
+2016,departamento,Totonicapan,11,6
+2016,departamento,Totonicapan,12,5
+2016,departamento,Totonicapan,,83
+2016,departamento,Zacapa,1,10
+2016,departamento,Zacapa,2,13
+2016,departamento,Zacapa,3,6
+2016,departamento,Zacapa,4,7
+2016,departamento,Zacapa,5,7
+2016,departamento,Zacapa,6,10
+2016,departamento,Zacapa,7,11
+2016,departamento,Zacapa,8,15
+2016,departamento,Zacapa,9,19
+2016,departamento,Zacapa,10,20
+2016,departamento,Zacapa,11,11
+2016,departamento,Zacapa,12,11
+2016,departamento,Zacapa,,140
+2016,pais,,1,405
+2016,pais,,2,442
+2016,pais,,3,567
+2016,pais,,4,448
+2016,pais,,5,490
+2016,pais,,6,497
+2016,pais,,7,395
+2016,pais,,8,498
+2016,pais,,9,525
+2016,pais,,10,525
+2016,pais,,11,430
+2016,pais,,12,443
+2016,pais,,,5665
+2017,departamento,Alta Verapaz,1,9
+2017,departamento,Alta Verapaz,2,10
+2017,departamento,Alta Verapaz,3,10
+2017,departamento,Alta Verapaz,4,11
+2017,departamento,Alta Verapaz,5,14
+2017,departamento,Alta Verapaz,6,10
+2017,departamento,Alta Verapaz,7,8
+2017,departamento,Alta Verapaz,8,13
+2017,departamento,Alta Verapaz,9,5
+2017,departamento,Alta Verapaz,10,9
+2017,departamento,Alta Verapaz,11,12
+2017,departamento,Alta Verapaz,12,11
+2017,departamento,Alta Verapaz,,122
+2017,departamento,Baja Verapaz,1,7
+2017,departamento,Baja Verapaz,2,10
+2017,departamento,Baja Verapaz,3,9
+2017,departamento,Baja Verapaz,4,13
+2017,departamento,Baja Verapaz,5,12
+2017,departamento,Baja Verapaz,6,12
+2017,departamento,Baja Verapaz,7,6
+2017,departamento,Baja Verapaz,8,17
+2017,departamento,Baja Verapaz,9,7
+2017,departamento,Baja Verapaz,10,7
+2017,departamento,Baja Verapaz,11,7
+2017,departamento,Baja Verapaz,12,10
+2017,departamento,Baja Verapaz,,117
+2017,departamento,Chimaltenango,1,6
+2017,departamento,Chimaltenango,2,12
+2017,departamento,Chimaltenango,3,12
+2017,departamento,Chimaltenango,4,11
+2017,departamento,Chimaltenango,5,15
+2017,departamento,Chimaltenango,6,12
+2017,departamento,Chimaltenango,7,5
+2017,departamento,Chimaltenango,8,18
+2017,departamento,Chimaltenango,9,10
+2017,departamento,Chimaltenango,10,11
+2017,departamento,Chimaltenango,11,13
+2017,departamento,Chimaltenango,12,5
+2017,departamento,Chimaltenango,,130
+2017,departamento,Chiquimula,1,13
+2017,departamento,Chiquimula,2,7
+2017,departamento,Chiquimula,3,9
+2017,departamento,Chiquimula,4,7
+2017,departamento,Chiquimula,5,7
+2017,departamento,Chiquimula,6,16
+2017,departamento,Chiquimula,7,11
+2017,departamento,Chiquimula,8,18
+2017,departamento,Chiquimula,9,13
+2017,departamento,Chiquimula,10,15
+2017,departamento,Chiquimula,11,21
+2017,departamento,Chiquimula,12,13
+2017,departamento,Chiquimula,,150
+2017,departamento,El Progreso,1,5
+2017,departamento,El Progreso,2,8
+2017,departamento,El Progreso,3,12
+2017,departamento,El Progreso,4,6
+2017,departamento,El Progreso,5,6
+2017,departamento,El Progreso,6,3
+2017,departamento,El Progreso,7,3
+2017,departamento,El Progreso,8,4
+2017,departamento,El Progreso,9,9
+2017,departamento,El Progreso,10,19
+2017,departamento,El Progreso,11,7
+2017,departamento,El Progreso,12,24
+2017,departamento,El Progreso,,106
+2017,departamento,Escuintla,1,19
+2017,departamento,Escuintla,2,24
+2017,departamento,Escuintla,3,38
+2017,departamento,Escuintla,4,15
+2017,departamento,Escuintla,5,37
+2017,departamento,Escuintla,6,34
+2017,departamento,Escuintla,7,40
+2017,departamento,Escuintla,8,24
+2017,departamento,Escuintla,9,20
+2017,departamento,Escuintla,10,23
+2017,departamento,Escuintla,11,29
+2017,departamento,Escuintla,12,29
+2017,departamento,Escuintla,,332
+2017,departamento,Guatemala,1,160
+2017,departamento,Guatemala,2,186
+2017,departamento,Guatemala,3,189
+2017,departamento,Guatemala,4,177
+2017,departamento,Guatemala,5,237
+2017,departamento,Guatemala,6,178
+2017,departamento,Guatemala,7,162
+2017,departamento,Guatemala,8,172
+2017,departamento,Guatemala,9,199
+2017,departamento,Guatemala,10,208
+2017,departamento,Guatemala,11,150
+2017,departamento,Guatemala,12,161
+2017,departamento,Guatemala,,2179
+2017,departamento,Huehuetenango,1,33
+2017,departamento,Huehuetenango,2,17
+2017,departamento,Huehuetenango,3,16
+2017,departamento,Huehuetenango,4,19
+2017,departamento,Huehuetenango,5,15
+2017,departamento,Huehuetenango,6,21
+2017,departamento,Huehuetenango,7,9
+2017,departamento,Huehuetenango,8,11
+2017,departamento,Huehuetenango,9,15
+2017,departamento,Huehuetenango,10,14
+2017,departamento,Huehuetenango,11,12
+2017,departamento,Huehuetenango,12,13
+2017,departamento,Huehuetenango,,195
+2017,departamento,Izabal,1,12
+2017,departamento,Izabal,2,14
+2017,departamento,Izabal,3,23
+2017,departamento,Izabal,4,27
+2017,departamento,Izabal,5,31
+2017,departamento,Izabal,6,19
+2017,departamento,Izabal,7,21
+2017,departamento,Izabal,8,26
+2017,departamento,Izabal,9,18
+2017,departamento,Izabal,10,24
+2017,departamento,Izabal,11,24
+2017,departamento,Izabal,12,15
+2017,departamento,Izabal,,254
+2017,departamento,Jalapa,1,12
+2017,departamento,Jalapa,2,15
+2017,departamento,Jalapa,3,16
+2017,departamento,Jalapa,4,7
+2017,departamento,Jalapa,5,9
+2017,departamento,Jalapa,6,15
+2017,departamento,Jalapa,7,14
+2017,departamento,Jalapa,8,26
+2017,departamento,Jalapa,9,16
+2017,departamento,Jalapa,10,12
+2017,departamento,Jalapa,11,14
+2017,departamento,Jalapa,12,13
+2017,departamento,Jalapa,,169
+2017,departamento,Jutiapa,1,8
+2017,departamento,Jutiapa,2,17
+2017,departamento,Jutiapa,3,18
+2017,departamento,Jutiapa,4,12
+2017,departamento,Jutiapa,5,11
+2017,departamento,Jutiapa,6,10
+2017,departamento,Jutiapa,7,12
+2017,departamento,Jutiapa,8,11
+2017,departamento,Jutiapa,9,12
+2017,departamento,Jutiapa,10,3
+2017,departamento,Jutiapa,11,17
+2017,departamento,Jutiapa,12,11
+2017,departamento,Jutiapa,,142
+2017,departamento,Peten,1,17
+2017,departamento,Peten,2,27
+2017,departamento,Peten,3,18
+2017,departamento,Peten,4,10
+2017,departamento,Peten,5,13
+2017,departamento,Peten,6,7
+2017,departamento,Peten,7,10
+2017,departamento,Peten,8,11
+2017,departamento,Peten,9,15
+2017,departamento,Peten,10,11
+2017,departamento,Peten,11,13
+2017,departamento,Peten,12,13
+2017,departamento,Peten,,165
+2017,departamento,Quetzaltenango,1,28
+2017,departamento,Quetzaltenango,2,33
+2017,departamento,Quetzaltenango,3,39
+2017,departamento,Quetzaltenango,4,33
+2017,departamento,Quetzaltenango,5,45
+2017,departamento,Quetzaltenango,6,40
+2017,departamento,Quetzaltenango,7,35
+2017,departamento,Quetzaltenango,8,35
+2017,departamento,Quetzaltenango,9,39
+2017,departamento,Quetzaltenango,10,27
+2017,departamento,Quetzaltenango,11,38
+2017,departamento,Quetzaltenango,12,43
+2017,departamento,Quetzaltenango,,435
+2017,departamento,Quiche,1,11
+2017,departamento,Quiche,2,12
+2017,departamento,Quiche,3,12
+2017,departamento,Quiche,4,5
+2017,departamento,Quiche,5,6
+2017,departamento,Quiche,6,6
+2017,departamento,Quiche,7,12
+2017,departamento,Quiche,8,9
+2017,departamento,Quiche,9,13
+2017,departamento,Quiche,10,8
+2017,departamento,Quiche,11,14
+2017,departamento,Quiche,12,9
+2017,departamento,Quiche,,117
+2017,departamento,Retalhuleu,1,17
+2017,departamento,Retalhuleu,2,11
+2017,departamento,Retalhuleu,3,22
+2017,departamento,Retalhuleu,4,12
+2017,departamento,Retalhuleu,5,13
+2017,departamento,Retalhuleu,6,12
+2017,departamento,Retalhuleu,7,11
+2017,departamento,Retalhuleu,8,9
+2017,departamento,Retalhuleu,9,16
+2017,departamento,Retalhuleu,10,13
+2017,departamento,Retalhuleu,11,14
+2017,departamento,Retalhuleu,12,16
+2017,departamento,Retalhuleu,,166
+2017,departamento,Sacatepequez,1,6
+2017,departamento,Sacatepequez,2,7
+2017,departamento,Sacatepequez,3,8
+2017,departamento,Sacatepequez,4,12
+2017,departamento,Sacatepequez,5,15
+2017,departamento,Sacatepequez,6,12
+2017,departamento,Sacatepequez,7,11
+2017,departamento,Sacatepequez,8,16
+2017,departamento,Sacatepequez,9,15
+2017,departamento,Sacatepequez,10,16
+2017,departamento,Sacatepequez,11,10
+2017,departamento,Sacatepequez,12,7
+2017,departamento,Sacatepequez,,135
+2017,departamento,San Marcos,1,17
+2017,departamento,San Marcos,2,17
+2017,departamento,San Marcos,3,23
+2017,departamento,San Marcos,4,17
+2017,departamento,San Marcos,5,22
+2017,departamento,San Marcos,6,19
+2017,departamento,San Marcos,7,24
+2017,departamento,San Marcos,8,33
+2017,departamento,San Marcos,9,29
+2017,departamento,San Marcos,10,25
+2017,departamento,San Marcos,11,24
+2017,departamento,San Marcos,12,20
+2017,departamento,San Marcos,,270
+2017,departamento,Santa Rosa,1,12
+2017,departamento,Santa Rosa,2,8
+2017,departamento,Santa Rosa,3,11
+2017,departamento,Santa Rosa,4,13
+2017,departamento,Santa Rosa,5,17
+2017,departamento,Santa Rosa,6,12
+2017,departamento,Santa Rosa,7,6
+2017,departamento,Santa Rosa,8,17
+2017,departamento,Santa Rosa,9,15
+2017,departamento,Santa Rosa,10,13
+2017,departamento,Santa Rosa,11,17
+2017,departamento,Santa Rosa,12,9
+2017,departamento,Santa Rosa,,150
+2017,departamento,Solola,1,4
+2017,departamento,Solola,2,3
+2017,departamento,Solola,3,9
+2017,departamento,Solola,4,7
+2017,departamento,Solola,5,8
+2017,departamento,Solola,6,7
+2017,departamento,Solola,7,3
+2017,departamento,Solola,8,8
+2017,departamento,Solola,9,3
+2017,departamento,Solola,10,5
+2017,departamento,Solola,11,6
+2017,departamento,Solola,12,9
+2017,departamento,Solola,,72
+2017,departamento,Suchitepequez,1,6
+2017,departamento,Suchitepequez,2,11
+2017,departamento,Suchitepequez,3,15
+2017,departamento,Suchitepequez,4,15
+2017,departamento,Suchitepequez,5,12
+2017,departamento,Suchitepequez,6,9
+2017,departamento,Suchitepequez,7,12
+2017,departamento,Suchitepequez,8,12
+2017,departamento,Suchitepequez,9,8
+2017,departamento,Suchitepequez,10,18
+2017,departamento,Suchitepequez,11,14
+2017,departamento,Suchitepequez,12,7
+2017,departamento,Suchitepequez,,139
+2017,departamento,Totonicapan,1,9
+2017,departamento,Totonicapan,2,6
+2017,departamento,Totonicapan,3,6
+2017,departamento,Totonicapan,4,5
+2017,departamento,Totonicapan,5,12
+2017,departamento,Totonicapan,6,11
+2017,departamento,Totonicapan,7,12
+2017,departamento,Totonicapan,8,9
+2017,departamento,Totonicapan,9,6
+2017,departamento,Totonicapan,10,11
+2017,departamento,Totonicapan,11,11
+2017,departamento,Totonicapan,12,4
+2017,departamento,Totonicapan,,102
+2017,departamento,Zacapa,1,17
+2017,departamento,Zacapa,2,14
+2017,departamento,Zacapa,3,16
+2017,departamento,Zacapa,4,11
+2017,departamento,Zacapa,5,13
+2017,departamento,Zacapa,6,11
+2017,departamento,Zacapa,7,7
+2017,departamento,Zacapa,8,9
+2017,departamento,Zacapa,9,6
+2017,departamento,Zacapa,10,16
+2017,departamento,Zacapa,11,25
+2017,departamento,Zacapa,12,16
+2017,departamento,Zacapa,,161
+2017,pais,,1,428
+2017,pais,,2,469
+2017,pais,,3,531
+2017,pais,,4,445
+2017,pais,,5,570
+2017,pais,,6,476
+2017,pais,,7,434
+2017,pais,,8,508
+2017,pais,,9,489
+2017,pais,,10,508
+2017,pais,,11,492
+2017,pais,,12,458
+2017,pais,,,5808
+2018,departamento,Alta Verapaz,1,7
+2018,departamento,Alta Verapaz,2,12
+2018,departamento,Alta Verapaz,3,7
+2018,departamento,Alta Verapaz,4,16
+2018,departamento,Alta Verapaz,5,15
+2018,departamento,Alta Verapaz,6,15
+2018,departamento,Alta Verapaz,7,7
+2018,departamento,Alta Verapaz,8,15
+2018,departamento,Alta Verapaz,9,9
+2018,departamento,Alta Verapaz,10,12
+2018,departamento,Alta Verapaz,11,13
+2018,departamento,Alta Verapaz,12,10
+2018,departamento,Alta Verapaz,,138
+2018,departamento,Baja Verapaz,1,16
+2018,departamento,Baja Verapaz,2,15
+2018,departamento,Baja Verapaz,3,10
+2018,departamento,Baja Verapaz,4,14
+2018,departamento,Baja Verapaz,5,9
+2018,departamento,Baja Verapaz,6,3
+2018,departamento,Baja Verapaz,7,12
+2018,departamento,Baja Verapaz,8,10
+2018,departamento,Baja Verapaz,9,12
+2018,departamento,Baja Verapaz,10,10
+2018,departamento,Baja Verapaz,11,10
+2018,departamento,Baja Verapaz,12,12
+2018,departamento,Baja Verapaz,,133
+2018,departamento,Chimaltenango,1,6
+2018,departamento,Chimaltenango,2,12
+2018,departamento,Chimaltenango,3,16
+2018,departamento,Chimaltenango,4,10
+2018,departamento,Chimaltenango,5,6
+2018,departamento,Chimaltenango,6,13
+2018,departamento,Chimaltenango,7,20
+2018,departamento,Chimaltenango,8,12
+2018,departamento,Chimaltenango,9,16
+2018,departamento,Chimaltenango,10,10
+2018,departamento,Chimaltenango,11,20
+2018,departamento,Chimaltenango,12,9
+2018,departamento,Chimaltenango,,150
+2018,departamento,Chiquimula,1,10
+2018,departamento,Chiquimula,2,8
+2018,departamento,Chiquimula,3,15
+2018,departamento,Chiquimula,4,13
+2018,departamento,Chiquimula,5,19
+2018,departamento,Chiquimula,6,15
+2018,departamento,Chiquimula,7,17
+2018,departamento,Chiquimula,8,13
+2018,departamento,Chiquimula,9,15
+2018,departamento,Chiquimula,10,15
+2018,departamento,Chiquimula,11,7
+2018,departamento,Chiquimula,12,4
+2018,departamento,Chiquimula,,151
+2018,departamento,El Progreso,1,8
+2018,departamento,El Progreso,2,23
+2018,departamento,El Progreso,3,9
+2018,departamento,El Progreso,4,5
+2018,departamento,El Progreso,5,5
+2018,departamento,El Progreso,6,5
+2018,departamento,El Progreso,7,15
+2018,departamento,El Progreso,8,8
+2018,departamento,El Progreso,9,14
+2018,departamento,El Progreso,10,12
+2018,departamento,El Progreso,11,9
+2018,departamento,El Progreso,12,17
+2018,departamento,El Progreso,,130
+2018,departamento,Escuintla,1,11
+2018,departamento,Escuintla,2,27
+2018,departamento,Escuintla,3,18
+2018,departamento,Escuintla,4,17
+2018,departamento,Escuintla,5,33
+2018,departamento,Escuintla,6,18
+2018,departamento,Escuintla,7,28
+2018,departamento,Escuintla,8,31
+2018,departamento,Escuintla,9,17
+2018,departamento,Escuintla,10,18
+2018,departamento,Escuintla,11,23
+2018,departamento,Escuintla,12,26
+2018,departamento,Escuintla,,267
+2018,departamento,Guatemala,1,118
+2018,departamento,Guatemala,2,169
+2018,departamento,Guatemala,3,184
+2018,departamento,Guatemala,4,179
+2018,departamento,Guatemala,5,228
+2018,departamento,Guatemala,6,201
+2018,departamento,Guatemala,7,189
+2018,departamento,Guatemala,8,207
+2018,departamento,Guatemala,9,205
+2018,departamento,Guatemala,10,229
+2018,departamento,Guatemala,11,164
+2018,departamento,Guatemala,12,148
+2018,departamento,Guatemala,,2221
+2018,departamento,Huehuetenango,1,19
+2018,departamento,Huehuetenango,2,20
+2018,departamento,Huehuetenango,3,12
+2018,departamento,Huehuetenango,4,12
+2018,departamento,Huehuetenango,5,15
+2018,departamento,Huehuetenango,6,23
+2018,departamento,Huehuetenango,7,15
+2018,departamento,Huehuetenango,8,15
+2018,departamento,Huehuetenango,9,15
+2018,departamento,Huehuetenango,10,14
+2018,departamento,Huehuetenango,11,20
+2018,departamento,Huehuetenango,12,10
+2018,departamento,Huehuetenango,,190
+2018,departamento,Izabal,1,13
+2018,departamento,Izabal,2,14
+2018,departamento,Izabal,3,22
+2018,departamento,Izabal,4,23
+2018,departamento,Izabal,5,28
+2018,departamento,Izabal,6,14
+2018,departamento,Izabal,7,20
+2018,departamento,Izabal,8,31
+2018,departamento,Izabal,9,35
+2018,departamento,Izabal,10,20
+2018,departamento,Izabal,11,22
+2018,departamento,Izabal,12,13
+2018,departamento,Izabal,,255
+2018,departamento,Jalapa,1,10
+2018,departamento,Jalapa,2,20
+2018,departamento,Jalapa,3,11
+2018,departamento,Jalapa,4,16
+2018,departamento,Jalapa,5,16
+2018,departamento,Jalapa,6,10
+2018,departamento,Jalapa,7,15
+2018,departamento,Jalapa,8,9
+2018,departamento,Jalapa,9,20
+2018,departamento,Jalapa,10,18
+2018,departamento,Jalapa,11,17
+2018,departamento,Jalapa,12,18
+2018,departamento,Jalapa,,180
+2018,departamento,Jutiapa,1,16
+2018,departamento,Jutiapa,2,19
+2018,departamento,Jutiapa,3,13
+2018,departamento,Jutiapa,4,10
+2018,departamento,Jutiapa,5,16
+2018,departamento,Jutiapa,6,20
+2018,departamento,Jutiapa,7,12
+2018,departamento,Jutiapa,8,23
+2018,departamento,Jutiapa,9,20
+2018,departamento,Jutiapa,10,32
+2018,departamento,Jutiapa,11,21
+2018,departamento,Jutiapa,12,24
+2018,departamento,Jutiapa,,226
+2018,departamento,Peten,1,5
+2018,departamento,Peten,2,16
+2018,departamento,Peten,3,11
+2018,departamento,Peten,4,14
+2018,departamento,Peten,5,12
+2018,departamento,Peten,6,14
+2018,departamento,Peten,7,30
+2018,departamento,Peten,8,13
+2018,departamento,Peten,9,18
+2018,departamento,Peten,10,15
+2018,departamento,Peten,11,25
+2018,departamento,Peten,12,17
+2018,departamento,Peten,,190
+2018,departamento,Quetzaltenango,1,43
+2018,departamento,Quetzaltenango,2,43
+2018,departamento,Quetzaltenango,3,41
+2018,departamento,Quetzaltenango,4,29
+2018,departamento,Quetzaltenango,5,50
+2018,departamento,Quetzaltenango,6,51
+2018,departamento,Quetzaltenango,7,33
+2018,departamento,Quetzaltenango,8,57
+2018,departamento,Quetzaltenango,9,69
+2018,departamento,Quetzaltenango,10,67
+2018,departamento,Quetzaltenango,11,53
+2018,departamento,Quetzaltenango,12,46
+2018,departamento,Quetzaltenango,,582
+2018,departamento,Quiche,1,13
+2018,departamento,Quiche,2,25
+2018,departamento,Quiche,3,20
+2018,departamento,Quiche,4,11
+2018,departamento,Quiche,5,19
+2018,departamento,Quiche,6,20
+2018,departamento,Quiche,7,8
+2018,departamento,Quiche,8,11
+2018,departamento,Quiche,9,14
+2018,departamento,Quiche,10,21
+2018,departamento,Quiche,11,20
+2018,departamento,Quiche,12,8
+2018,departamento,Quiche,,190
+2018,departamento,Retalhuleu,1,15
+2018,departamento,Retalhuleu,2,13
+2018,departamento,Retalhuleu,3,16
+2018,departamento,Retalhuleu,4,11
+2018,departamento,Retalhuleu,5,17
+2018,departamento,Retalhuleu,6,9
+2018,departamento,Retalhuleu,7,13
+2018,departamento,Retalhuleu,8,10
+2018,departamento,Retalhuleu,9,12
+2018,departamento,Retalhuleu,10,13
+2018,departamento,Retalhuleu,11,9
+2018,departamento,Retalhuleu,12,11
+2018,departamento,Retalhuleu,,149
+2018,departamento,Sacatepequez,1,10
+2018,departamento,Sacatepequez,2,13
+2018,departamento,Sacatepequez,3,9
+2018,departamento,Sacatepequez,4,18
+2018,departamento,Sacatepequez,5,18
+2018,departamento,Sacatepequez,6,8
+2018,departamento,Sacatepequez,7,13
+2018,departamento,Sacatepequez,8,11
+2018,departamento,Sacatepequez,9,21
+2018,departamento,Sacatepequez,10,16
+2018,departamento,Sacatepequez,11,21
+2018,departamento,Sacatepequez,12,11
+2018,departamento,Sacatepequez,,169
+2018,departamento,San Marcos,1,10
+2018,departamento,San Marcos,2,32
+2018,departamento,San Marcos,3,26
+2018,departamento,San Marcos,4,18
+2018,departamento,San Marcos,5,25
+2018,departamento,San Marcos,6,21
+2018,departamento,San Marcos,7,17
+2018,departamento,San Marcos,8,22
+2018,departamento,San Marcos,9,14
+2018,departamento,San Marcos,10,24
+2018,departamento,San Marcos,11,24
+2018,departamento,San Marcos,12,13
+2018,departamento,San Marcos,,246
+2018,departamento,Santa Rosa,1,6
+2018,departamento,Santa Rosa,2,17
+2018,departamento,Santa Rosa,3,7
+2018,departamento,Santa Rosa,4,8
+2018,departamento,Santa Rosa,5,15
+2018,departamento,Santa Rosa,6,19
+2018,departamento,Santa Rosa,7,15
+2018,departamento,Santa Rosa,8,11
+2018,departamento,Santa Rosa,9,14
+2018,departamento,Santa Rosa,10,23
+2018,departamento,Santa Rosa,11,12
+2018,departamento,Santa Rosa,12,12
+2018,departamento,Santa Rosa,,159
+2018,departamento,Solola,1,6
+2018,departamento,Solola,2,5
+2018,departamento,Solola,3,3
+2018,departamento,Solola,4,4
+2018,departamento,Solola,5,7
+2018,departamento,Solola,6,5
+2018,departamento,Solola,7,11
+2018,departamento,Solola,8,6
+2018,departamento,Solola,9,9
+2018,departamento,Solola,10,3
+2018,departamento,Solola,11,7
+2018,departamento,Solola,12,6
+2018,departamento,Solola,,72
+2018,departamento,Suchitepequez,1,10
+2018,departamento,Suchitepequez,2,9
+2018,departamento,Suchitepequez,3,8
+2018,departamento,Suchitepequez,4,14
+2018,departamento,Suchitepequez,5,28
+2018,departamento,Suchitepequez,6,19
+2018,departamento,Suchitepequez,7,12
+2018,departamento,Suchitepequez,8,21
+2018,departamento,Suchitepequez,9,20
+2018,departamento,Suchitepequez,10,21
+2018,departamento,Suchitepequez,11,12
+2018,departamento,Suchitepequez,12,10
+2018,departamento,Suchitepequez,,184
+2018,departamento,Totonicapan,1,8
+2018,departamento,Totonicapan,2,7
+2018,departamento,Totonicapan,3,8
+2018,departamento,Totonicapan,4,11
+2018,departamento,Totonicapan,5,9
+2018,departamento,Totonicapan,6,14
+2018,departamento,Totonicapan,7,14
+2018,departamento,Totonicapan,8,5
+2018,departamento,Totonicapan,9,3
+2018,departamento,Totonicapan,10,17
+2018,departamento,Totonicapan,11,16
+2018,departamento,Totonicapan,12,12
+2018,departamento,Totonicapan,,124
+2018,departamento,Zacapa,1,13
+2018,departamento,Zacapa,2,13
+2018,departamento,Zacapa,3,4
+2018,departamento,Zacapa,4,9
+2018,departamento,Zacapa,5,17
+2018,departamento,Zacapa,6,17
+2018,departamento,Zacapa,7,12
+2018,departamento,Zacapa,8,14
+2018,departamento,Zacapa,9,15
+2018,departamento,Zacapa,10,12
+2018,departamento,Zacapa,11,10
+2018,departamento,Zacapa,12,13
+2018,departamento,Zacapa,,149
+2018,pais,,1,373
+2018,pais,,2,532
+2018,pais,,3,470
+2018,pais,,4,462
+2018,pais,,5,607
+2018,pais,,6,534
+2018,pais,,7,528
+2018,pais,,8,555
+2018,pais,,9,587
+2018,pais,,10,622
+2018,pais,,11,535
+2018,pais,,12,450
+2018,pais,,,6255
+2019,departamento,Alta Verapaz,1,8
+2019,departamento,Alta Verapaz,2,16
+2019,departamento,Alta Verapaz,3,10
+2019,departamento,Alta Verapaz,4,7
+2019,departamento,Alta Verapaz,5,10
+2019,departamento,Alta Verapaz,6,8
+2019,departamento,Alta Verapaz,7,12
+2019,departamento,Alta Verapaz,8,13
+2019,departamento,Alta Verapaz,9,11
+2019,departamento,Alta Verapaz,10,13
+2019,departamento,Alta Verapaz,11,13
+2019,departamento,Alta Verapaz,12,11
+2019,departamento,Alta Verapaz,,132
+2019,departamento,Baja Verapaz,1,8
+2019,departamento,Baja Verapaz,2,12
+2019,departamento,Baja Verapaz,3,16
+2019,departamento,Baja Verapaz,4,7
+2019,departamento,Baja Verapaz,5,16
+2019,departamento,Baja Verapaz,6,13
+2019,departamento,Baja Verapaz,7,5
+2019,departamento,Baja Verapaz,8,8
+2019,departamento,Baja Verapaz,9,9
+2019,departamento,Baja Verapaz,10,12
+2019,departamento,Baja Verapaz,11,13
+2019,departamento,Baja Verapaz,12,11
+2019,departamento,Baja Verapaz,,130
+2019,departamento,Chimaltenango,1,8
+2019,departamento,Chimaltenango,2,15
+2019,departamento,Chimaltenango,3,13
+2019,departamento,Chimaltenango,4,14
+2019,departamento,Chimaltenango,5,17
+2019,departamento,Chimaltenango,6,11
+2019,departamento,Chimaltenango,7,7
+2019,departamento,Chimaltenango,8,22
+2019,departamento,Chimaltenango,9,14
+2019,departamento,Chimaltenango,10,16
+2019,departamento,Chimaltenango,11,22
+2019,departamento,Chimaltenango,12,12
+2019,departamento,Chimaltenango,,171
+2019,departamento,Chiquimula,1,21
+2019,departamento,Chiquimula,2,11
+2019,departamento,Chiquimula,3,12
+2019,departamento,Chiquimula,4,5
+2019,departamento,Chiquimula,5,7
+2019,departamento,Chiquimula,6,14
+2019,departamento,Chiquimula,7,12
+2019,departamento,Chiquimula,8,17
+2019,departamento,Chiquimula,9,16
+2019,departamento,Chiquimula,10,13
+2019,departamento,Chiquimula,11,14
+2019,departamento,Chiquimula,12,17
+2019,departamento,Chiquimula,,159
+2019,departamento,El Progreso,1,13
+2019,departamento,El Progreso,2,7
+2019,departamento,El Progreso,3,15
+2019,departamento,El Progreso,4,13
+2019,departamento,El Progreso,5,7
+2019,departamento,El Progreso,6,18
+2019,departamento,El Progreso,7,11
+2019,departamento,El Progreso,8,12
+2019,departamento,El Progreso,9,15
+2019,departamento,El Progreso,10,8
+2019,departamento,El Progreso,11,5
+2019,departamento,El Progreso,12,20
+2019,departamento,El Progreso,,144
+2019,departamento,Escuintla,1,20
+2019,departamento,Escuintla,2,21
+2019,departamento,Escuintla,3,18
+2019,departamento,Escuintla,4,18
+2019,departamento,Escuintla,5,28
+2019,departamento,Escuintla,6,31
+2019,departamento,Escuintla,7,15
+2019,departamento,Escuintla,8,49
+2019,departamento,Escuintla,9,31
+2019,departamento,Escuintla,10,36
+2019,departamento,Escuintla,11,39
+2019,departamento,Escuintla,12,29
+2019,departamento,Escuintla,,335
+2019,departamento,Guatemala,1,307
+2019,departamento,Guatemala,2,197
+2019,departamento,Guatemala,3,244
+2019,departamento,Guatemala,4,240
+2019,departamento,Guatemala,5,374
+2019,departamento,Guatemala,6,410
+2019,departamento,Guatemala,7,366
+2019,departamento,Guatemala,8,346
+2019,departamento,Guatemala,9,351
+2019,departamento,Guatemala,10,293
+2019,departamento,Guatemala,11,342
+2019,departamento,Guatemala,12,217
+2019,departamento,Guatemala,,3687
+2019,departamento,Huehuetenango,1,21
+2019,departamento,Huehuetenango,2,23
+2019,departamento,Huehuetenango,3,11
+2019,departamento,Huehuetenango,4,12
+2019,departamento,Huehuetenango,5,18
+2019,departamento,Huehuetenango,6,13
+2019,departamento,Huehuetenango,7,18
+2019,departamento,Huehuetenango,8,18
+2019,departamento,Huehuetenango,9,29
+2019,departamento,Huehuetenango,10,23
+2019,departamento,Huehuetenango,11,27
+2019,departamento,Huehuetenango,12,16
+2019,departamento,Huehuetenango,,229
+2019,departamento,Izabal,1,15
+2019,departamento,Izabal,2,17
+2019,departamento,Izabal,3,18
+2019,departamento,Izabal,4,21
+2019,departamento,Izabal,5,12
+2019,departamento,Izabal,6,8
+2019,departamento,Izabal,7,26
+2019,departamento,Izabal,8,24
+2019,departamento,Izabal,9,20
+2019,departamento,Izabal,10,17
+2019,departamento,Izabal,11,12
+2019,departamento,Izabal,12,18
+2019,departamento,Izabal,,208
+2019,departamento,Jalapa,1,35
+2019,departamento,Jalapa,2,12
+2019,departamento,Jalapa,3,17
+2019,departamento,Jalapa,4,9
+2019,departamento,Jalapa,5,21
+2019,departamento,Jalapa,6,12
+2019,departamento,Jalapa,7,24
+2019,departamento,Jalapa,8,24
+2019,departamento,Jalapa,9,12
+2019,departamento,Jalapa,10,24
+2019,departamento,Jalapa,11,14
+2019,departamento,Jalapa,12,8
+2019,departamento,Jalapa,,212
+2019,departamento,Jutiapa,1,15
+2019,departamento,Jutiapa,2,14
+2019,departamento,Jutiapa,3,12
+2019,departamento,Jutiapa,4,8
+2019,departamento,Jutiapa,5,18
+2019,departamento,Jutiapa,6,29
+2019,departamento,Jutiapa,7,19
+2019,departamento,Jutiapa,8,22
+2019,departamento,Jutiapa,9,23
+2019,departamento,Jutiapa,10,9
+2019,departamento,Jutiapa,11,13
+2019,departamento,Jutiapa,12,16
+2019,departamento,Jutiapa,,198
+2019,departamento,Peten,1,24
+2019,departamento,Peten,2,19
+2019,departamento,Peten,3,20
+2019,departamento,Peten,4,9
+2019,departamento,Peten,5,23
+2019,departamento,Peten,6,10
+2019,departamento,Peten,7,13
+2019,departamento,Peten,8,19
+2019,departamento,Peten,9,20
+2019,departamento,Peten,10,20
+2019,departamento,Peten,11,13
+2019,departamento,Peten,12,22
+2019,departamento,Peten,,212
+2019,departamento,Quetzaltenango,1,53
+2019,departamento,Quetzaltenango,2,63
+2019,departamento,Quetzaltenango,3,55
+2019,departamento,Quetzaltenango,4,36
+2019,departamento,Quetzaltenango,5,68
+2019,departamento,Quetzaltenango,6,46
+2019,departamento,Quetzaltenango,7,74
+2019,departamento,Quetzaltenango,8,66
+2019,departamento,Quetzaltenango,9,62
+2019,departamento,Quetzaltenango,10,83
+2019,departamento,Quetzaltenango,11,86
+2019,departamento,Quetzaltenango,12,47
+2019,departamento,Quetzaltenango,,739
+2019,departamento,Quiche,1,14
+2019,departamento,Quiche,2,17
+2019,departamento,Quiche,3,14
+2019,departamento,Quiche,4,4
+2019,departamento,Quiche,5,8
+2019,departamento,Quiche,6,21
+2019,departamento,Quiche,7,19
+2019,departamento,Quiche,8,20
+2019,departamento,Quiche,9,15
+2019,departamento,Quiche,10,28
+2019,departamento,Quiche,11,11
+2019,departamento,Quiche,12,17
+2019,departamento,Quiche,,188
+2019,departamento,Retalhuleu,1,17
+2019,departamento,Retalhuleu,2,7
+2019,departamento,Retalhuleu,3,7
+2019,departamento,Retalhuleu,4,7
+2019,departamento,Retalhuleu,5,13
+2019,departamento,Retalhuleu,6,14
+2019,departamento,Retalhuleu,7,25
+2019,departamento,Retalhuleu,8,24
+2019,departamento,Retalhuleu,9,22
+2019,departamento,Retalhuleu,10,20
+2019,departamento,Retalhuleu,11,21
+2019,departamento,Retalhuleu,12,12
+2019,departamento,Retalhuleu,,189
+2019,departamento,Sacatepéquez,1,14
+2019,departamento,Sacatepéquez,2,14
+2019,departamento,Sacatepéquez,3,8
+2019,departamento,Sacatepéquez,4,10
+2019,departamento,Sacatepéquez,5,14
+2019,departamento,Sacatepéquez,6,15
+2019,departamento,Sacatepéquez,7,28
+2019,departamento,Sacatepéquez,8,14
+2019,departamento,Sacatepéquez,9,15
+2019,departamento,Sacatepéquez,10,19
+2019,departamento,Sacatepéquez,11,18
+2019,departamento,Sacatepéquez,12,16
+2019,departamento,Sacatepéquez,,185
+2019,departamento,San Marcos,1,20
+2019,departamento,San Marcos,2,19
+2019,departamento,San Marcos,3,14
+2019,departamento,San Marcos,4,13
+2019,departamento,San Marcos,5,25
+2019,departamento,San Marcos,6,31
+2019,departamento,San Marcos,7,26
+2019,departamento,San Marcos,8,26
+2019,departamento,San Marcos,9,15
+2019,departamento,San Marcos,10,19
+2019,departamento,San Marcos,11,35
+2019,departamento,San Marcos,12,24
+2019,departamento,San Marcos,,267
+2019,departamento,Santa Rosa,1,17
+2019,departamento,Santa Rosa,2,18
+2019,departamento,Santa Rosa,3,11
+2019,departamento,Santa Rosa,4,7
+2019,departamento,Santa Rosa,5,22
+2019,departamento,Santa Rosa,6,13
+2019,departamento,Santa Rosa,7,17
+2019,departamento,Santa Rosa,8,17
+2019,departamento,Santa Rosa,9,13
+2019,departamento,Santa Rosa,10,20
+2019,departamento,Santa Rosa,11,14
+2019,departamento,Santa Rosa,12,20
+2019,departamento,Santa Rosa,,189
+2019,departamento,Sololá,1,7
+2019,departamento,Sololá,2,5
+2019,departamento,Sololá,3,6
+2019,departamento,Sololá,4,9
+2019,departamento,Sololá,5,15
+2019,departamento,Sololá,6,0
+2019,departamento,Sololá,7,10
+2019,departamento,Sololá,8,15
+2019,departamento,Sololá,9,9
+2019,departamento,Sololá,10,10
+2019,departamento,Sololá,11,10
+2019,departamento,Sololá,12,8
+2019,departamento,Sololá,,104
+2019,departamento,Suchitepéquez,1,13
+2019,departamento,Suchitepéquez,2,7
+2019,departamento,Suchitepéquez,3,12
+2019,departamento,Suchitepéquez,4,10
+2019,departamento,Suchitepéquez,5,19
+2019,departamento,Suchitepéquez,6,20
+2019,departamento,Suchitepéquez,7,15
+2019,departamento,Suchitepéquez,8,13
+2019,departamento,Suchitepéquez,9,15
+2019,departamento,Suchitepéquez,10,29
+2019,departamento,Suchitepéquez,11,25
+2019,departamento,Suchitepéquez,12,17
+2019,departamento,Suchitepéquez,,195
+2019,departamento,Totonicapán,1,5
+2019,departamento,Totonicapán,2,11
+2019,departamento,Totonicapán,3,9
+2019,departamento,Totonicapán,4,10
+2019,departamento,Totonicapán,5,10
+2019,departamento,Totonicapán,6,20
+2019,departamento,Totonicapán,7,13
+2019,departamento,Totonicapán,8,10
+2019,departamento,Totonicapán,9,11
+2019,departamento,Totonicapán,10,17
+2019,departamento,Totonicapán,11,9
+2019,departamento,Totonicapán,12,3
+2019,departamento,Totonicapán,,128
+2019,departamento,Zacapa,1,12
+2019,departamento,Zacapa,2,14
+2019,departamento,Zacapa,3,27
+2019,departamento,Zacapa,4,12
+2019,departamento,Zacapa,5,15
+2019,departamento,Zacapa,6,18
+2019,departamento,Zacapa,7,10
+2019,departamento,Zacapa,8,19
+2019,departamento,Zacapa,9,15
+2019,departamento,Zacapa,10,21
+2019,departamento,Zacapa,11,21
+2019,departamento,Zacapa,12,18
+2019,departamento,Zacapa,,202
+2019,pais,,1,667
+2019,pais,,2,539
+2019,pais,,3,569
+2019,pais,,4,481
+2019,pais,,5,760
+2019,pais,,6,775
+2019,pais,,7,765
+2019,pais,,8,798
+2019,pais,,9,743
+2019,pais,,10,750
+2019,pais,,11,777
+2019,pais,,12,579
+2019,pais,,,8203
+2020,departamento,Alta Verapaz,1,8
+2020,departamento,Alta Verapaz,2,10
+2020,departamento,Alta Verapaz,3,3
+2020,departamento,Alta Verapaz,4,9
+2020,departamento,Alta Verapaz,5,3
+2020,departamento,Alta Verapaz,6,6
+2020,departamento,Alta Verapaz,7,0
+2020,departamento,Alta Verapaz,8,0
+2020,departamento,Alta Verapaz,9,8
+2020,departamento,Alta Verapaz,10,15
+2020,departamento,Alta Verapaz,11,13
+2020,departamento,Alta Verapaz,12,16
+2020,departamento,Alta Verapaz,,91
+2020,departamento,Baja Verapaz,1,9
+2020,departamento,Baja Verapaz,2,3
+2020,departamento,Baja Verapaz,3,7
+2020,departamento,Baja Verapaz,4,1
+2020,departamento,Baja Verapaz,5,0
+2020,departamento,Baja Verapaz,6,2
+2020,departamento,Baja Verapaz,7,2
+2020,departamento,Baja Verapaz,8,0
+2020,departamento,Baja Verapaz,9,2
+2020,departamento,Baja Verapaz,10,3
+2020,departamento,Baja Verapaz,11,8
+2020,departamento,Baja Verapaz,12,6
+2020,departamento,Baja Verapaz,,43
+2020,departamento,Chimaltenango,1,18
+2020,departamento,Chimaltenango,2,11
+2020,departamento,Chimaltenango,3,13
+2020,departamento,Chimaltenango,4,2
+2020,departamento,Chimaltenango,5,3
+2020,departamento,Chimaltenango,6,3
+2020,departamento,Chimaltenango,7,0
+2020,departamento,Chimaltenango,8,2
+2020,departamento,Chimaltenango,9,5
+2020,departamento,Chimaltenango,10,20
+2020,departamento,Chimaltenango,11,22
+2020,departamento,Chimaltenango,12,28
+2020,departamento,Chimaltenango,,127
+2020,departamento,Chiquimula,1,14
+2020,departamento,Chiquimula,2,12
+2020,departamento,Chiquimula,3,11
+2020,departamento,Chiquimula,4,8
+2020,departamento,Chiquimula,5,6
+2020,departamento,Chiquimula,6,10
+2020,departamento,Chiquimula,7,7
+2020,departamento,Chiquimula,8,7
+2020,departamento,Chiquimula,9,6
+2020,departamento,Chiquimula,10,22
+2020,departamento,Chiquimula,11,17
+2020,departamento,Chiquimula,12,12
+2020,departamento,Chiquimula,,132
+2020,departamento,El Progreso,1,12
+2020,departamento,El Progreso,2,11
+2020,departamento,El Progreso,3,7
+2020,departamento,El Progreso,4,1
+2020,departamento,El Progreso,5,1
+2020,departamento,El Progreso,6,1
+2020,departamento,El Progreso,7,2
+2020,departamento,El Progreso,8,6
+2020,departamento,El Progreso,9,6
+2020,departamento,El Progreso,10,8
+2020,departamento,El Progreso,11,6
+2020,departamento,El Progreso,12,6
+2020,departamento,El Progreso,,67
+2020,departamento,Escuintla,1,10
+2020,departamento,Escuintla,2,24
+2020,departamento,Escuintla,3,25
+2020,departamento,Escuintla,4,7
+2020,departamento,Escuintla,5,6
+2020,departamento,Escuintla,6,5
+2020,departamento,Escuintla,7,3
+2020,departamento,Escuintla,8,5
+2020,departamento,Escuintla,9,10
+2020,departamento,Escuintla,10,12
+2020,departamento,Escuintla,11,17
+2020,departamento,Escuintla,12,13
+2020,departamento,Escuintla,,137
+2020,departamento,Guatemala,1,177
+2020,departamento,Guatemala,2,251
+2020,departamento,Guatemala,3,207
+2020,departamento,Guatemala,4,94
+2020,departamento,Guatemala,5,37
+2020,departamento,Guatemala,6,34
+2020,departamento,Guatemala,7,21
+2020,departamento,Guatemala,8,52
+2020,departamento,Guatemala,9,63
+2020,departamento,Guatemala,10,112
+2020,departamento,Guatemala,11,209
+2020,departamento,Guatemala,12,155
+2020,departamento,Guatemala,,1412
+2020,departamento,Huehuetenango,1,13
+2020,departamento,Huehuetenango,2,18
+2020,departamento,Huehuetenango,3,10
+2020,departamento,Huehuetenango,4,9
+2020,departamento,Huehuetenango,5,13
+2020,departamento,Huehuetenango,6,6
+2020,departamento,Huehuetenango,7,4
+2020,departamento,Huehuetenango,8,5
+2020,departamento,Huehuetenango,9,6
+2020,departamento,Huehuetenango,10,10
+2020,departamento,Huehuetenango,11,14
+2020,departamento,Huehuetenango,12,20
+2020,departamento,Huehuetenango,,128
+2020,departamento,Izabal,1,14
+2020,departamento,Izabal,2,17
+2020,departamento,Izabal,3,17
+2020,departamento,Izabal,4,4
+2020,departamento,Izabal,5,8
+2020,departamento,Izabal,6,4
+2020,departamento,Izabal,7,1
+2020,departamento,Izabal,8,4
+2020,departamento,Izabal,9,15
+2020,departamento,Izabal,10,18
+2020,departamento,Izabal,11,12
+2020,departamento,Izabal,12,8
+2020,departamento,Izabal,,122
+2020,departamento,Jalapa,1,5
+2020,departamento,Jalapa,2,19
+2020,departamento,Jalapa,3,7
+2020,departamento,Jalapa,4,2
+2020,departamento,Jalapa,5,0
+2020,departamento,Jalapa,6,2
+2020,departamento,Jalapa,7,1
+2020,departamento,Jalapa,8,3
+2020,departamento,Jalapa,9,13
+2020,departamento,Jalapa,10,7
+2020,departamento,Jalapa,11,3
+2020,departamento,Jalapa,12,33
+2020,departamento,Jalapa,,95
+2020,departamento,Jutiapa,1,22
+2020,departamento,Jutiapa,2,31
+2020,departamento,Jutiapa,3,20
+2020,departamento,Jutiapa,4,7
+2020,departamento,Jutiapa,5,6
+2020,departamento,Jutiapa,6,2
+2020,departamento,Jutiapa,7,2
+2020,departamento,Jutiapa,8,2
+2020,departamento,Jutiapa,9,3
+2020,departamento,Jutiapa,10,14
+2020,departamento,Jutiapa,11,3
+2020,departamento,Jutiapa,12,12
+2020,departamento,Jutiapa,,124
+2020,departamento,Petén,1,19
+2020,departamento,Petén,2,25
+2020,departamento,Petén,3,12
+2020,departamento,Petén,4,2
+2020,departamento,Petén,5,3
+2020,departamento,Petén,6,1
+2020,departamento,Petén,7,9
+2020,departamento,Petén,8,5
+2020,departamento,Petén,9,4
+2020,departamento,Petén,10,14
+2020,departamento,Petén,11,12
+2020,departamento,Petén,12,12
+2020,departamento,Petén,,118
+2020,departamento,Quetzaltenango,1,57
+2020,departamento,Quetzaltenango,2,73
+2020,departamento,Quetzaltenango,3,46
+2020,departamento,Quetzaltenango,4,17
+2020,departamento,Quetzaltenango,5,13
+2020,departamento,Quetzaltenango,6,13
+2020,departamento,Quetzaltenango,7,13
+2020,departamento,Quetzaltenango,8,9
+2020,departamento,Quetzaltenango,9,21
+2020,departamento,Quetzaltenango,10,43
+2020,departamento,Quetzaltenango,11,52
+2020,departamento,Quetzaltenango,12,85
+2020,departamento,Quetzaltenango,,442
+2020,departamento,Quiché,1,20
+2020,departamento,Quiché,2,19
+2020,departamento,Quiché,3,16
+2020,departamento,Quiché,4,8
+2020,departamento,Quiché,5,4
+2020,departamento,Quiché,6,9
+2020,departamento,Quiché,7,1
+2020,departamento,Quiché,8,6
+2020,departamento,Quiché,9,16
+2020,departamento,Quiché,10,13
+2020,departamento,Quiché,11,16
+2020,departamento,Quiché,12,11
+2020,departamento,Quiché,,139
+2020,departamento,Retalhuleu,1,8
+2020,departamento,Retalhuleu,2,12
+2020,departamento,Retalhuleu,3,10
+2020,departamento,Retalhuleu,4,6
+2020,departamento,Retalhuleu,5,7
+2020,departamento,Retalhuleu,6,2
+2020,departamento,Retalhuleu,7,1
+2020,departamento,Retalhuleu,8,4
+2020,departamento,Retalhuleu,9,12
+2020,departamento,Retalhuleu,10,16
+2020,departamento,Retalhuleu,11,23
+2020,departamento,Retalhuleu,12,12
+2020,departamento,Retalhuleu,,113
+2020,departamento,Sacatepéquez,1,23
+2020,departamento,Sacatepéquez,2,14
+2020,departamento,Sacatepéquez,3,6
+2020,departamento,Sacatepéquez,4,2
+2020,departamento,Sacatepéquez,5,5
+2020,departamento,Sacatepéquez,6,4
+2020,departamento,Sacatepéquez,7,1
+2020,departamento,Sacatepéquez,8,1
+2020,departamento,Sacatepéquez,9,3
+2020,departamento,Sacatepéquez,10,8
+2020,departamento,Sacatepéquez,11,13
+2020,departamento,Sacatepéquez,12,18
+2020,departamento,Sacatepéquez,,98
+2020,departamento,San Marcos,1,18
+2020,departamento,San Marcos,2,16
+2020,departamento,San Marcos,3,15
+2020,departamento,San Marcos,4,19
+2020,departamento,San Marcos,5,14
+2020,departamento,San Marcos,6,4
+2020,departamento,San Marcos,7,4
+2020,departamento,San Marcos,8,9
+2020,departamento,San Marcos,9,19
+2020,departamento,San Marcos,10,15
+2020,departamento,San Marcos,11,21
+2020,departamento,San Marcos,12,24
+2020,departamento,San Marcos,,178
+2020,departamento,Santa Rosa,1,14
+2020,departamento,Santa Rosa,2,23
+2020,departamento,Santa Rosa,3,9
+2020,departamento,Santa Rosa,4,2
+2020,departamento,Santa Rosa,5,1
+2020,departamento,Santa Rosa,6,2
+2020,departamento,Santa Rosa,7,1
+2020,departamento,Santa Rosa,8,3
+2020,departamento,Santa Rosa,9,8
+2020,departamento,Santa Rosa,10,44
+2020,departamento,Santa Rosa,11,31
+2020,departamento,Santa Rosa,12,22
+2020,departamento,Santa Rosa,,160
+2020,departamento,Sololá,1,3
+2020,departamento,Sololá,2,15
+2020,departamento,Sololá,3,5
+2020,departamento,Sololá,4,2
+2020,departamento,Sololá,5,3
+2020,departamento,Sololá,6,4
+2020,departamento,Sololá,7,0
+2020,departamento,Sololá,8,0
+2020,departamento,Sololá,9,1
+2020,departamento,Sololá,10,2
+2020,departamento,Sololá,11,5
+2020,departamento,Sololá,12,2
+2020,departamento,Sololá,,42
+2020,departamento,Suchitepéquez,1,16
+2020,departamento,Suchitepéquez,2,17
+2020,departamento,Suchitepéquez,3,13
+2020,departamento,Suchitepéquez,4,5
+2020,departamento,Suchitepéquez,5,7
+2020,departamento,Suchitepéquez,6,3
+2020,departamento,Suchitepéquez,7,7
+2020,departamento,Suchitepéquez,8,2
+2020,departamento,Suchitepéquez,9,8
+2020,departamento,Suchitepéquez,10,28
+2020,departamento,Suchitepéquez,11,22
+2020,departamento,Suchitepéquez,12,25
+2020,departamento,Suchitepéquez,,153
+2020,departamento,Totonicapán,1,9
+2020,departamento,Totonicapán,2,10
+2020,departamento,Totonicapán,3,11
+2020,departamento,Totonicapán,4,4
+2020,departamento,Totonicapán,5,6
+2020,departamento,Totonicapán,6,1
+2020,departamento,Totonicapán,7,1
+2020,departamento,Totonicapán,8,1
+2020,departamento,Totonicapán,9,4
+2020,departamento,Totonicapán,10,6
+2020,departamento,Totonicapán,11,16
+2020,departamento,Totonicapán,12,4
+2020,departamento,Totonicapán,,73
+2020,departamento,Zacapa,1,18
+2020,departamento,Zacapa,2,11
+2020,departamento,Zacapa,3,9
+2020,departamento,Zacapa,4,2
+2020,departamento,Zacapa,5,3
+2020,departamento,Zacapa,6,3
+2020,departamento,Zacapa,7,0
+2020,departamento,Zacapa,8,0
+2020,departamento,Zacapa,9,7
+2020,departamento,Zacapa,10,8
+2020,departamento,Zacapa,11,9
+2020,departamento,Zacapa,12,10
+2020,departamento,Zacapa,,80
+2020,pais,,1,507
+2020,pais,,2,642
+2020,pais,,3,479
+2020,pais,,4,213
+2020,pais,,5,149
+2020,pais,,6,121
+2020,pais,,7,81
+2020,pais,,8,126
+2020,pais,,9,240
+2020,pais,,10,438
+2020,pais,,11,544
+2020,pais,,12,534
+2020,pais,,,4074
+2021,departamento,Alta Verapaz,1,10
+2021,departamento,Alta Verapaz,2,11
+2021,departamento,Alta Verapaz,3,11
+2021,departamento,Alta Verapaz,4,15
+2021,departamento,Alta Verapaz,5,14
+2021,departamento,Alta Verapaz,6,19
+2021,departamento,Alta Verapaz,7,17
+2021,departamento,Alta Verapaz,8,11
+2021,departamento,Alta Verapaz,9,23
+2021,departamento,Alta Verapaz,10,13
+2021,departamento,Alta Verapaz,11,8
+2021,departamento,Alta Verapaz,12,22
+2021,departamento,Alta Verapaz,,174
+2021,departamento,Baja Verapaz,1,20
+2021,departamento,Baja Verapaz,2,14
+2021,departamento,Baja Verapaz,3,15
+2021,departamento,Baja Verapaz,4,5
+2021,departamento,Baja Verapaz,5,7
+2021,departamento,Baja Verapaz,6,4
+2021,departamento,Baja Verapaz,7,16
+2021,departamento,Baja Verapaz,8,17
+2021,departamento,Baja Verapaz,9,16
+2021,departamento,Baja Verapaz,10,7
+2021,departamento,Baja Verapaz,11,7
+2021,departamento,Baja Verapaz,12,11
+2021,departamento,Baja Verapaz,,139
+2021,departamento,Chimaltenango,1,20
+2021,departamento,Chimaltenango,2,17
+2021,departamento,Chimaltenango,3,24
+2021,departamento,Chimaltenango,4,22
+2021,departamento,Chimaltenango,5,27
+2021,departamento,Chimaltenango,6,20
+2021,departamento,Chimaltenango,7,24
+2021,departamento,Chimaltenango,8,16
+2021,departamento,Chimaltenango,9,28
+2021,departamento,Chimaltenango,10,22
+2021,departamento,Chimaltenango,11,21
+2021,departamento,Chimaltenango,12,29
+2021,departamento,Chimaltenango,,270
+2021,departamento,Chiquimula,1,13
+2021,departamento,Chiquimula,2,17
+2021,departamento,Chiquimula,3,29
+2021,departamento,Chiquimula,4,22
+2021,departamento,Chiquimula,5,29
+2021,departamento,Chiquimula,6,24
+2021,departamento,Chiquimula,7,16
+2021,departamento,Chiquimula,8,19
+2021,departamento,Chiquimula,9,24
+2021,departamento,Chiquimula,10,21
+2021,departamento,Chiquimula,11,43
+2021,departamento,Chiquimula,12,26
+2021,departamento,Chiquimula,,283
+2021,departamento,El Progreso,1,22
+2021,departamento,El Progreso,2,17
+2021,departamento,El Progreso,3,25
+2021,departamento,El Progreso,4,13
+2021,departamento,El Progreso,5,9
+2021,departamento,El Progreso,6,17
+2021,departamento,El Progreso,7,24
+2021,departamento,El Progreso,8,38
+2021,departamento,El Progreso,9,20
+2021,departamento,El Progreso,10,5
+2021,departamento,El Progreso,11,26
+2021,departamento,El Progreso,12,16
+2021,departamento,El Progreso,,232
+2021,departamento,Escuintla,1,30
+2021,departamento,Escuintla,2,27
+2021,departamento,Escuintla,3,35
+2021,departamento,Escuintla,4,33
+2021,departamento,Escuintla,5,33
+2021,departamento,Escuintla,6,24
+2021,departamento,Escuintla,7,32
+2021,departamento,Escuintla,8,35
+2021,departamento,Escuintla,9,35
+2021,departamento,Escuintla,10,33
+2021,departamento,Escuintla,11,48
+2021,departamento,Escuintla,12,42
+2021,departamento,Escuintla,,407
+2021,departamento,Guatemala,1,244
+2021,departamento,Guatemala,2,246
+2021,departamento,Guatemala,3,328
+2021,departamento,Guatemala,4,298
+2021,departamento,Guatemala,5,322
+2021,departamento,Guatemala,6,356
+2021,departamento,Guatemala,7,298
+2021,departamento,Guatemala,8,275
+2021,departamento,Guatemala,9,314
+2021,departamento,Guatemala,10,290
+2021,departamento,Guatemala,11,264
+2021,departamento,Guatemala,12,246
+2021,departamento,Guatemala,,3481
+2021,departamento,Huehuetenango,1,25
+2021,departamento,Huehuetenango,2,30
+2021,departamento,Huehuetenango,3,15
+2021,departamento,Huehuetenango,4,26
+2021,departamento,Huehuetenango,5,39
+2021,departamento,Huehuetenango,6,46
+2021,departamento,Huehuetenango,7,30
+2021,departamento,Huehuetenango,8,41
+2021,departamento,Huehuetenango,9,31
+2021,departamento,Huehuetenango,10,34
+2021,departamento,Huehuetenango,11,34
+2021,departamento,Huehuetenango,12,19
+2021,departamento,Huehuetenango,,370
+2021,departamento,Izabal,1,24
+2021,departamento,Izabal,2,19
+2021,departamento,Izabal,3,29
+2021,departamento,Izabal,4,27
+2021,departamento,Izabal,5,38
+2021,departamento,Izabal,6,28
+2021,departamento,Izabal,7,25
+2021,departamento,Izabal,8,26
+2021,departamento,Izabal,9,20
+2021,departamento,Izabal,10,28
+2021,departamento,Izabal,11,24
+2021,departamento,Izabal,12,15
+2021,departamento,Izabal,,303
+2021,departamento,Jalapa,1,36
+2021,departamento,Jalapa,2,10
+2021,departamento,Jalapa,3,31
+2021,departamento,Jalapa,4,17
+2021,departamento,Jalapa,5,12
+2021,departamento,Jalapa,6,31
+2021,departamento,Jalapa,7,5
+2021,departamento,Jalapa,8,29
+2021,departamento,Jalapa,9,33
+2021,departamento,Jalapa,10,26
+2021,departamento,Jalapa,11,19
+2021,departamento,Jalapa,12,14
+2021,departamento,Jalapa,,263
+2021,departamento,Jutiapa,1,15
+2021,departamento,Jutiapa,2,22
+2021,departamento,Jutiapa,3,19
+2021,departamento,Jutiapa,4,30
+2021,departamento,Jutiapa,5,18
+2021,departamento,Jutiapa,6,21
+2021,departamento,Jutiapa,7,24
+2021,departamento,Jutiapa,8,32
+2021,departamento,Jutiapa,9,31
+2021,departamento,Jutiapa,10,24
+2021,departamento,Jutiapa,11,25
+2021,departamento,Jutiapa,12,22
+2021,departamento,Jutiapa,,283
+2021,departamento,Petén,1,31
+2021,departamento,Petén,2,17
+2021,departamento,Petén,3,32
+2021,departamento,Petén,4,24
+2021,departamento,Petén,5,23
+2021,departamento,Petén,6,24
+2021,departamento,Petén,7,22
+2021,departamento,Petén,8,18
+2021,departamento,Petén,9,15
+2021,departamento,Petén,10,22
+2021,departamento,Petén,11,18
+2021,departamento,Petén,12,31
+2021,departamento,Petén,,277
+2021,departamento,Quetzaltenango,1,60
+2021,departamento,Quetzaltenango,2,64
+2021,departamento,Quetzaltenango,3,72
+2021,departamento,Quetzaltenango,4,71
+2021,departamento,Quetzaltenango,5,82
+2021,departamento,Quetzaltenango,6,80
+2021,departamento,Quetzaltenango,7,90
+2021,departamento,Quetzaltenango,8,61
+2021,departamento,Quetzaltenango,9,66
+2021,departamento,Quetzaltenango,10,107
+2021,departamento,Quetzaltenango,11,88
+2021,departamento,Quetzaltenango,12,56
+2021,departamento,Quetzaltenango,,897
+2021,departamento,Quiché,1,30
+2021,departamento,Quiché,2,12
+2021,departamento,Quiché,3,28
+2021,departamento,Quiché,4,12
+2021,departamento,Quiché,5,25
+2021,departamento,Quiché,6,16
+2021,departamento,Quiché,7,18
+2021,departamento,Quiché,8,24
+2021,departamento,Quiché,9,38
+2021,departamento,Quiché,10,17
+2021,departamento,Quiché,11,14
+2021,departamento,Quiché,12,28
+2021,departamento,Quiché,,262
+2021,departamento,Retalhuleu,1,26
+2021,departamento,Retalhuleu,2,23
+2021,departamento,Retalhuleu,3,25
+2021,departamento,Retalhuleu,4,31
+2021,departamento,Retalhuleu,5,22
+2021,departamento,Retalhuleu,6,28
+2021,departamento,Retalhuleu,7,35
+2021,departamento,Retalhuleu,8,22
+2021,departamento,Retalhuleu,9,27
+2021,departamento,Retalhuleu,10,17
+2021,departamento,Retalhuleu,11,36
+2021,departamento,Retalhuleu,12,15
+2021,departamento,Retalhuleu,,307
+2021,departamento,Sacatepéquez,1,21
+2021,departamento,Sacatepéquez,2,16
+2021,departamento,Sacatepéquez,3,20
+2021,departamento,Sacatepéquez,4,15
+2021,departamento,Sacatepéquez,5,22
+2021,departamento,Sacatepéquez,6,15
+2021,departamento,Sacatepéquez,7,19
+2021,departamento,Sacatepéquez,8,18
+2021,departamento,Sacatepéquez,9,21
+2021,departamento,Sacatepéquez,10,14
+2021,departamento,Sacatepéquez,11,14
+2021,departamento,Sacatepéquez,12,14
+2021,departamento,Sacatepéquez,,209
+2021,departamento,San Marcos,1,32
+2021,departamento,San Marcos,2,17
+2021,departamento,San Marcos,3,21
+2021,departamento,San Marcos,4,30
+2021,departamento,San Marcos,5,29
+2021,departamento,San Marcos,6,38
+2021,departamento,San Marcos,7,27
+2021,departamento,San Marcos,8,35
+2021,departamento,San Marcos,9,41
+2021,departamento,San Marcos,10,35
+2021,departamento,San Marcos,11,47
+2021,departamento,San Marcos,12,29
+2021,departamento,San Marcos,,381
+2021,departamento,Santa Rosa,1,30
+2021,departamento,Santa Rosa,2,23
+2021,departamento,Santa Rosa,3,40
+2021,departamento,Santa Rosa,4,30
+2021,departamento,Santa Rosa,5,10
+2021,departamento,Santa Rosa,6,31
+2021,departamento,Santa Rosa,7,28
+2021,departamento,Santa Rosa,8,22
+2021,departamento,Santa Rosa,9,31
+2021,departamento,Santa Rosa,10,18
+2021,departamento,Santa Rosa,11,39
+2021,departamento,Santa Rosa,12,21
+2021,departamento,Santa Rosa,,323
+2021,departamento,Sololá,1,12
+2021,departamento,Sololá,2,15
+2021,departamento,Sololá,3,10
+2021,departamento,Sololá,4,2
+2021,departamento,Sololá,5,5
+2021,departamento,Sololá,6,9
+2021,departamento,Sololá,7,4
+2021,departamento,Sololá,8,7
+2021,departamento,Sololá,9,8
+2021,departamento,Sololá,10,7
+2021,departamento,Sololá,11,8
+2021,departamento,Sololá,12,7
+2021,departamento,Sololá,,94
+2021,departamento,Suchitepéquez,1,22
+2021,departamento,Suchitepéquez,2,29
+2021,departamento,Suchitepéquez,3,34
+2021,departamento,Suchitepéquez,4,20
+2021,departamento,Suchitepéquez,5,27
+2021,departamento,Suchitepéquez,6,35
+2021,departamento,Suchitepéquez,7,29
+2021,departamento,Suchitepéquez,8,27
+2021,departamento,Suchitepéquez,9,36
+2021,departamento,Suchitepéquez,10,41
+2021,departamento,Suchitepéquez,11,28
+2021,departamento,Suchitepéquez,12,17
+2021,departamento,Suchitepéquez,,345
+2021,departamento,Totonicapán,1,9
+2021,departamento,Totonicapán,2,7
+2021,departamento,Totonicapán,3,18
+2021,departamento,Totonicapán,4,11
+2021,departamento,Totonicapán,5,26
+2021,departamento,Totonicapán,6,17
+2021,departamento,Totonicapán,7,10
+2021,departamento,Totonicapán,8,10
+2021,departamento,Totonicapán,9,10
+2021,departamento,Totonicapán,10,8
+2021,departamento,Totonicapán,11,9
+2021,departamento,Totonicapán,12,8
+2021,departamento,Totonicapán,,143
+2021,departamento,Zacapa,1,20
+2021,departamento,Zacapa,2,13
+2021,departamento,Zacapa,3,19
+2021,departamento,Zacapa,4,18
+2021,departamento,Zacapa,5,14
+2021,departamento,Zacapa,6,8
+2021,departamento,Zacapa,7,11
+2021,departamento,Zacapa,8,23
+2021,departamento,Zacapa,9,9
+2021,departamento,Zacapa,10,16
+2021,departamento,Zacapa,11,11
+2021,departamento,Zacapa,12,16
+2021,departamento,Zacapa,,178
+2021,pais,,1,752
+2021,pais,,2,666
+2021,pais,,3,880
+2021,pais,,4,772
+2021,pais,,5,833
+2021,pais,,6,891
+2021,pais,,7,804
+2021,pais,,8,806
+2021,pais,,9,877
+2021,pais,,10,805
+2021,pais,,11,831
+2021,pais,,12,704
+2021,pais,,,9621
+2022,departamento,Alta Verapaz,1,18
+2022,departamento,Alta Verapaz,2,10
+2022,departamento,Alta Verapaz,3,21
+2022,departamento,Alta Verapaz,4,10
+2022,departamento,Alta Verapaz,5,22
+2022,departamento,Alta Verapaz,6,16
+2022,departamento,Alta Verapaz,7,11
+2022,departamento,Alta Verapaz,8,13
+2022,departamento,Alta Verapaz,9,14
+2022,departamento,Alta Verapaz,10,17
+2022,departamento,Alta Verapaz,11,9
+2022,departamento,Alta Verapaz,12,6
+2022,departamento,Alta Verapaz,,167
+2022,departamento,Baja Verapaz,1,20
+2022,departamento,Baja Verapaz,2,8
+2022,departamento,Baja Verapaz,3,8
+2022,departamento,Baja Verapaz,4,5
+2022,departamento,Baja Verapaz,5,11
+2022,departamento,Baja Verapaz,6,6
+2022,departamento,Baja Verapaz,7,1
+2022,departamento,Baja Verapaz,8,4
+2022,departamento,Baja Verapaz,9,12
+2022,departamento,Baja Verapaz,10,18
+2022,departamento,Baja Verapaz,11,15
+2022,departamento,Baja Verapaz,12,17
+2022,departamento,Baja Verapaz,,125
+2022,departamento,Chimaltenango,1,17
+2022,departamento,Chimaltenango,2,15
+2022,departamento,Chimaltenango,3,28
+2022,departamento,Chimaltenango,4,23
+2022,departamento,Chimaltenango,5,18
+2022,departamento,Chimaltenango,6,15
+2022,departamento,Chimaltenango,7,19
+2022,departamento,Chimaltenango,8,17
+2022,departamento,Chimaltenango,9,18
+2022,departamento,Chimaltenango,10,14
+2022,departamento,Chimaltenango,11,11
+2022,departamento,Chimaltenango,12,14
+2022,departamento,Chimaltenango,,209
+2022,departamento,Chiquimula,1,16
+2022,departamento,Chiquimula,2,16
+2022,departamento,Chiquimula,3,24
+2022,departamento,Chiquimula,4,11
+2022,departamento,Chiquimula,5,21
+2022,departamento,Chiquimula,6,26
+2022,departamento,Chiquimula,7,20
+2022,departamento,Chiquimula,8,18
+2022,departamento,Chiquimula,9,22
+2022,departamento,Chiquimula,10,22
+2022,departamento,Chiquimula,11,15
+2022,departamento,Chiquimula,12,11
+2022,departamento,Chiquimula,,222
+2022,departamento,El Progreso,1,11
+2022,departamento,El Progreso,2,8
+2022,departamento,El Progreso,3,26
+2022,departamento,El Progreso,4,17
+2022,departamento,El Progreso,5,14
+2022,departamento,El Progreso,6,25
+2022,departamento,El Progreso,7,13
+2022,departamento,El Progreso,8,29
+2022,departamento,El Progreso,9,10
+2022,departamento,El Progreso,10,11
+2022,departamento,El Progreso,11,4
+2022,departamento,El Progreso,12,15
+2022,departamento,El Progreso,,183
+2022,departamento,Escuintla,1,19
+2022,departamento,Escuintla,2,17
+2022,departamento,Escuintla,3,43
+2022,departamento,Escuintla,4,34
+2022,departamento,Escuintla,5,37
+2022,departamento,Escuintla,6,35
+2022,departamento,Escuintla,7,42
+2022,departamento,Escuintla,8,38
+2022,departamento,Escuintla,9,42
+2022,departamento,Escuintla,10,38
+2022,departamento,Escuintla,11,37
+2022,departamento,Escuintla,12,32
+2022,departamento,Escuintla,,414
+2022,departamento,Guatemala,1,264
+2022,departamento,Guatemala,2,237
+2022,departamento,Guatemala,3,292
+2022,departamento,Guatemala,4,260
+2022,departamento,Guatemala,5,262
+2022,departamento,Guatemala,6,359
+2022,departamento,Guatemala,7,264
+2022,departamento,Guatemala,8,370
+2022,departamento,Guatemala,9,344
+2022,departamento,Guatemala,10,309
+2022,departamento,Guatemala,11,301
+2022,departamento,Guatemala,12,232
+2022,departamento,Guatemala,,3494
+2022,departamento,Huehuetenango,1,22
+2022,departamento,Huehuetenango,2,35
+2022,departamento,Huehuetenango,3,41
+2022,departamento,Huehuetenango,4,39
+2022,departamento,Huehuetenango,5,42
+2022,departamento,Huehuetenango,6,40
+2022,departamento,Huehuetenango,7,33
+2022,departamento,Huehuetenango,8,48
+2022,departamento,Huehuetenango,9,36
+2022,departamento,Huehuetenango,10,38
+2022,departamento,Huehuetenango,11,31
+2022,departamento,Huehuetenango,12,9
+2022,departamento,Huehuetenango,,414
+2022,departamento,Izabal,1,11
+2022,departamento,Izabal,2,23
+2022,departamento,Izabal,3,27
+2022,departamento,Izabal,4,19
+2022,departamento,Izabal,5,16
+2022,departamento,Izabal,6,24
+2022,departamento,Izabal,7,17
+2022,departamento,Izabal,8,28
+2022,departamento,Izabal,9,25
+2022,departamento,Izabal,10,24
+2022,departamento,Izabal,11,26
+2022,departamento,Izabal,12,11
+2022,departamento,Izabal,,251
+2022,departamento,Jalapa,1,22
+2022,departamento,Jalapa,2,15
+2022,departamento,Jalapa,3,37
+2022,departamento,Jalapa,4,6
+2022,departamento,Jalapa,5,3
+2022,departamento,Jalapa,6,50
+2022,departamento,Jalapa,7,16
+2022,departamento,Jalapa,8,17
+2022,departamento,Jalapa,9,22
+2022,departamento,Jalapa,10,32
+2022,departamento,Jalapa,11,25
+2022,departamento,Jalapa,12,23
+2022,departamento,Jalapa,,268
+2022,departamento,Jutiapa,1,13
+2022,departamento,Jutiapa,2,18
+2022,departamento,Jutiapa,3,17
+2022,departamento,Jutiapa,4,20
+2022,departamento,Jutiapa,5,33
+2022,departamento,Jutiapa,6,25
+2022,departamento,Jutiapa,7,21
+2022,departamento,Jutiapa,8,32
+2022,departamento,Jutiapa,9,38
+2022,departamento,Jutiapa,10,26
+2022,departamento,Jutiapa,11,22
+2022,departamento,Jutiapa,12,29
+2022,departamento,Jutiapa,,294
+2022,departamento,Peten,1,36
+2022,departamento,Peten,2,18
+2022,departamento,Peten,3,35
+2022,departamento,Peten,4,19
+2022,departamento,Peten,5,23
+2022,departamento,Peten,6,27
+2022,departamento,Peten,7,18
+2022,departamento,Peten,8,39
+2022,departamento,Peten,9,38
+2022,departamento,Peten,10,31
+2022,departamento,Peten,11,24
+2022,departamento,Peten,12,35
+2022,departamento,Peten,,343
+2022,departamento,Quetzaltenango,1,67
+2022,departamento,Quetzaltenango,2,71
+2022,departamento,Quetzaltenango,3,81
+2022,departamento,Quetzaltenango,4,79
+2022,departamento,Quetzaltenango,5,85
+2022,departamento,Quetzaltenango,6,92
+2022,departamento,Quetzaltenango,7,68
+2022,departamento,Quetzaltenango,8,112
+2022,departamento,Quetzaltenango,9,72
+2022,departamento,Quetzaltenango,10,100
+2022,departamento,Quetzaltenango,11,73
+2022,departamento,Quetzaltenango,12,57
+2022,departamento,Quetzaltenango,,957
+2022,departamento,Quiche,1,19
+2022,departamento,Quiche,2,13
+2022,departamento,Quiche,3,19
+2022,departamento,Quiche,4,20
+2022,departamento,Quiche,5,25
+2022,departamento,Quiche,6,39
+2022,departamento,Quiche,7,30
+2022,departamento,Quiche,8,24
+2022,departamento,Quiche,9,19
+2022,departamento,Quiche,10,24
+2022,departamento,Quiche,11,42
+2022,departamento,Quiche,12,21
+2022,departamento,Quiche,,295
+2022,departamento,Retalhuleu,1,21
+2022,departamento,Retalhuleu,2,16
+2022,departamento,Retalhuleu,3,39
+2022,departamento,Retalhuleu,4,28
+2022,departamento,Retalhuleu,5,30
+2022,departamento,Retalhuleu,6,47
+2022,departamento,Retalhuleu,7,29
+2022,departamento,Retalhuleu,8,34
+2022,departamento,Retalhuleu,9,35
+2022,departamento,Retalhuleu,10,26
+2022,departamento,Retalhuleu,11,20
+2022,departamento,Retalhuleu,12,26
+2022,departamento,Retalhuleu,,351
+2022,departamento,Sacatepéquez,1,12
+2022,departamento,Sacatepéquez,2,13
+2022,departamento,Sacatepéquez,3,16
+2022,departamento,Sacatepéquez,4,25
+2022,departamento,Sacatepéquez,5,9
+2022,departamento,Sacatepéquez,6,28
+2022,departamento,Sacatepéquez,7,13
+2022,departamento,Sacatepéquez,8,16
+2022,departamento,Sacatepéquez,9,25
+2022,departamento,Sacatepéquez,10,15
+2022,departamento,Sacatepéquez,11,15
+2022,departamento,Sacatepéquez,12,14
+2022,departamento,Sacatepéquez,,201
+2022,departamento,San Marcos,1,32
+2022,departamento,San Marcos,2,28
+2022,departamento,San Marcos,3,37
+2022,departamento,San Marcos,4,51
+2022,departamento,San Marcos,5,37
+2022,departamento,San Marcos,6,48
+2022,departamento,San Marcos,7,40
+2022,departamento,San Marcos,8,47
+2022,departamento,San Marcos,9,42
+2022,departamento,San Marcos,10,37
+2022,departamento,San Marcos,11,45
+2022,departamento,San Marcos,12,40
+2022,departamento,San Marcos,,484
+2022,departamento,Santa Rosa,1,25
+2022,departamento,Santa Rosa,2,15
+2022,departamento,Santa Rosa,3,47
+2022,departamento,Santa Rosa,4,14
+2022,departamento,Santa Rosa,5,22
+2022,departamento,Santa Rosa,6,21
+2022,departamento,Santa Rosa,7,33
+2022,departamento,Santa Rosa,8,32
+2022,departamento,Santa Rosa,9,21
+2022,departamento,Santa Rosa,10,30
+2022,departamento,Santa Rosa,11,18
+2022,departamento,Santa Rosa,12,33
+2022,departamento,Santa Rosa,,311
+2022,departamento,Sololá,1,19
+2022,departamento,Sololá,2,15
+2022,departamento,Sololá,3,11
+2022,departamento,Sololá,4,4
+2022,departamento,Sololá,5,6
+2022,departamento,Sololá,6,14
+2022,departamento,Sololá,7,6
+2022,departamento,Sololá,8,12
+2022,departamento,Sololá,9,6
+2022,departamento,Sololá,10,12
+2022,departamento,Sololá,11,9
+2022,departamento,Sololá,12,11
+2022,departamento,Sololá,,125
+2022,departamento,Suchitepéquez,1,33
+2022,departamento,Suchitepéquez,2,23
+2022,departamento,Suchitepéquez,3,41
+2022,departamento,Suchitepéquez,4,35
+2022,departamento,Suchitepéquez,5,37
+2022,departamento,Suchitepéquez,6,46
+2022,departamento,Suchitepéquez,7,43
+2022,departamento,Suchitepéquez,8,54
+2022,departamento,Suchitepéquez,9,46
+2022,departamento,Suchitepéquez,10,42
+2022,departamento,Suchitepéquez,11,55
+2022,departamento,Suchitepéquez,12,24
+2022,departamento,Suchitepéquez,,479
+2022,departamento,Totonicapán,1,11
+2022,departamento,Totonicapán,2,11
+2022,departamento,Totonicapán,3,19
+2022,departamento,Totonicapán,4,13
+2022,departamento,Totonicapán,5,19
+2022,departamento,Totonicapán,6,16
+2022,departamento,Totonicapán,7,12
+2022,departamento,Totonicapán,8,14
+2022,departamento,Totonicapán,9,13
+2022,departamento,Totonicapán,10,14
+2022,departamento,Totonicapán,11,11
+2022,departamento,Totonicapán,12,8
+2022,departamento,Totonicapán,,161
+2022,departamento,Zacapa,1,18
+2022,departamento,Zacapa,2,15
+2022,departamento,Zacapa,3,20
+2022,departamento,Zacapa,4,14
+2022,departamento,Zacapa,5,14
+2022,departamento,Zacapa,6,22
+2022,departamento,Zacapa,7,13
+2022,departamento,Zacapa,8,16
+2022,departamento,Zacapa,9,13
+2022,departamento,Zacapa,10,18
+2022,departamento,Zacapa,11,19
+2022,departamento,Zacapa,12,20
+2022,departamento,Zacapa,,202
+2022,pais,,1,726
+2022,pais,,2,640
+2022,pais,,3,929
+2022,pais,,4,746
+2022,pais,,5,786
+2022,pais,,6,1021
+2022,pais,,7,762
+2022,pais,,8,1014
+2022,pais,,9,913
+2022,pais,,10,898
+2022,pais,,11,827
+2022,pais,,12,688
+2022,pais,,,9950
