@@ -298,10 +298,82 @@ print(resultados_totales)
 Con el alpha que pusimos podemos percartarnos que ninguno de los datos tiene una distrubucion normal, como anteriormente visto facilmente de la forma grafica
 ---
 
-### **Exploración de Variables Categóricas BENITEZ BENITEZ BENITEZ**
+### **Exploración de Variables Categóricas**
 
-Tablas de frecuencia
-Gráficos de barra para cada una
+```{r}
+cat("Frecuencia de matrimonios por departamento (totales 2009-2022):\n")
+tabla_freq_depto_matr <- matrimonios_depto %>%
+  filter(nivel_geo == "departamento", is.na(mes)) %>%
+  group_by(departamento) %>%
+  summarise(total_matrimonios = sum(valor, na.rm = TRUE)) %>%
+  arrange(desc(total_matrimonios))
+
+print(tabla_freq_depto_matr)
+
+cat("\nFrecuencia de divorcios por departamento (totales 2009-2022):\n")
+tabla_freq_depto_div <- divorcios_depto %>%
+  filter(nivel_geo == "departamento", is.na(mes)) %>%
+  group_by(departamento) %>%
+  summarise(total_divorcios = sum(valor, na.rm = TRUE)) %>%
+  arrange(desc(total_divorcios))
+
+print(tabla_freq_depto_div)
+
+cat("\nFrecuencia de matrimonios por rango de edad de mujeres:\n")
+tabla_freq_edad_mujer_matr <- matrimonios_edad %>%
+  group_by(edad_mujer_grupo) %>%
+  summarise(total = sum(valor, na.rm = TRUE)) %>%
+  arrange(desc(total))
+
+print(tabla_freq_edad_mujer_matr)
+
+cat("\nFrecuencia de matrimonios por rango de edad de hombres:\n")
+tabla_freq_edad_hombre_matr <- matrimonios_edad %>%
+  group_by(edad_hombre_grupo) %>%
+  summarise(total = sum(valor, na.rm = TRUE)) %>%
+  arrange(desc(total))
+
+print(tabla_freq_edad_hombre_matr)
+
+ggplot(tabla_freq_depto_matr, aes(x = reorder(departamento, total_matrimonios), 
+                                   y = total_matrimonios)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Total de Matrimonios por Departamento (2009-2022)",
+       x = "Departamento",
+       y = "Número de Matrimonios") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = 8))
+
+# Gráfico de barras - Divorcios por departamento
+ggplot(tabla_freq_depto_div, aes(x = reorder(departamento, total_divorcios), 
+                                  y = total_divorcios)) +
+  geom_bar(stat = "identity", fill = "coral") +
+  coord_flip() +
+  labs(title = "Total de Divorcios por Departamento (2009-2022)",
+       x = "Departamento",
+       y = "Número de Divorcios") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = 8))
+
+# Gráfico de barras - Matrimonios por edad de mujer
+ggplot(tabla_freq_edad_mujer_matr, aes(x = edad_mujer_grupo, y = total)) +
+  geom_bar(stat = "identity", fill = "lightpink") +
+  labs(title = "Matrimonios por Rango de Edad de Mujeres (2009-2022)",
+       x = "Rango de Edad",
+       y = "Número de Matrimonios") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Gráfico de barras - Matrimonios por edad de hombre
+ggplot(tabla_freq_edad_hombre_matr, aes(x = edad_hombre_grupo, y = total)) +
+  geom_bar(stat = "identity", fill = "lightblue") +
+  labs(title = "Matrimonios por Rango de Edad de Hombres (2009-2022)",
+       x = "Rango de Edad",
+       y = "Número de Matrimonios") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
 
 ---
 
