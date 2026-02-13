@@ -9,6 +9,9 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(readr)
+library(dplyr)
+library(stringr)
+library(stringi)
 ```
 
 ## **Situación Problemática**
@@ -44,10 +47,23 @@ Analizar los datos de matrimonios y divorcios en Guatemala con el fin de identif
 ## **Descripción de los Datos**
 
 ```{r}
-matrimonios_depto <- read_csv("matrimonios_depto_mes.csv", show_col_types = FALSE)
+# Algunos departamentos vienen escritos diferente, mayúsculas, minúsculas o con/sin tildes.
+norm_depto <- function(x) {
+  x %>%
+    str_trim() %>%
+    str_squish() %>%
+    stri_trans_general("Latin-ASCII") %>%  # quita tildes (Petén -> Peten)
+    str_to_lower()
+}
+
+matrimonios_depto <- read_csv("matrimonios_depto_mes.csv", show_col_types = FALSE) %>%
+  mutate(departamento = norm_depto(departamento))
+
 matrimonios_edad  <- read_csv("matrimonios_edad.csv", show_col_types = FALSE)
 
-divorcios_depto <- read_csv("divorcios_depto_mes.csv", show_col_types = FALSE)
+divorcios_depto <- read_csv("divorcios_depto_mes.csv", show_col_types = FALSE) %>%
+  mutate(departamento = norm_depto(departamento))
+
 divorcios_edad  <- read_csv("divorcios_edad.csv", show_col_types = FALSE)
 ```
 
@@ -166,5 +182,41 @@ Gráficos de barra para cada una
 ### **Relaciones entre Variables**
 
 (este es un poquito peculiar, por como estan los datos, se me ocurre que vean si existe una relación entre la cantidad de casamientos con el rango de edad de la novia o del hombre, y luego, ver si hay una relación entre la cantidad de divorcios y los rangos de edades de los novios/novias).
+
+## **Clustering**
+
+### **Tendencia de Agrupamiento y Número de Clusters**
+
+```{r}
+# Quedarnos solo con datos departamentales, y segmentados por datos anuales, en vez de mes x año
+matrimonios_anual <- matrimonios_depto %>%
+  filter(
+    nivel_geo == "departamento",
+    is.na(mes)
+  ) %>%
+  select(anio, departamento, matrimonios = valor)
+
+divorcios_anual <- divorcios_depto %>%
+  filter(
+    nivel_geo == "departamento",
+    is.na(mes)
+  ) %>%
+  select(anio, departamento, divorcios = valor)
+
+# Unificar datos anuales de matrimonios y divorcios
+matrimonios_divorcios_depto_anual <- full_join(
+  matrimonios_anual,
+  divorcios_anual,
+  by = c("anio", "departamento")
+)
+
+# Variable para analizar el ratio entre divorcios y matrimonios
+matrimonios_divorcios_depto_anual <- matrimonios_divorcios_depto_anual %>%
+  mutate(
+    ratio_div_matr = divorcios / matrimonios
+  )
+
+matrimonios_divorcios_depto_anual
+```
 
 ---
