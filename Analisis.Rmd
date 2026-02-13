@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(readr)
 library(dplyr)
 library(stringr)
+library(ggplot2)  
+library(nortest)
 library(stringi)
 ```
 
@@ -170,6 +172,124 @@ Finalmente, los datos procesados fueron exportados a archivos CSV para facilitar
 (Medidas de tendencia central, distribución y orden. (todas las variables tienen que tener una análisis sobre los resultados, se debe incluir histogramas, boxplots o gráficos de dispersión, uno como mínimo y explicarlo). Para cada una hay que describir su distribución (sacarle su p-value)
 Si o si piden analizar las variables por tecnicas de estadistica descriptiva, tener graficos, y sacar la distribucion.)
 
+---
+
+#### **Medidas de tendencia central**
+```{r}
+
+print("Matrimonios por deparatmento")
+summary(matrimonios_depto)
+print(" ")
+
+print("Matrimonios por edad")
+summary(matrimonios_edad)
+print(" ")
+
+print("Divorcios por departamento")
+summary(divorcios_depto)
+print(" ")
+
+print("Divorcios por edad")
+summary(divorcios_edad)
+print(" ")
+
+```
+
+Del summary ya podemos sacar unos cuantos datos cuantitativos los cuales no pueden servir probablmente un poco a futuro, como que la media de divorcios por anio y matrimonio por anio tienen un anio de diferencia
+
+#### Distribuciones por variables
+
+```{r}
+
+each_df <- list(
+  matrimonios_depto = matrimonios_depto,
+  matrimonios_edad = matrimonios_edad,
+  divorcios_depto = divorcios_depto,
+  divorcios_edad = divorcios_edad
+)
+plot_histograms_gg <- function(df, df_name, bins = 30) {
+  
+  df <- as.data.frame(df)
+  numeric_vars <- df[, sapply(df, is.numeric), drop = FALSE]
+  
+  for (col_name in names(numeric_vars)) {
+    
+    p <- ggplot(df, aes(x = .data[[col_name]])) +
+      geom_histogram(bins = bins, fill = "skyblue", color = "white") +
+      labs(
+        title = paste("Histogram of", col_name, "\nDataset:", df_name),
+        x = col_name,
+        y = "Frequency"
+      ) +
+      theme_minimal()
+    
+    print(p)
+  }
+}
+
+for (df_name in names(each_df)) {
+  plot_histograms_gg(each_df[[df_name]], df_name)
+}
+
+
+
+
+```
+
+Como podemos ver de los histogramas, muchas columnas no siguen una distribucion muy clara, como si N cantidad de muestras fueron tomadas siempre por cada mes o anio. Las que si nos importan son como tal la cantidad de divorcios y la cantidad de matrimonios, los cuales a simple vista no parecen que tengan una distribucion normal para nada, si no mas sesagadas a la derecha.
+
+Ademas de eso pareciera al ver el histograma pareciera que tienen una clase de "corelacion" los datos, teniendo un pico extremadamente alto de cantidad de divorcios a cierto punto igual que con los matrimonios, del lado del valor.
+
+
+#### Distribucion normal
+
+```{r}
+prueba_lilliefors <- function(df, df_name, alpha = 0.05) {
+  
+  df <- as.data.frame(df)
+  numeric_vars <- df[, sapply(df, is.numeric), drop = FALSE]
+  
+  resultados <- data.frame(
+    Dataset = character(),
+    Variable = character(),
+    P_value = numeric(),
+    Normalidad = character(),
+    stringsAsFactors = FALSE
+  )
+  
+  for (col_name in names(numeric_vars)) {
+    
+    x <- na.omit(numeric_vars[[col_name]])
+    
+    test <- lillie.test(x)
+    
+    decision <- ifelse(test$p.value < alpha,
+                       "No tiene normalidad",
+                       "No se puede determinar normalidad")
+    
+    resultados <- rbind(resultados, data.frame(
+      Dataset = df_name,
+      Variable = col_name,
+      P_value = test$p.value,
+      Normalidad = decision
+    ))
+  }
+  
+  return(resultados)
+}
+
+resultados_totales <- data.frame()
+
+for (df_name in names(each_df)) {
+  res <- prueba_lilliefors(each_df[[df_name]], df_name)
+  resultados_totales <- rbind(resultados_totales, res)
+}
+
+print(resultados_totales)
+
+```
+
+Con el alpha que pusimos podemos percartarnos que ninguno de los datos tiene una distrubucion normal, como anteriormente visto facilmente de la forma grafica
 ---
 
 ### **Exploración de Variables Categóricas BENITEZ BENITEZ BENITEZ**
