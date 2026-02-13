@@ -187,6 +187,82 @@ Gráficos de barra para cada una
 
 (este es un poquito peculiar, por como estan los datos, se me ocurre que vean si existe una relación entre la cantidad de casamientos con el rango de edad de la novia o del hombre, y luego, ver si hay una relación entre la cantidad de divorcios y los rangos de edades de los novios/novias).
 
+``` {r Cleanup And Functions}
+matrimonios_depto_clean <- filter(matrimonios_depto, nivel_geo == "departamento" & !is.na(mes))
+divorcios_depto_clean <- filter(divorcios_depto, nivel_geo == "departamento" & !is.na(mes))
+
+to_mid_age <- function(x){
+  x <- str_trim(x)
+  if (x %in% c("Ignorado", "Menos de 15")) return(NA_real_)
+  if (str_detect(x, "60")) return(60) # "60 y más"
+  nums <- str_extract_all(x, "\\d+")[[1]]
+  if (length(nums) == 2) return(mean(as.numeric(nums)))
+  NA_real_
+}
+```
+
+
+``` {r Relation of Age and Marriage}
+matrimonios_edad_plot <- matrimonios_edad %>%
+  mutate(
+    edad_h = sapply(edad_hombre_grupo, to_mid_age),
+    edad_m = sapply(edad_mujer_grupo, to_mid_age)
+  ) %>%
+  filter(!is.na(edad_h), !is.na(edad_m))
+
+ggplot(matrimonios_edad_plot, aes(x = edad_h, y = edad_m)) +
+  geom_abline(slope = 1, intercept = 0) +
+  geom_point(aes(size = valor), alpha = 0.5) +
+  labs(
+    title = "Matrimonios: edad hombre vs edad mujer",
+    x = "Edad (hombre, punto medio del grupo)",
+    y = "Edad (mujer, punto medio del grupo)",
+    size = "Cantidad (valor)"
+  ) +
+  theme_minimal()
+```
+
+``` {r Relation of Age and Divorce}
+divorcios_edad_plot <- divorcios_edad %>%
+  mutate(
+    edad_h = sapply(edad_hombre_grupo, to_mid_age),
+    edad_m = sapply(edad_mujer_grupo, to_mid_age)
+  ) %>%
+  filter(!is.na(edad_h), !is.na(edad_m))
+
+ggplot(divorcios_edad_plot, aes(x = edad_h, y = edad_m)) +
+  geom_abline(slope = 1, intercept = 0) +
+  geom_point(aes(size = valor), alpha = 0.5) +
+  labs(
+    title = "Divorcios: edad hombre vs edad mujer",
+    x = "Edad (hombre, punto medio del grupo)",
+    y = "Edad (mujer, punto medio del grupo)",
+    size = "Cantidad (valor)"
+  ) +
+  theme_minimal()
+```
+
+3. Esta relacion entre la cantidad de gente casada y cantidad de gente divorciada es de 0.603 por el valor de pearson lo cual indica que no es una relacion ni fuerte ni debil si no mas bien moderada, en general, a mayor taza de matrimonios, mayor taza de divorcios, aunque con variabilidad considerable.
+```{r Relation for Marrige and Divorce}
+matrimonios_vs_divorcios <- number_of_matrimonios_por_anio |>
+  inner_join(number_of_divorcios_por_anio, by = c("anio"))
+colnames(matrimonios_vs_divorcios) <- c("anio", "total_matrimonios", "total_divorcios")
+
+ggplot(matrimonios_vs_divorcios, aes(x = total_divorcios, y = total_matrimonios)) +
+  geom_point(na.rm = TRUE) +
+  labs(
+    title = "Matrimonios: edad hombre vs edad mujer",
+    x = "Divorcios",
+    y = "Matrimonios"
+  ) +
+  theme_minimal()
+
+correlation_coefficient <- cor(matrimonios_vs_divorcios$total_matrimonios, matrimonios_vs_divorcios$total_divorcios)
+print(paste("Coefficiente de Correlacion entre Matrimonios and Divorcios:", correlation_coefficient))
+print(paste("Porcentaje de :", correlation_coefficient))
+```
+
+
 ## **Clustering**
 
 ### **Número de Clusters**
