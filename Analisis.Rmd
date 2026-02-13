@@ -12,6 +12,10 @@ library(readr)
 library(dplyr)
 library(stringr)
 library(stringi)
+library(tidyverse)
+library(cluster)
+library(factoextra)
+library(GGally)
 ```
 
 ## **Situación Problemática**
@@ -185,7 +189,7 @@ Gráficos de barra para cada una
 
 ## **Clustering**
 
-### **Tendencia de Agrupamiento y Número de Clusters**
+### **Número de Clusters**
 
 ```{r}
 # Quedarnos solo con datos departamentales, y segmentados por datos anuales, en vez de mes x año
@@ -216,7 +220,129 @@ matrimonios_divorcios_depto_anual <- matrimonios_divorcios_depto_anual %>%
     ratio_div_matr = divorcios / matrimonios
   )
 
-matrimonios_divorcios_depto_anual
+depto_stats <- matrimonios_divorcios_depto_anual %>%
+  group_by(departamento) %>%
+  summarise(
+    avg_matrimonios = mean(matrimonios, na.rm = TRUE),
+    avg_divorcios   = mean(divorcios, na.rm = TRUE),
+    ratio_div_matr  = avg_divorcios / avg_matrimonios,
+    .groups = "drop"
+  )
+
+dept_labels <- depto_stats$departamento
+depto_stats_num <- depto_stats %>% select(-departamento)
+depto_stats_num_scaled <- scale(depto_stats_num)
 ```
+
+
+```{r}
+fviz_nbclust(depto_stats_num_scaled, kmeans, method = "wss")
+```
+
+Utilizando el método del codo, se logra identificar que el punto en donde se identifica que el gráfico deja de ser pronunciado y empieza a estabilizarse es en 3.
+
+```{r}
+fviz_nbclust(depto_stats_num_scaled, kmeans, method = "silhouette")
+```
+
+Para garantizar una selección adecuada de clusters, se decidió hacer la prueba por método de la silueta. Al realizarlo, vemos que el punto óptimo señalado es 3. Tomando en consideración ambos métodos, para nuestro clustering utilizaremos k=3.
+
+
+### **Agrupamiento y Tendencia**
+
+Para este caso se estará trabajando con k-means para agrupar los elementos acorde a los vecinos más cercanos.
+
+```{r}
+set.seed(56)
+kmeans_model <- kmeans(depto_stats_num_scaled, centers = 3, nstart = 25)
+sil <- silhouette(kmeans_model$cluster, dist(depto_stats_num_scaled))
+mean(sil[, 3])
+```
+
+Para evaluar la tendencia al agrupamiento se encontró el coeficiente promedio de silueta para k=3 y este fue de 0.495, lo cual indica una separación fuerte. Esto indica que nuestros datos pueden ser separados en clusters.
+
+
+```{r}
+fviz_cluster(kmeans_model, data = depto_stats_num_scaled,
+             geom = "point",
+             ellipse.type = "convex",
+             ggtheme = theme_minimal())
+```
+
+```{r}
+depto_clusters <- depto_stats %>%
+  mutate(cluster = kmeans_model$cluster) %>%
+  arrange(cluster, desc(ratio_div_matr))
+
+depto_clusters
+```
+
+En este caso se obtuvieron tres grupos. El primer grupo contiene únicamente al departamento de Guatemala, el cual presenta valores promedio de matrimonios y divorcios considerablemente más altos que el resto. En particular, registra aproximadamente 15,282 matrimonios promedio y 2,272 divorcios promedio. En contraste, los demás departamentos presentan promedios notablemente menores (aprox. 800 a 6,000 matrimonios y 65 a 458 divorcios). Esto sugiere que Guatemala se comporta de manera diferenciada.
+
+### **Calidad de Agrupamiento**
+
+```{r}
+summary(sil)
+```
+
+El coeficiente promedio de silueta obtenido fue 0.4916 lo que indica un agrupamiento aceptable. Al analizar por cluster, se observa que un grupo presenta un valor promedio de 0.4762 (cluster bueno), otro grupo de 0.5781 (cl.uster muy bueno), y otro que está en cero. Este tercer cluster presenta un valor promedio de 0.00, pero esto se debe a que es un cluster unitario, y es que este elemnto pertenece a un caso atípico que es el departamento de Guatemala, el cual tiene magnitudes bastante superiores a las presentadas a comparación de todos los demás departamentos, por lo que fue separado a un grupo propio.
+
+### **Interpretación de grupos**
+
+**Cluster 1**
+
+Aquí solo tenemos a Guatemala es el caso atípico, tenemos promedios muchos más altos en matrimonios y divorcios, así como un ratio mayor al de los demás con 0.149.
+
+**Cluster 2**
+
+Tiene una proporción media alta de divorcios con respecto a matrimonios (entre 0.065 y 0.127). 
+
+Departamentos pertenecientes:
+
+- El Progreso
+    
+- Zacapa
+    
+- Izabal
+    
+- Jalapa
+    
+- Quetzaltenango
+    
+- Jutiapa
+    
+- Retalhuleu
+    
+- Santa Rosa
+    
+- Chiquimula
+    
+- Escuintla
+    
+- Baja Verapaz
+    
+- Petén
+    
+- Sacatepéquez 
+
+**Cluster 3**
+
+Departamentos con una baja proporción de divorcios respecto a matrimonios (valores menores a 0.059). Cabe destacar que en este grupo aparecen varios departamentos con algunos de los promedios más altos de matrimonios como Huehuetenango y Alta Verapaz.
+
+- Suchitepéquez
+    
+- San Marcos
+    
+- Totonicapán
+    
+- Huehuetenango
+    
+- Chimaltenango
+    
+- Sololá
+    
+- Quiché
+    
+- Alta Verapaz
 
 ---
