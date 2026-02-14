@@ -615,4 +615,8 @@ Departamentos con una baja proporción de divorcios respecto a matrimonios (valo
     
 - Alta Verapaz
 
+
+
+### **Preguntas de Investigación**
+1. ¿Se ha observado un cambio en la edad promedio en la que las personas contraen matrimonio en Guatemala, indicando que se casan a mayor edad?
 ---
