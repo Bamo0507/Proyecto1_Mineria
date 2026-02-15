@@ -233,96 +233,86 @@ Bajo estos criterios, se obtuvieron los siguientes resultados descriptivos para 
 - Los valores son más bajos en comparación con los matrimonios, con una **mediana de 2** y una **media de 24.1**, y un máximo de **767 divorcios**. La fuerte diferencia entre la media y la mediana refleja una **distribución altamente sesgada**, donde pocos rangos de edad concentran la mayor cantidad de divorcios. Es interesante ver que los 767 divorcios, se dieron con el hombre y mujer estando entre 30 y 34 años, en el año 2022, justo en el año en que estábamos empezando a salir de las restricciones por COVID.
 
 
-#### Distribuciones por variables
+#### **Distribuciones por variables**
+
+##### **Gráficamente**
 
 ```{r}
-
 each_df <- list(
-  matrimonios_depto = matrimonios_depto,
-  matrimonios_edad = matrimonios_edad,
-  divorcios_depto = divorcios_depto,
-  divorcios_edad = divorcios_edad
+  matrimonios_depto = matrimonios_depto_limpio,
+  divorcios_depto = divorcios_depto_limpio,
+  matrimonios_edad = matrimonios_edad_limpio,
+  divorcios_edad = divorcios_edad_limpio
 )
-plot_histograms_gg <- function(df, df_name, bins = 30) {
-  
+
+plot_valor_hist_box <- function(df, df_name, bins = 30) {
   df <- as.data.frame(df)
-  numeric_vars <- df[, sapply(df, is.numeric), drop = FALSE]
-  
-  for (col_name in names(numeric_vars)) {
-    
-    p <- ggplot(df, aes(x = .data[[col_name]])) +
-      geom_histogram(bins = bins, fill = "skyblue", color = "white") +
-      labs(
-        title = paste("Histogram of", col_name, "\nDataset:", df_name),
-        x = col_name,
-        y = "Frequency"
-      ) +
-      theme_minimal()
-    
-    print(p)
-  }
+
+  p_hist <- ggplot(df, aes(x = valor)) +
+    geom_histogram(bins = bins) +
+    labs(
+      title = paste("Histograma de valor -", df_name),
+      x = "valor",
+      y = "Frecuencia"
+    ) +
+    theme_minimal()
+
+  p_box <- ggplot(df, aes(y = valor)) +
+    geom_boxplot() +
+    labs(
+      title = paste("Boxplot de valor -", df_name),
+      y = "valor"
+    ) +
+    theme_minimal()
+
+  print(p_hist)
+  print(p_box)
 }
 
 for (df_name in names(each_df)) {
-  plot_histograms_gg(each_df[[df_name]], df_name)
+  plot_valor_hist_box(each_df[[df_name]], df_name)
 }
-
 ```
 
-Como podemos ver de los histogramas, muchas columnas no siguen una distribucion muy clara, como si N cantidad de muestras fueron tomadas siempre por cada mes o anio. Las que si nos importan son como tal la cantidad de divorcios y la cantidad de matrimonios, los cuales a simple vista no parecen que tengan una distribucion normal para nada, si no mas sesagadas a la derecha.
+**Distribución de los datos (histogramas)**
 
-Ademas de eso pareciera al ver el histograma pareciera que tienen una clase de "corelacion" los datos, teniendo un pico extremadamente alto de cantidad de divorcios a cierto punto igual que con los matrimonios, del lado del valor.
+Luego de obtener medidas de tendencia central y dispersión para la variable valor en cada dataset, se generaron histogramas con el fin de comprender visualmente la forma de distribución de los datos. En los cuatro casos se observa una concentración fuerte hacia valores bajos, con una cola hacia la derecha. La mayoría de observaciones registran cantidades moderadas, mientras que un subconjunto reducido presenta valores mucho más altos. Por ejemplo, en matrimonios por departamento (mensual) una parte considerable de los datos se concentra aproximadamente entre 0 y 800, mientras que en divorcios por departamento (mensual) la mayor densidad se ubica entre 0 y 100. En los datasets por rangos de edad, la concentración hacia valores bajos también es evidente, lo cual sugiere que los conteos altos se concentran en grupos específicos de edad, mientras que muchos rangos (por ejemplo, edades muy bajas o muy altas) presentan valores pequeños o incluso cercanos a cero.
 
+**Valores atípicos (boxplots)**
 
-#### Distribucion normal
+Los diagramas de cajas y bigotes refuerzan lo observado en los histogramas: en los cuatro datasets se identifican múltiples valores atípicos, lo cual indica la presencia de meses, departamentos o combinaciones de rangos de edad con conteos significativamente mayores al resto. En matrimonios por departamento (mensual) destacan varios puntos por encima de 800 y algunos cercanos al máximo del dataset; en divorcios por departamento (mensual) también se observan atípicos por encima de 120 y hasta valores cercanos a 400. En los datasets por edad, los outliers son todavía más notorios debido a la concentración en ciertos rangos; por ejemplo, en matrimonios por rangos de edad aparece un valor extremo cercano a 15,000, correspondiente a una combinación de edades altamente frecuente. En conjunto, estos resultados sugieren que los eventos no se distribuyen uniformemente entre departamentos o rangos de edad, sino que existen picos de alta concentración asociados a rangos bastatne comunes.
+
+##### **Prueba de Normalidad**
 
 ```{r}
-prueba_lilliefors <- function(df, df_name, alpha = 0.05) {
-  
-  df <- as.data.frame(df)
-  numeric_vars <- df[, sapply(df, is.numeric), drop = FALSE]
-  
-  resultados <- data.frame(
-    Dataset = character(),
-    Variable = character(),
-    P_value = numeric(),
-    Normalidad = character(),
-    stringsAsFactors = FALSE
+prueba_lilliefors_valor <- function(df, df_name, alpha = 0.05) {
+  x <- na.omit(df$valor)
+  test <- lillie.test(x)
+
+  decision <- ifelse(
+    test$p.value < alpha,
+    "Se rechaza normalidad",
+    "No se rechaza normalidad"
   )
-  
-  for (col_name in names(numeric_vars)) {
-    
-    x <- na.omit(numeric_vars[[col_name]])
-    
-    test <- lillie.test(x)
-    
-    decision <- ifelse(test$p.value < alpha,
-                       "No tiene normalidad",
-                       "No se puede determinar normalidad")
-    
-    resultados <- rbind(resultados, data.frame(
-      Dataset = df_name,
-      Variable = col_name,
-      P_value = test$p.value,
-      Normalidad = decision
-    ))
-  }
-  
-  return(resultados)
+
+  tibble(
+    dataset = df_name,
+    n = length(x),
+    p_value = test$p.value,
+    conclusion = decision
+  )
 }
 
-resultados_totales <- data.frame()
+resultados_normalidad <- bind_rows(
+  lapply(names(each_df), function(nm) {
+    prueba_lilliefors_valor(each_df[[nm]], nm)
+  })
+)
 
-for (df_name in names(each_df)) {
-  res <- prueba_lilliefors(each_df[[df_name]], df_name)
-  resultados_totales <- rbind(resultados_totales, res)
-}
-
-print(resultados_totales)
-
+resultados_normalidad
 ```
 
-Con el alpha que pusimos podemos percartarnos que ninguno de los datos tiene una distrubucion normal, como anteriormente visto facilmente de la forma grafica
+Para corroborar lo observado gráficamente (asimetría positiva y presencia de valores atípicos), se aplicó la prueba de normalidad de Lilliefors sobre la variable valor en cada dataset. En todos los casos se obtuvo un p-value < 0.05, por lo que se rechaza la hipótesis de normalidad.
 
 ---
 
