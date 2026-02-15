@@ -318,7 +318,9 @@ Para corroborar lo observado gráficamente (asimetría positiva y presencia de v
 
 ### **Exploración de Variables Categóricas**
 
+En esta sección se analizan las variables categóricas mediante tablas de frecuencia y proporciones. En nuestros datasets, la variable valor representa el conteo de eventos (matrimonios o divorcios) asociado a una categoría específica: ya sea un departamento (en los datasets geográficos) o un rango de edad (en los datasets demográficos). Por lo tanto, tanto los totales como las proporciones describen la concentración relativa de eventos en cada categoría. Es decir, una proporción alta indica que una categoría (por ejemplo, un departamento o un rango de edad) concentra una parte mayor de los registros totales del periodo analizado.
 
+#### **Análisis de Datasets de Departamentos**
 
 ```{r}
 matr_depto_cat <- matrimonios_depto %>%
@@ -343,10 +345,123 @@ tabla_depto_matr
 tabla_depto_div
 ```
 
+```{r}
+ggplot(tabla_depto_matr, aes(x = reorder(departamento, prop), y = prop)) +
+  geom_col() +
+  coord_flip() +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Proporción de matrimonios por departamento (2009-2022)",
+       x = "Departamento", y = "Proporción") +
+  theme_minimal()
+
+ggplot(tabla_depto_div, aes(x = reorder(departamento, prop), y = prop)) +
+  geom_col() +
+  coord_flip() +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Proporción de divorcios por departamento (2009-2022)",
+       x = "Departamento", y = "Proporción") +
+  theme_minimal()
+```
+
+Al analizar la distribución de matrimonios por departamento (2009–2022), se observa una marcada concentración en pocos departamentos. Los tres departamentos con mayor presencia son Guatemala (20.26%), Huehuetenango (7.42%) y Alta Verapaz (7.35%). La diferencia entre Guatemala y el resto es notable: incluso sumando Huehuetenango y Alta Verapaz, no se alcanza la proporción que aporta Guatemala por sí sola. Esto sugiere que Guatemala concentra una fracción muy importante de los matrimonios registrados durante el periodo.
+
+En el caso de divorcios por departamento, la concentración es todavía más marcada en Guatemala. Guatemala registra 31,813 divorcios, lo que corresponde al 38.53% del total, seguido por Quetzaltenango con 6,423 (7.78%) y Escuintla con 3,768 (4.56%). Nuevamente, Guatemala sobresale ampliamente y domina la distribución. Esta diferencia también se aprecia claramente en los gráficos: la barra de Guatemala es muy superior a las demás.
+
+
+#### **Análisis de Datasets de Rangos de Edad**
+
+Para el análisis por edades, se construyeron cuatro tablas:
+
+1.	matrimonios por rango de edad de mujeres,
+2.	divorcios por rango de edad de mujeres,
+3.	matrimonios por rango de edad de hombres,
+4.	divorcios por rango de edad de hombres.
+
+```{r}
+matr_edad_cat <- matrimonios_edad %>%
+  filter(edad_mujer_grupo != "Ignorado", edad_hombre_grupo != "Ignorado")
+
+div_edad_cat <- divorcios_edad %>%
+  filter(edad_mujer_grupo != "Ignorado", edad_hombre_grupo != "Ignorado")
+
+# Mujer
+tabla_matr_mujer <- matr_edad_cat %>%
+  group_by(edad_mujer_grupo) %>%
+  summarise(total = sum(valor, na.rm = TRUE), .groups = "drop") %>%
+  mutate(prop = total / sum(total)) %>%
+  arrange(desc(total))
+
+tabla_div_mujer <- div_edad_cat %>%
+  group_by(edad_mujer_grupo) %>%
+  summarise(total = sum(valor, na.rm = TRUE), .groups = "drop") %>%
+  mutate(prop = total / sum(total)) %>%
+  arrange(desc(total))
+
+# Hombre
+tabla_matr_hombre <- matr_edad_cat %>%
+  group_by(edad_hombre_grupo) %>%
+  summarise(total = sum(valor, na.rm = TRUE), .groups = "drop") %>%
+  mutate(prop = total / sum(total)) %>%
+  arrange(desc(total))
+
+tabla_div_hombre <- div_edad_cat %>%
+  group_by(edad_hombre_grupo) %>%
+  summarise(total = sum(valor, na.rm = TRUE), .groups = "drop") %>%
+  mutate(prop = total / sum(total)) %>%
+  arrange(desc(total))
+
+tabla_matr_mujer
+tabla_div_mujer
+tabla_matr_hombre
+tabla_div_hombre
+```
+
+```{r}
+ggplot(tabla_matr_mujer, aes(x = reorder(edad_mujer_grupo, prop), y = prop)) +
+  geom_col() + coord_flip() +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Proporción de matrimonios por rango de edad (mujer)",
+       x = "Rango de edad", y = "Proporción") +
+  theme_minimal()
+
+ggplot(tabla_div_mujer, aes(x = reorder(edad_mujer_grupo, prop), y = prop)) +
+  geom_col() + coord_flip() +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Proporción de divorcios por rango de edad (mujer)",
+       x = "Rango de edad", y = "Proporción") +
+  theme_minimal()
+
+ggplot(tabla_matr_hombre, aes(x = reorder(edad_hombre_grupo, prop), y = prop)) +
+  geom_col() + coord_flip() +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Proporción de matrimonios por rango de edad (hombre)",
+       x = "Rango de edad", y = "Proporción") +
+  theme_minimal()
+
+ggplot(tabla_div_hombre, aes(x = reorder(edad_hombre_grupo, prop), y = prop)) +
+  geom_col() + coord_flip() +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Proporción de divorcios por rango de edad (hombre)",
+       x = "Rango de edad", y = "Proporción") +
+  theme_minimal()
+```
+**Rangos de edad en mujeres**
+
+En matrimonios, el rango más frecuente para mujeres es 20–24 años, con 352,716 registros (33.55%). Le siguen 25–29 años con 207,469 (19.73%), y 15–19 años con 177,653 (16.90%). Esto muestra una concentración fuerte en edades jóvenes-adultas, particularmente en el rango de 20–24 años.
+
+En divorcios, la distribución se desplaza hacia edades mayores: el rango más frecuente es 25–29 años con 9,781 (25.88%), seguido de 30–34 años con 8,235 (21.79%), y luego 20–24 años con 6,367 (16.85%). En comparación con matrimonios, los divorcios aparecen con mayor frecuencia en rangos que corresponden a edades ligeramente más avanzadas.
+
+**Rangos de edad en hombres**
+
+En matrimonios, el rango más frecuente para hombres también es 20–24 años, con 342,479 (32.58%), seguido por 25–29 años con 260,128 (24.74%), y en tercer lugar 30–34 años con 141,959 (13.50%). La concentración se mantiene en el periodo de adultez temprana, aunque se nota un mayor peso relativo en rangos ligeramente superiores en comparación con mujeres (por ejemplo, 30–34 aparece en el top 3).
+
+En divorcios, el pico principal está en edades más altas: 30–34 años con 9,245 (24.47%), seguido por 25–29 años con 8,416 (22.27%), y luego 35–39 años con 6,439 (17.04%). Esto refuerza la idea de que los divorcios tienden a concentrarse en rangos posteriores a los que concentran matrimonios.
+
+Finalmente, los gráficos permiten detectar un aspecto relevante: en la distribución de matrimonios por edad de mujeres aparecen registros en el grupo “Menos de 15”, mientras que en los hombres no aparecen registros menores de 15. Esto es alarmante, porque se evidencia la posible presencia de matrimonios con mujeres menores de edad con hombres mayores de edad.
+
 ---
 
 ### **Relaciones entre Variables**
-
 
 
 ``` {r Cleanup And Functions}
@@ -363,8 +478,10 @@ to_mid_age <- function(x){
 }
 ```
 
-1. Relacion entre edades de mujeres y hombres en la decision de casarse
-- Al tratarse de datos con valores comunes no se puede utilizar un grafico de dispercion comun y corriente, asi que se decidio usar uno de peso de burbujas. En este grafico podemos observar que las burbujas mas pesadas no se encuentran en la diagonal de relacion, si no mas bien en la parte inferior del diagrama lo cual nos indica que no hay una relacion fuerte entre la edad del hombre y la mujer al momento de casarse
+1. Relacion entre edades de mujeres y hombres en la decision de casarse.
+
+- Al tratarse de datos con valores comunes, no se puede utilizar un gráfico de dispersión “común y corriente”, así que se decidió usar uno de burbujas (tamaño proporcional al conteo). En este gráfico podemos observar que las burbujas más grandes no se encuentran sobre la diagonal de relación, sino más bien en la parte inferior del diagrama, lo cual sugiere que no hay una relación fuerte entre la edad del hombre y la de la mujer al momento de casarse.
+
 ``` {r Relation of Age and Marriage}
 matrimonios_edad_plot <- matrimonios_edad %>%
   mutate(
@@ -386,7 +503,9 @@ ggplot(matrimonios_edad_plot, aes(x = edad_h, y = edad_m)) +
 ```
 
 2. Relacion entre edades de mujeres y hombres en la decision de divorciarse
-- Al tratarse de datos con valores comunes no se puede utilizar un grafico de dispercion comun y corriente, asi que se decidio usar uno de peso de burbujas. En este grafico podemos observar que las burbujas mas pesadas si se encuentran en la diagonal de relacion a pesar de tener algunas un poco mas dispersa, lo cual nos indica que hay una relacion media fuerte entre la edad del hombre y la mujer al momento de divorciarse
+
+- Al tratarse de datos con valores comunes, no se puede utilizar un gráfico de dispersión “común y corriente”, así que se decidió usar uno de burbujas (tamaño proporcional al conteo). En este gráfico podemos observar que las burbujas más grandes sí se encuentran sobre la diagonal de relación, aunque con cierta dispersión, lo cual sugiere que existe una relación moderada entre la edad del hombre y la de la mujer al momento de divorciarse.
+
 ``` {r Relation of Age and Divorce}
 divorcios_edad_plot <- divorcios_edad %>%
   mutate(
@@ -407,8 +526,17 @@ ggplot(divorcios_edad_plot, aes(x = edad_h, y = edad_m)) +
   theme_minimal()
 ```
 
-3. Esta relacion entre la cantidad de gente casada y cantidad de gente divorciada es de 0.603 por el valor de pearson lo cual indica que no es una relacion ni fuerte ni debil si no mas bien moderada, en general, a mayor taza de matrimonios, mayor taza de divorcios, aunque con variabilidad considerable.
+3. La relación entre la cantidad de matrimonios y la cantidad de divorcios es de 0.603 (coeficiente de correlación de Pearson), lo cual indica una relación moderada. En general, a mayor tasa de matrimonios, mayor tasa de divorcios, aunque con variabilidad considerable.
+
 ```{r Relation for Marrige and Divorce}
+number_of_divorcios_por_anio <- divorcios_depto_clean |>
+  group_by(anio) |>
+  summarise(total_divorcios = sum(valor))
+
+number_of_matrimonios_por_anio <- matrimonios_depto_clean |>
+  group_by(anio) |>
+  summarise(total_divorcios = sum(valor))
+
 matrimonios_vs_divorcios <- number_of_matrimonios_por_anio |>
   inner_join(number_of_divorcios_por_anio, by = c("anio"))
 colnames(matrimonios_vs_divorcios) <- c("anio", "total_matrimonios", "total_divorcios")
@@ -433,30 +561,31 @@ print(paste("Porcentaje de :", correlation_coefficient))
 ### **Número de Clusters**
 
 ```{r}
-# Quedarnos solo con datos departamentales, y segmentados por datos anuales, en vez de mes x año
 matrimonios_anual <- matrimonios_depto %>%
   filter(
     nivel_geo == "departamento",
-    is.na(mes)
+    is.na(mes),
+    !is.na(departamento)
   ) %>%
-  select(anio, departamento, matrimonios = valor)
+  mutate(departamento = norm_depto(departamento)) %>%
+  group_by(anio, departamento) %>%
+  summarise(matrimonios = sum(valor, na.rm = TRUE), .groups = "drop")
 
 divorcios_anual <- divorcios_depto %>%
   filter(
     nivel_geo == "departamento",
-    is.na(mes)
+    is.na(mes),
+    !is.na(departamento)
   ) %>%
-  select(anio, departamento, divorcios = valor)
+  mutate(departamento = norm_depto(departamento)) %>%
+  group_by(anio, departamento) %>%
+  summarise(divorcios = sum(valor, na.rm = TRUE), .groups = "drop")
 
-# Unificar datos anuales de matrimonios y divorcios
 matrimonios_divorcios_depto_anual <- full_join(
   matrimonios_anual,
   divorcios_anual,
   by = c("anio", "departamento")
-)
-
-# Variable para analizar el ratio entre divorcios y matrimonios
-matrimonios_divorcios_depto_anual <- matrimonios_divorcios_depto_anual %>%
+) %>%
   mutate(
     ratio_div_matr = divorcios / matrimonios
   )
@@ -475,7 +604,6 @@ depto_stats_num <- depto_stats %>% select(-departamento)
 depto_stats_num_scaled <- scale(depto_stats_num)
 ```
 
-
 ```{r}
 fviz_nbclust(depto_stats_num_scaled, kmeans, method = "wss")
 ```
@@ -491,7 +619,7 @@ Para garantizar una selección adecuada de clusters, se decidió hacer la prueba
 
 ### **Agrupamiento y Tendencia**
 
-Para este caso se estará trabajando con k-means para agrupar los elementos acorde a los vecinos más cercanos.
+Para este caso se estará trabajando con k-means para agrupar los elementos.
 
 ```{r}
 set.seed(56)
@@ -500,7 +628,7 @@ sil <- silhouette(kmeans_model$cluster, dist(depto_stats_num_scaled))
 mean(sil[, 3])
 ```
 
-Para evaluar la tendencia al agrupamiento se encontró el coeficiente promedio de silueta para k=3 y este fue de 0.495, lo cual indica una separación fuerte. Esto indica que nuestros datos pueden ser separados en clusters.
+Para evaluar la tendencia al agrupamiento se encontró el coeficiente promedio de silueta para k=3 y este fue de 0.4915, lo cual indica una separación fuerte. Esto indica que nuestros datos pueden ser separados en clusters.
 
 
 ```{r}
@@ -587,11 +715,12 @@ Departamentos con una baja proporción de divorcios respecto a matrimonios (valo
 - Alta Verapaz
 
 
-
 ### **Preguntas de Investigación**
+
 1. ¿Se ha observado un cambio en la edad promedio en la que las personas contraen matrimonio en Guatemala, indicando que se casan a mayor edad?
 
 2. ¿La tasa promedio de divorcios por cada 100 matrimonios es mayor en el departamento de Guatemala que en el interior del país?
+
 - La taza de divorcios por cada 100 matrimonios es mucho mayor en la Ciudad de Guatemala a comparacion del interior del pais, esto siendo una diferencia casi del doble con 14.87 en guatemala en promedio y 6.03 en el interior de promedio, esto posiblemente nos puede indicar que en la capital el divorcio no es tan mal visto a comparacion del interior.
 - Adicionalmente para descartar posibles desequilibrios por los promedios, si observamos los graficos de barra podemos confirmar estos numeros viendo que incluso los divorcios de Quetzaltenango no llegan ni siquiera cerca de los que ocurren el la Capital.
 
