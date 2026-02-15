@@ -739,4 +739,65 @@ ggplot(div_periodo, aes(x = periodo, y = promedio_anual)) +
        x = "Periodo", y = "Promedio anual (total por año)") +
   theme_minimal()
 ```
+
+4.¿Los departamentos con menor cantidad de matrimonios presentan una proporción significativamente menor de divorcios, sugiriendo que en zonas menos urbanizadas el divorcio es menos común?
+
+Hipótesis
+
+Los departamentos con bajo número de matrimonios (zonas menos urbanizadas) presentan tasas de divorcio considerablemente más bajas que los departamentos con alto número de matrimonios, lo que podría indicar diferencias culturales o de acceso a servicios legales.
+
+```{r}
+# Calcular totales y tasas por departamento
+analisis_rural_urbano <- matrimonios_depto %>%
+  filter(nivel_geo == "departamento", is.na(mes)) %>%
+  group_by(departamento) %>%
+  summarise(total_matrimonios = sum(valor, na.rm = TRUE)) %>%
+  left_join(
+    divorcios_depto %>%
+      filter(nivel_geo == "departamento", is.na(mes)) %>%
+      group_by(departamento) %>%
+      summarise(total_divorcios = sum(valor, na.rm = TRUE)),
+    by = "departamento"
+  ) %>%
+  mutate(
+    tasa_divorcio_por_100 = (total_divorcios / total_matrimonios) * 100,
+    categoria = case_when(
+      total_matrimonios > 40000 ~ "Alto",
+      total_matrimonios > 20000 ~ "Medio",
+      TRUE ~ "Bajo"
+    ),
+    categoria = factor(categoria, levels = c("Bajo", "Medio", "Alto"))
+  )
+
+# Tabla resumen
+tabla_resumen <- analisis_rural_urbano %>%
+  group_by(categoria) %>%
+  summarise(
+    n_departamentos = n(),
+    promedio_tasa_divorcio = round(mean(tasa_divorcio_por_100), 2),
+    .groups = "drop"
+  )
+
+print(tabla_resumen)
+
+# Gráfico de barras
+ggplot(tabla_resumen, aes(x = categoria, y = promedio_tasa_divorcio, fill = categoria)) +
+  geom_bar(stat = "identity", width = 0.6) +
+  geom_text(aes(label = promedio_tasa_divorcio), 
+            vjust = -0.5, size = 6, fontface = "bold") +
+  labs(
+    title = "Tasa Promedio de Divorcio según Volumen de Matrimonios",
+    subtitle = "Guatemala 2009-2022",
+    x = "Volumen de Matrimonios del Departamento",
+    y = "Divorcios por cada 100 matrimonios"
+  ) +
+  theme_minimal(base_size = 14) +
+  scale_fill_manual(values = c("Bajo" = "#CD853F", "Medio" = "#DAA520", "Alto" = "#4169E1")) +
+  theme(legend.position = "none",
+        plot.title = element_text(face = "bold", size = 16))
+```
+## Analisis
+
+Contrario a lo esperado, el análisis revela un patrón inverso, los departamentos con bajo volumen de matrimonios presentan la mayor tasa de divorcios (12.63 por cada 100 matrimonios), mientras que los de alto volumen muestran la tasa más baja (6.12). Esta diferencia de 6.51 puntos refuta la hipótesis inicial.
+Este hallazgo inesperado sugiere que en departamentos menos urbanizados o con menor actividad matrimonial formal, cuando ocurren divorcios, representan una proporción mayor del total de matrimonios. Se refuta la hipotesis. 
 ---
