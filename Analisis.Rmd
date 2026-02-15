@@ -26,9 +26,9 @@ library(nortest)
 
 En los últimos años se ha vuelto común escuchar que el matrimonio y la formación de una familia ya no forman parte de los planes de muchas personas, o que estas decisiones se están postergando a edades más avanzadas. Asimismo, se percibe que las relaciones de pareja tienden a adoptar formas distintas a las tradicionales, ahora vemos a más personas que buscan convivir con una pareja sin matrimonio o bajo compromisos legales.
 
-Sin embargo, estas percepciones sociales no siempre son evidentes o respaldadas con información verídica. En particular, no se conoce con certeza si en Guatemala ha ocurrido una disminución en los matrimonios, un aumento en los divorcios, o cambios significativos en la edad a la que las personas deciden casarse o divorciarse. Tampoco es claro si estos posibles cambios se presentan de manera uniforme en todo el país o si existen departamentos en donde existan diferencias relevantes.
+Sin embargo, estas percepciones sociales no siempre son evidentes o respaldadas con información verídica. En particular, no se conoce con certeza si en Guatemala ha ocurrido una disminución en los matrimonios, un aumento en los divorcios, o cambios significativos en la edad a la que las personas deciden casarse o divorciarse. Tampoco es claro si estos posibles cambios se presentan de manera uniforme en todo el país o si existen departamentos en donde se identifiquen diferencias relevantes.
 
-Al tener acceso a datos oficiales por parte de la INE sobre matrimonios y divorcios en Guatemala, surge la necesidad de analizar estos datos para tratar de responder a estas interrogantes. Buscando identificar diferentes patrones a lo largo de la última decada y media. Por medio de nuestro análisis seremos capaces de contrastar las percepciones sociales con datos reales, y comprender si realmente ha ocurrido un cambio en la dinámica de los matrimonios y divorcios guatemaltecos.
+Al tener acceso a datos oficiales por parte de la INE sobre matrimonios y divorcios en Guatemala, surge la necesidad de analizar estos datos para tratar de responder a estas interrogantes, buscando identificar diferentes patrones a lo largo de la última década y media. Por medio de nuestro análisis seremos capaces de contrastar las percepciones sociales con datos reales, y comprender si realmente ha ocurrido un cambio en la dinámica de los matrimonios y divorcios guatemaltecos.
 
 ---
 
@@ -64,6 +64,7 @@ norm_depto <- function(x) {
     str_to_lower()
 }
 
+# Carga de datos
 matrimonios_depto <- read_csv("matrimonios_depto_mes.csv", show_col_types = FALSE) %>%
   mutate(departamento = norm_depto(departamento))
 
@@ -73,6 +74,25 @@ divorcios_depto <- read_csv("divorcios_depto_mes.csv", show_col_types = FALSE) %
   mutate(departamento = norm_depto(departamento))
 
 divorcios_edad  <- read_csv("divorcios_edad.csv", show_col_types = FALSE)
+
+# Limpieza de datasets
+matrimonios_depto_limpio <- matrimonios_depto %>%
+  filter(nivel_geo == "departamento", !is.na(mes))
+
+divorcios_depto_limpio <- divorcios_depto %>%
+  filter(nivel_geo == "departamento", !is.na(mes))
+
+matrimonios_edad_limpio <- matrimonios_edad %>%
+  filter(
+    !str_detect(tolower(edad_hombre_grupo), "ignorado"),
+    !str_detect(tolower(edad_mujer_grupo), "ignorado")
+  )
+
+divorcios_edad_limpio <- divorcios_edad %>%
+  filter(
+    !str_detect(tolower(edad_hombre_grupo), "ignorado"),
+    !str_detect(tolower(edad_mujer_grupo), "ignorado")
+  )
 ```
 
 ### **Significado y tipo de cada variable**
@@ -165,7 +185,9 @@ Al explorar las opciones de descarga de datos disponibles en la plataforma del I
 
 Los archivos descargados contenían múltiples hojas y tablas cruzadas que no se encontraban en un formato que se pudiera utilizar directamente para análisis en R. Por esta razón, se realizó un proceso de limpieza. Primero, se seleccionaron únicamente las hojas asociadas a rangos de edad y distribución por departamento en todos los libros de matrimonios y divorcios.
 
-Después, se transformaron las tablas cruzadas a un formato que permitiera el análisis estadístico. La idea era que en cada observación se pudiera identificar sencillamente los datos para un año determinado, logrando reconocer el departamento, rangos de edad de los novios, y la cantidad de un evento (matrimonio o divorcio). Asimismo, se estandarizaron varios datos, pues en varias ocasiones se redactaba de forma distinta, por ejemplo, habían matrimonios o divorcios que ocurrían después de los 65 años, y en algunos documentos aparecía como 65 y mas, y en otros correctamente escrito como 65 y más.
+Después, se transformaron las tablas cruzadas a un formato que permitiera el análisis estadístico. La idea era que en cada observación se pudiera identificar sencillamente los datos para un año determinado, logrando reconocer el departamento, rangos de edad de los novios, y la cantidad de un evento (matrimonio o divorcio). Asimismo, se estandarizaron varios datos, pues en varias ocasiones se redactaba de forma distinta, por ejemplo, había matrimonios o divorcios que ocurrían después de los 65 años, y en algunos documentos aparecía como 65 y mas, y en otros correctamente escrito como 65 y más. También, se normalizaron los nombres de los departamentos para evitar inconsistencias causadas por mayúsculas, espacios y tildes.
+
+Adicionalmente, al analizar datos estadísticos sobre los valores de algunos datasets, se decidió dejar una versión limpia para trabajar únicamente con datos relevantes para los análisis en donde explícitamente se conservaran datos a nivel geográfico de departamento en los datasets de departamento. En los datasets por rangos de edad, se eliminaron los registros clasificados como Ignorado, ya que no aportan información útil para el análisis demográfico.
 
 Finalmente, los datos procesados fueron exportados a archivos CSV para facilitar su manipulación y análisis en R.
 
@@ -173,35 +195,43 @@ Finalmente, los datos procesados fueron exportados a archivos CSV para facilitar
 
 ## **Análisis Exploratorio**
 
-### **Exploración de Variables Númericas PEDRITO PEDRITO PEDRITO**
-
-(Medidas de tendencia central, distribución y orden. (todas las variables tienen que tener una análisis sobre los resultados, se debe incluir histogramas, boxplots o gráficos de dispersión, uno como mínimo y explicarlo). Para cada una hay que describir su distribución (sacarle su p-value)
-Si o si piden analizar las variables por tecnicas de estadistica descriptiva, tener graficos, y sacar la distribucion.)
+### **Exploración de Variables Cuantitativas**
 
 ---
 
-#### **Medidas de tendencia central**
+#### **Estadística Descriptiva**
+
 ```{r}
+summary(matrimonios_depto_limpio %>% pull(valor))
+summary(divorcios_depto_limpio %>% pull(valor))
 
-print("Matrimonios por deparatmento")
-summary(matrimonios_depto)
-print(" ")
-
-print("Matrimonios por edad")
-summary(matrimonios_edad)
-print(" ")
-
-print("Divorcios por departamento")
-summary(divorcios_depto)
-print(" ")
-
-print("Divorcios por edad")
-summary(divorcios_edad)
-print(" ")
-
+summary(matrimonios_edad_limpio %>% pull(valor))
+summary(divorcios_edad_limpio %>% pull(valor))
 ```
 
-Del summary ya podemos sacar unos cuantos datos cuantitativos los cuales no pueden servir probablmente un poco a futuro, como que la media de divorcios por anio y matrimonio por anio tienen un anio de diferencia
+Para el análisis de variables numéricas se decidió enfocar el estudio únicamente en la variable **valor**, ya que esta representa la cantidad de eventos registrados (matrimonios o divorcios) y es la única variable cuantitativa con significado estadístico. Las demás variables numéricas presentes en los datasets, como el año o el mes, cumplen una función temporal, pero no representan magnitudes susceptibles de análisis de tendencia central o dispersión en este contexto. 
+
+Adicionalmente, para evitar distorsiones en las medidas estadísticas, se trabajó únicamente con registros a nivel departamental y se excluyeron los totales nacionales. En el caso de los datasets por rangos de edad, se eliminaron los registros clasificados como _Ignorado_, ya que no aportan información útil para el análisis demográfico.
+
+Bajo estos criterios, se obtuvieron los siguientes resultados descriptivos para la variable **valor**:
+
+**Matrimonios por departamento (mensuales)**
+
+- Los valores presentan un **mínimo de 8** y un **máximo de 2619 matrimonios**, con una **mediana de 204**. La **media (285.7)** es considerablemente mayor que la mediana, lo que indica una distribución asimétrica hacia la derecha, con la presencia de valores extremos altos. Esto sugiere que existen algunos departamentos con cantidades de matrimonios significativamente mayores al resto, mientras que la mayoría presenta valores más moderados.  El máximo de matrimonios mensuales se dio en enero del 2012 en Guatemala.
+
+**Divorcios por departamento (mensuales)**
+
+- Los valores oscilan entre **0 y 410 divorcios**, con una **mediana de 13** y una **media de 22.34**. Nuevamente, la media supera a la mediana, evidenciando una **asimetría positiva**. Como dato curioso se buscó en el dataset quien era el 410, y fue Guatemala en junio del 2019. En comparación con los matrimonios, los divorcios ocurren en cantidades considerablemente menores, lo cual es coherente con la naturaleza del fenómeno.
+    
+
+**Matrimonios por rangos de edad**
+
+- Se observa una gran dispersión en los valores, con un **máximo de 14,859 registros**, una **mediana de 62** y una **media de 566.7**. La diferencia marcada entre la mediana y la media confirma la presencia de **grupos de edad con una concentración muy alta de matrimonios**, mientras que otros rangos presentan valores bajos. Esto indica que los matrimonios no se distribuyen uniformemente entre los rangos establecidos por el INE, sino que se concentran en edades específicas. El tope de matrimonios se dio en parejas en donde tanto el novio y la novia estaban entre 20 y 24 años durante el 2021, cuando estuvimos en cuarentena por la mayor parte del tiempo.
+    
+**Divorcios por rangos de edad**
+
+- Los valores son más bajos en comparación con los matrimonios, con una **mediana de 2** y una **media de 24.1**, y un máximo de **767 divorcios**. La fuerte diferencia entre la media y la mediana refleja una **distribución altamente sesgada**, donde pocos rangos de edad concentran la mayor cantidad de divorcios. Es interesante ver que los 767 divorcios, se dieron con el hombre y mujer estando entre 30 y 34 años, en el año 2022, justo en el año en que estábamos empezando a salir de las restricciones por COVID.
+
 
 #### Distribuciones por variables
 
@@ -236,9 +266,6 @@ plot_histograms_gg <- function(df, df_name, bins = 30) {
 for (df_name in names(each_df)) {
   plot_histograms_gg(each_df[[df_name]], df_name)
 }
-
-
-
 
 ```
 
@@ -296,6 +323,7 @@ print(resultados_totales)
 ```
 
 Con el alpha que pusimos podemos percartarnos que ninguno de los datos tiene una distrubucion normal, como anteriormente visto facilmente de la forma grafica
+
 ---
 
 ### **Exploración de Variables Categóricas**
