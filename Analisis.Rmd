@@ -14,7 +14,6 @@ library(stringr)
 library(ggplot2)  
 library(nortest)
 library(stringi)
-library(tidyverse)
 library(cluster)
 library(factoextra)
 library(GGally)
@@ -876,5 +875,95 @@ ggplot(tabla_resumen, aes(x = categoria, y = promedio_tasa_divorcio, fill = cate
 ```
 
 ---
+
+## **Hallazgos y Conclusiones**
+
+### **Resumen de Hallazgos en Análisis Exploratorio**
+
+**Estructura del Conjunto de Datos**
+
+- Se trabajó con 4 datasets (2009–2022): matrimonios por departamento/mes, matrimonios por rangos de edad, divorcios por departamento/mes y divorcios por rangos de edad.
+- Cada dataset contiene una variable clave de conteo (valor) que representa la cantidad de eventos (matrimonios o divorcios) para una combinación de variables categóricas (año/mes/departamento/edad).
+
+**Variables Cuantitativas**
+
+- Se analizó principalmente valor, ya que las demás variables numéricas (año/mes) funcionan como identificadores temporales y no como magnitudes interpretables para tendencia central/dispersión.
+- En general, valor muestra asimetría positiva (media > mediana) y presencia de valores atípicos, especialmente en departamentos con mayor concentración poblacional.
+
+**Distribución y Normalidad**
+
+- Los histogramas y boxplots muestran concentración de valores bajos con colas largas (outliers) en los cuatro datasets.
+- La prueba de Lilliefors rechaza normalidad para valor en los datasets analizados (p-value < 0), confirmando que no siguen distribución normal.
+
+**Variables Cualitativas**
+
+- Por departamento, Guatemala domina tanto en matrimonios como divorcios, mostrando una diferencia marcada frente al resto.
+- Los matrimonios se concentran principalmente en edades jóvenes adultas (por ejemplo, 20–24 y 25–29).
+- Los divorcios tienden a concentrarse en rangos más altos que los matrimonios (por ejemplo, 25–29, 30–34 y 35–39, dependiendo del sexo).
+
+**Relaciones entre variables**
+
+- En el análisis por edades (gráfico de burbujas), se observan concentraciones fuertes en combinaciones específicas de edades
+- La relación entre total anual de matrimonios y divorcios muestra una correlación positiva moderada (≈ 0.60): cuando hay más matrimonios en un año, también suelen registrarse más divorcios, aunque con variabilidad.
+
+---
+
+### **Resumen de Clustering**
+
+**Cluster 1 — “Outlier (Guatemala)”**
+
+- Característica principal: promedios de matrimonios y divorcios muy superiores al resto, y ratio relativamente alto.    
+  
+**Cluster 2 — “Alta proporción de divorcios”**
+
+- Característica principal: ratio divorcios/matrimonios medio–alto (aprox. 0.065 a 0.127).
+
+**Cluster 3 — “Baja proporción de divorcios”**
+- Característica principal: ratio divorcios/matrimonios bajo (menor a ~0.059), aunque algunos tienen altos promedios de matrimonios.
+
+---
+
+### **Conclusiones con Base a Objetivos**
+
+**Analizar los datos de matrimonios y divorcios en Guatemala para identificar patrones demográficos, diferencias entre departamentos y cambios en la dinámica a lo largo del período.**
+
+- El análisis exploratorio muestra patrones claros de concentración tanto por edad como por departamento, por lo que sí existen diferencias relevantes entre regiones y grupos etarios.
+    
+- A nivel temporal, los datos sugieren variaciones en la dinámica de divorcios al comparar periodos (por ejemplo, 2019–2022 vs 2009–2012), lo cual es consistente con la hipótesis de cambios sociales en años recientes.
+    
+- En la relación global, se observó una asociación moderada entre matrimonios y divorcios, en años con más matrimonios, tienden a registrarse más divorcios, aunque con variabilidad.
+
+**Analizar los datos de matrimonios y divorcios en Guatemala para identificar patrones demográficos, diferencias entre departamentos y cambios en la dinámica a lo largo del período.**
+
+- El análisis exploratorio muestra patrones claros de concentración tanto por edad como por departamento, por lo que sí existen diferencias relevantes entre regiones y grupos etarios.
+    
+- A nivel temporal, los datos sugieren variaciones en la dinámica de divorcios al comparar periodos (por ejemplo, 2019–2022 vs 2009–2012), lo cual es consistente con la hipótesis de **cambios sociales** en años recientes.
+    
+- En la relación global, se observó una asociación moderada entre matrimonios y divorcios, en años con más matrimonios, tienden a registrarse más divorcios, aunque con variabilidad.
+
+**Examinar la distribución de matrimonios y divorcios según rangos de edad, identificando variaciones en las edades donde ocurren estos eventos.**
+
+- Los matrimonios no se distribuyen uniformemente entre rangos de edad: se concentran en rangos específicos (por ejemplo, en el análisis de frecuencias, los mayores registros se ubican en edades jóvenes-adultas como 20–24 y 25–29).
+    
+- Los divorcios tienden a concentrarse en rangos mayores respecto a los matrimonios (por ejemplo, rangos como 25–29, 30–34 y 35–39 aparecen con alta presencia), lo que sugiere que el divorcio ocurre con mayor frecuencia después de algunos años de vida en pareja.
+
+**Analizar la distribución de matrimonios y divorcios por departamento para detectar patrones regionales relevantes.**
+
+- Existe una concentración fuerte de eventos en el departamento de Guatemala, que destaca ampliamente tanto en matrimonios como en divorcios (y por proporciones, especialmente en divorcios).
+    
+- Al comparar “capital vs interior”, la tasa promedio de divorcios por cada 100 matrimonios fue mayor en Guatemala (≈ 14.87) que en el resto del país (≈ 6.03), confirmando diferencias regionales relevantes.
+    
+- El clustering reforzó la existencia de patrones departamentales:
+    - Guatemala se comporta como caso atípico.
+
+---
+
+### **Potencial Plan de Pasos a Seguir**
+
+Tras analizar los patrones de matrimonios y divorcios en Guatemala (2009–2022) a nivel geográfico y demográfico, se identificó que el departamento de Guatemala presenta un comportamiento marcadamente distinto al resto. Por ello, un siguiente paso sería profundizar su análisis y formular hipótesis explicativas (por ejemplo, diferencias en urbanización, acceso a servicios legales, concentración económica, etc), para luego contrastarlas con evidencia adicional.
+
+En cuanto a los matrimonios, los registros se concentran principalmente en el rango de 20 a 30 años, por lo que conviene explorar con más detalle si esta concentración tiene factores económicos detrás, como que la mayoría de personas empiezan a laburar en esta rango, o si existen más factores.
+
+Respecto a los divorcios, sería relevante analizar su evolución en años recientes más a fondo, con el fin de comprender qué cambios culturales han ocurrido que hagan que se presente este fenómeno.
 
 ---
