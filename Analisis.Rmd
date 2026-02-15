@@ -379,7 +379,7 @@ ggplot(tabla_freq_edad_hombre_matr, aes(x = edad_hombre_grupo, y = total)) +
 
 ### **Relaciones entre Variables**
 
-(este es un poquito peculiar, por como estan los datos, se me ocurre que vean si existe una relación entre la cantidad de casamientos con el rango de edad de la novia o del hombre, y luego, ver si hay una relación entre la cantidad de divorcios y los rangos de edades de los novios/novias).
+
 
 ``` {r Cleanup And Functions}
 matrimonios_depto_clean <- filter(matrimonios_depto, nivel_geo == "departamento" & !is.na(mes))
@@ -395,7 +395,8 @@ to_mid_age <- function(x){
 }
 ```
 
-
+1. Relacion entre edades de mujeres y hombres en la decision de casarse
+- Al tratarse de datos con valores comunes no se puede utilizar un grafico de dispercion comun y corriente, asi que se decidio usar uno de peso de burbujas. En este grafico podemos observar que las burbujas mas pesadas no se encuentran en la diagonal de relacion, si no mas bien en la parte inferior del diagrama lo cual nos indica que no hay una relacion fuerte entre la edad del hombre y la mujer al momento de casarse
 ``` {r Relation of Age and Marriage}
 matrimonios_edad_plot <- matrimonios_edad %>%
   mutate(
@@ -416,6 +417,8 @@ ggplot(matrimonios_edad_plot, aes(x = edad_h, y = edad_m)) +
   theme_minimal()
 ```
 
+2. Relacion entre edades de mujeres y hombres en la decision de divorciarse
+- Al tratarse de datos con valores comunes no se puede utilizar un grafico de dispercion comun y corriente, asi que se decidio usar uno de peso de burbujas. En este grafico podemos observar que las burbujas mas pesadas si se encuentran en la diagonal de relacion a pesar de tener algunas un poco mas dispersa, lo cual nos indica que hay una relacion media fuerte entre la edad del hombre y la mujer al momento de divorciarse
 ``` {r Relation of Age and Divorce}
 divorcios_edad_plot <- divorcios_edad %>%
   mutate(
@@ -619,4 +622,93 @@ Departamentos con una baja proporción de divorcios respecto a matrimonios (valo
 
 ### **Preguntas de Investigación**
 1. ¿Se ha observado un cambio en la edad promedio en la que las personas contraen matrimonio en Guatemala, indicando que se casan a mayor edad?
+
+2. ¿La tasa promedio de divorcios por cada 100 matrimonios es mayor en el departamento de Guatemala que en el interior del país?
+- La taza de divorcios por cada 100 matrimonios es mucho mayor en la Ciudad de Guatemala a comparacion del interior del pais, esto siendo una diferencia casi del doble con 14.87 en guatemala en promedio y 6.03 en el interior de promedio, esto posiblemente nos puede indicar que en la capital el divorcio no es tan mal visto a comparacion del interior.
+- Adicionalmente para descartar posibles desequilibrios por los promedios, si observamos los graficos de barra podemos confirmar estos numeros viendo que incluso los divorcios de Quetzaltenango no llegan ni siquiera cerca de los que ocurren el la Capital.
+
+```{r capital vs interior}
+divorcios_por_depto <- divorcios_depto_clean |>
+  mutate(departamento = stri_trans_general(departamento, "Latin-ASCII")) |>  # quita tildes
+  group_by(departamento) |>
+  summarise(promedio_divorcios = mean(valor, na.rm = TRUE), .groups = "drop") |>
+  arrange(desc(promedio_divorcios))
+
+matrimonios_por_depto <- matrimonios_depto_clean |>
+  mutate(departamento = stri_trans_general(departamento, "Latin-ASCII")) |>  # quita tildes
+  group_by(departamento) |>
+  summarise(promedio_matrimonios = mean(valor, na.rm = TRUE), .groups = "drop") |>
+  arrange(desc(promedio_matrimonios))
+
+ggplot(divorcios_por_depto, aes(x = reorder(departamento, promedio_divorcios), y = promedio_divorcios)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Promedio de Divorcios por Departamento", x = "Departamento", y = "Promedio de Divorcios") +
+  theme_minimal()
+
+ggplot(matrimonios_por_depto, aes(x = reorder(departamento, promedio_matrimonios), y = promedio_matrimonios)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Promedio de Matrimonios por Departamento", x = "Departamento", y = "Promedio de Matrimonios") +
+  theme_minimal()
+
+# promedio de guatemala vs el resto del pais
+divorcios_guatemala <- divorcios_depto_clean |>
+  filter(departamento == "Guatemala") |>
+  summarise(promedio_divorcios_guatemala = mean(valor, na.rm = TRUE))
+
+divorcios_resto <- divorcios_depto_clean |>
+  filter(departamento != "Guatemala") |>
+  summarise(promedio_divorcios_resto = mean(valor, na.rm = TRUE))
+
+matrimonios_guatemala <- matrimonios_depto_clean |>
+  filter(departamento == "Guatemala") |>
+  summarise(promedio_matrimonios_guatemala = mean(valor, na.rm = TRUE)) 
+
+matrimonios_resto <- matrimonios_depto_clean |>
+  filter(departamento != "Guatemala") |>
+  summarise(promedio_matrimonios_resto = mean(valor, na.rm = TRUE))
+
+# tasa de divorcios por cada 100 matrimonios
+tasa_divorcios_guatemala <- (divorcios_guatemala$promedio_divorcios_guatemala / matrimonios_guatemala$promedio_matrimonios_guatemala) * 100
+tasa_divorcios_resto <- (divorcios_resto$promedio_divorcios_resto / matrimonios_resto$promedio_matrimonios_resto) * 100
+
+print(paste("Tasa de Divorcios por cada 100 Matrimonios en Guatemala:", round(tasa_divorcios_guatemala, 2)))
+print(paste("Tasa de Divorcios por cada 100 Matrimonios en el resto del país:", round(tasa_divorcios_resto, 2)))
+
+```
+
+3. ¿Se observa un incremento en el número promedio anual de divorcios en años recientes (2019–2022) frente a hace una década (2009–2012), lo cual podría sugerir cambios sociales?
+- Si observamos las tablas y el grafico de barras podemos observar que los divorcios de 2019-2022 han incrementado el doble que hace 10 anios (2009-2012) lo cual posiblemente nos podria indicar que si ha habido un cambio social sobre la aceptacion del divorcio.
+```{r divorcios ahora vs hace 10 anios}
+# divorcios de 2019 a 2022
+divorcios_2019_2022 <- divorcios_depto_clean |>
+  filter(anio >= 2019 & anio <= 2022) |>
+  group_by(anio) |>
+  summarise(total_divorcios = sum(valor, na.rm = TRUE), .groups = "drop")
+
+# divorcios de 2009 a 2012
+divorcios_2009_2012 <- divorcios_depto_clean |>
+  filter(anio >= 2009 & anio <= 2012) |>
+  group_by(anio) |>
+  summarise(total_divorcios = sum(valor, na.rm = TRUE), .groups = "drop")
+
+divorcios_2019_2022
+divorcios_2009_2012
+
+# promedios por anios
+div_periodo <- divorcios_depto_clean |>
+  filter((anio >= 2009 & anio <= 2012) | (anio >= 2019 & anio <= 2022)) |>
+  group_by(anio) |>
+  summarise(total_anual = sum(valor, na.rm = TRUE), .groups = "drop") |>
+  mutate(periodo = ifelse(anio <= 2012, "2009–2012", "2019–2022")) |>
+  group_by(periodo) |>
+  summarise(promedio_anual = mean(total_anual), .groups = "drop")
+
+ggplot(div_periodo, aes(x = periodo, y = promedio_anual)) +
+  geom_col() +
+  labs(title = "Promedio anual de divorcios por periodo",
+       x = "Periodo", y = "Promedio anual (total por año)") +
+  theme_minimal()
+```
 ---
