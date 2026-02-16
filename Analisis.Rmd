@@ -895,13 +895,11 @@ ggplot(tabla_resumen, aes(x = categoria, y = promedio_tasa_divorcio, fill = cate
   theme(legend.position = "none",
         plot.title = element_text(face = "bold", size = 16))
 ```
+4. ¿Será que entre más fríos se tiende a tener una proporción de divorcios más bajos respecto al matrimonio?
 
-4.  ¿Sera que entre mas frios se tiende a tener una proporcion de divorcios mas bajos respecto al matrimonio?
+Al momento que llegamos a ver los clústeres, podemos ver una tendencia curiosa: aquellos que están en el clúster tres son departamentos fríos respecto a todos los demás.
 
-Al momento que llegamos a ver los clusters podemos ver una tendencia curiosa, aquellos que estan en el cluster tres son departamentos frios respecto a todos los demas.
-
-Para eso podriamos juntar solo aquellos valores que son parte de estos dos clusters, y viendo cuales son los valores mas bajos entre ellos y si son considerados de lugares los cuales normalmente se consideran mas frios en el pais de guatemala.
-
+Para eso podríamos juntar solo aquellos valores que son parte de estos dos clústeres, y ver cuáles son los valores más bajos entre ellos y si son considerados de lugares que normalmente se consideran más fríos en el país de Guatemala.
 ```{r}
 
 cluster_data_set = depto_clusters
@@ -912,11 +910,9 @@ ratio_df = cluster_data_set[c("ratio_div_matr", "departamento")]
 
 ratio_df
 ```
+Aquí ya empezamos a mirar una tendencia; por ejemplo, los 5 departamentos con la proporción de divorcios matrimoniales son de lugares fríos como Alta Verapaz, Solalá, Chimaltenango, Huehuetenango, Totonicapán y San Marcos.
 
-Aqui ya empezamos a mirar una tendencia, por ejemplo los 5 departamentos con la proporcion de divorcios matrimonio son de lugares frios como Alta Verapaz, Solola, Chimaltenango, Huehuetenango, Totonicapan y San Marcos.
-
-Ahora lo que podemos hacerlo es separarlos en departamentos frios y calientes solo entre 2 y el 3.
-
+Ahora lo que podemos hacer es separarlos en departamentos fríos y calientes, solo entre 2 y 3.
 ```{r}
 
   # Vector de departamentos fríos
@@ -939,16 +935,12 @@ dept_frios
 resto_depts
 
 ```
-
-Ahora que ya tenemos los dos grupos separados, ahora 'plotemos' estos valores uno encima de otro, para ver cua de los dos grupos tienden a tener una proporcion de divorcios respecto a matrimonios mejor (mas bajo).osea
-
+Ahora que ya tenemos los dos grupos separados, ahora 'plotemos' estos valores uno encima de otro, para ver cuál de los dos grupos tiende a tener una proporción de divorcios respecto a matrimonios mejor (más bajo).
 ```{r}
-datos <- rbind(
+datos <- cbind(
   Resto = resto_depts$ratio_div_matr,
   Frios = dept_frios$ratio_div_matr
 )
-
-datos
 
 barplot(
   resto_depts$ratio_div_matr,
@@ -969,7 +961,6 @@ barplot(
 barplot(
   datos,
   beside = TRUE,
-  col = c("orange", "blue"),
   xlab = "Departamentos",
   ylab = "Proporcion de divorcios por matrimonios",
   legend.text = TRUE
@@ -977,9 +968,9 @@ barplot(
 
 ```
 
-Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital los departamentos mas frios tienden a tener una proporcion de divorcios por matrimonios bastante menor.
+Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital, los departamentos más fríos tienden a tener una proporción de divorcios por matrimonios bastante menor.
 
-Para poder respaldar aun mas lo visto, probemos ver si estos valores tambien se mantienen entre los meses mas frios.
+Para poder respaldar aún más lo visto, probemos ver si estos valores también se mantienen entre los meses más fríos.
 
 ```{r}
 
@@ -1076,7 +1067,7 @@ mean(meses_frios$ratio_div_matr)
 mean(resto_meses$ratio_div_matr)
 
 ```
-Aqui podemos ver que en proporcion a la pura temperatura no llega a ser tan notable, tambien estamos aqui combinando todos los departamentos, lo cual tambien pueda darnos la idea que normalmente los departamentos que tienden a climas mas frios tambien tienen otros factores probablemente culturales que cambian esta metrica.
+Aquí podemos ver que en proporción a la pura temperatura no llega a ser tan notable. También estamos aquí combinando todos los departamentos, lo cual también puede darnos la idea de que normalmente los departamentos que tienden a climas más fríos también tienen otros factores, probablemente culturales, que cambian esta métrica.
 
 ------------------------------------------------------------------------
 
