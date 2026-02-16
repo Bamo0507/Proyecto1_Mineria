@@ -1496,6 +1496,69 @@ Investigación}}{Preguntas de Investigación}}\label{preguntas-de-investigaciuxf
   contraen matrimonio en Guatemala, indicando que se casan a mayor edad?
 \end{enumerate}
 
+Se puede observar que se compararon las combinaciones de edad más
+frecuentes en matrimonios entre los periodos 2009-2012 y 2019-2022. Los
+resultados muestran que en ambos periodos predominan las parejas en
+donde el hombre y la mujer tienen entre 20 y 24 años, seguidas por los
+rangos entre 25 y 29 años. Aunque en el periodo de 2019-2022 se pueden
+observar algunos rangos ligeramente mayores estos no superan a los
+grupos principales. Por lo tanto no se identifica un cambio
+significativo hacia edades más altas en los matrimonios. Por
+consiguiente no se observa un cambio en la edad promedio en que las
+personas contraen matrimonio en Guatemala.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Periodos matrimonios}
+\NormalTok{matr\_periodos }\OtherTok{\textless{}{-}}\NormalTok{ matrimonios\_edad\_limpio }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{periodo =} \FunctionTok{case\_when}\NormalTok{(}
+\NormalTok{      anio }\SpecialCharTok{\textgreater{}=} \DecValTok{2009} \SpecialCharTok{\&}\NormalTok{ anio }\SpecialCharTok{\textless{}=} \DecValTok{2012} \SpecialCharTok{\textasciitilde{}} \StringTok{"2009–2012"}\NormalTok{,}
+\NormalTok{      anio }\SpecialCharTok{\textgreater{}=} \DecValTok{2019} \SpecialCharTok{\&}\NormalTok{ anio }\SpecialCharTok{\textless{}=} \DecValTok{2022} \SpecialCharTok{\textasciitilde{}} \StringTok{"2019–2022"}\NormalTok{,}
+      \ConstantTok{TRUE} \SpecialCharTok{\textasciitilde{}} \ConstantTok{NA\_character\_}
+\NormalTok{    )}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(periodo))}
+
+\CommentTok{\# tabla de matrimonios }
+\NormalTok{tabla\_top10 }\OtherTok{\textless{}{-}}\NormalTok{ matr\_periodos }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(periodo, edad\_mujer\_grupo, edad\_hombre\_grupo) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{total\_matrimonios =} \FunctionTok{sum}\NormalTok{(valor, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{), }\AttributeTok{.groups =} \StringTok{"drop"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(periodo, }\FunctionTok{desc}\NormalTok{(total\_matrimonios)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(periodo) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{slice\_head}\NormalTok{(}\AttributeTok{n =} \DecValTok{10}\NormalTok{)}
+
+\NormalTok{tabla\_top10}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 20 x 4
+## # Groups:   periodo [2]
+##    periodo   edad_mujer_grupo edad_hombre_grupo total_matrimonios
+##    <chr>     <chr>            <chr>                         <dbl>
+##  1 2009–2012 20 - 24          20-24                         45282
+##  2 2009–2012 15 - 19          20-24                         41155
+##  3 2009–2012 20 - 24          25-29                         28886
+##  4 2009–2012 15 - 19          15-19                         24695
+##  5 2009–2012 25 - 29          25-29                         20847
+##  6 2009–2012 25 - 29          30-34                         13096
+##  7 2009–2012 15 - 19          25-29                         11826
+##  8 2009–2012 25 - 29          20-24                          9809
+##  9 2009–2012 30 - 34          30-34                          8947
+## 10 2009–2012 20 - 24          30-34                          8003
+## 11 2019–2022 20 - 24          20-24                         51572
+## 12 2019–2022 20 - 24          25-29                         34679
+## 13 2019–2022 25 - 29          25-29                         29346
+## 14 2019–2022 Menos de 20      20-24                         18887
+## 15 2019–2022 25 - 29          30-34                         17253
+## 16 2019–2022 30 - 34          30-34                         12785
+## 17 2019–2022 25 - 29          20-24                         11231
+## 18 2019–2022 20 - 24          30-34                          8967
+## 19 2019–2022 30 - 34          35-39                          7950
+## 20 2019–2022 18 - 19          20-24                          7497
+\end{verbatim}
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \begin{enumerate}
@@ -1768,7 +1831,156 @@ no en un indicador directo de urbanización.
 \end{Highlighting}
 \end{Shaded}
 
-\pandocbounded{\includegraphics[keepaspectratio]{Analisis_files/figure-latex/unnamed-chunk-20-1.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio]{Analisis_files/figure-latex/unnamed-chunk-21-1.pdf}}
+4. ¿Sera que los departamentos mas frios tienden a tener una proporcion
+de divorcios mas bajos respecto al matrimonio?
+
+Al momento que llegamos a ver los clusters podemos ver una tendencia
+curiosa, aquellos que estan en el cluster tres son departamentos frios
+respecto a todos los demas.
+
+Para eso podriamos juntar solo aquellos valores que son parte de estos
+dos clusters, y viendo cuales son los valores mas bajos entre ellos y si
+son considerados de lugares los cuales normalmente se consideran mas
+frios en el pais de guatemala.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cluster\_data\_set }\OtherTok{=}\NormalTok{ depto\_clusters}
+
+\NormalTok{cluster\_data\_set }\OtherTok{=}\NormalTok{ cluster\_data\_set[}\FunctionTok{order}\NormalTok{(cluster\_data\_set}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr),]}
+
+\NormalTok{ratio\_df }\OtherTok{=}\NormalTok{ cluster\_data\_set[}\FunctionTok{c}\NormalTok{(}\StringTok{"ratio\_div\_matr"}\NormalTok{, }\StringTok{"departamento"}\NormalTok{)]}
+
+\NormalTok{ratio\_df}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 22 x 2
+##    ratio_div_matr departamento 
+##             <dbl> <chr>        
+##  1         0.0258 alta verapaz 
+##  2         0.0320 quiche       
+##  3         0.0321 solola       
+##  4         0.0327 chimaltenango
+##  5         0.0342 huehuetenango
+##  6         0.0354 totonicapan  
+##  7         0.0452 san marcos   
+##  8         0.0590 suchitepequez
+##  9         0.0645 sacatepequez 
+## 10         0.0661 peten        
+## # i 12 more rows
+\end{verbatim}
+
+Aqui ya empezamos a mirar una tendencia, por ejemplo los 5 departamentos
+con la proporcion de divorcios matrimonio son de lugares frios como Alta
+Verapaz, Solola, Chimaltenango, Huehuetenango, Totonicapan y San Marcos.
+
+Ahora lo que podemos hacerlo es separarlos en departamentos frios y
+calientes solo entre 2 y el 3.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+  \CommentTok{\# Vector de departamentos fríos}
+\NormalTok{departamentos\_frios }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"quiche"}\NormalTok{,}
+                         \StringTok{"solola"}\NormalTok{,}
+                         \StringTok{"chimaltenango"}\NormalTok{,}
+                         \StringTok{"huehuetenango"}\NormalTok{,}
+                         \StringTok{"totonicapan"}\NormalTok{,}
+                         \StringTok{"quetzaltenango"}\NormalTok{,}
+                         \StringTok{"san marcos"}\NormalTok{,}
+                         \StringTok{"alta verapaz"}\NormalTok{,}
+                         \StringTok{"baja verapaz"}\NormalTok{,}
+                         \StringTok{"sacatepequez"}\NormalTok{)}
+
+\NormalTok{dept\_frios }\OtherTok{=} \FunctionTok{filter}\NormalTok{(ratio\_df,departamento }\SpecialCharTok{\%in\%}\NormalTok{ departamentos\_frios)}
+
+\NormalTok{resto\_depts }\OtherTok{=} \FunctionTok{filter}\NormalTok{(ratio\_df,}\SpecialCharTok{!}\NormalTok{departamento }\SpecialCharTok{\%in\%}\NormalTok{ departamentos\_frios)}
+
+\NormalTok{dept\_frios}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 10 x 2
+##    ratio_div_matr departamento  
+##             <dbl> <chr>         
+##  1         0.0258 alta verapaz  
+##  2         0.0320 quiche        
+##  3         0.0321 solola        
+##  4         0.0327 chimaltenango 
+##  5         0.0342 huehuetenango 
+##  6         0.0354 totonicapan   
+##  7         0.0452 san marcos    
+##  8         0.0645 sacatepequez  
+##  9         0.0706 baja verapaz  
+## 10         0.0996 quetzaltenango
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{resto\_depts}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 12 x 2
+##    ratio_div_matr departamento 
+##             <dbl> <chr>        
+##  1         0.0590 suchitepequez
+##  2         0.0661 peten        
+##  3         0.0739 escuintla    
+##  4         0.0891 chiquimula   
+##  5         0.0902 santa rosa   
+##  6         0.0917 retalhuleu   
+##  7         0.0923 jutiapa      
+##  8         0.102  jalapa       
+##  9         0.107  izabal       
+## 10         0.124  zacapa       
+## 11         0.127  el progreso  
+## 12         0.149  guatemala
+\end{verbatim}
+
+Ahora que ya tenemos los dos grupos separados, ahora `plotemos' estos
+valores uno encima de otro, para ver cua de los dos grupos tienden a
+tener una proporcion de divorcios respecto a matrimonios mejor (mas
+bajo).osea
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Combine ratios into a matrix}
+\NormalTok{datos }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(}
+  \AttributeTok{Resto =}\NormalTok{ resto\_depts}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr,}
+  \AttributeTok{Frios =}\NormalTok{ dept\_frios}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in rbind(Resto = resto_depts$ratio_div_matr, Frios =
+## dept_frios$ratio_div_matr): number of columns of result is not a multiple of
+## vector length (arg 2)
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Create grouped barplot}
+\FunctionTok{barplot}\NormalTok{(}
+\NormalTok{  datos,}
+  \AttributeTok{beside =} \ConstantTok{TRUE}\NormalTok{,}
+  \AttributeTok{col =} \FunctionTok{c}\NormalTok{(}\StringTok{"orange"}\NormalTok{, }\StringTok{"blue"}\NormalTok{),}
+  \AttributeTok{xlab =} \StringTok{"Departamentos"}\NormalTok{,}
+  \AttributeTok{ylab =} \StringTok{"Proporcion de divorcios por matrimonios"}\NormalTok{,}
+  \AttributeTok{legend.text =} \ConstantTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Analisis_files/figure-latex/unnamed-chunk-24-1.pdf}}
+Como podemos llegar a ver si llega a ver esa tendencia, quitando la
+capital los departamentos mas frios tienden a tener una proporcion de
+divorcios por matrimonios bastante menor.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
