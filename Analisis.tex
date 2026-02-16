@@ -1275,6 +1275,7 @@ Clusters}}{Número de Clusters}}\label{nuxfamero-de-clusters}
     \AttributeTok{ratio\_div\_matr =}\NormalTok{ divorcios }\SpecialCharTok{/}\NormalTok{ matrimonios}
 \NormalTok{  )}
 
+
 \NormalTok{depto\_stats }\OtherTok{\textless{}{-}}\NormalTok{ matrimonios\_divorcios\_depto\_anual }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{group\_by}\NormalTok{(departamento) }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{summarise}\NormalTok{(}
@@ -1841,8 +1842,8 @@ no en un indicador directo de urbanización.
 \setcounter{enumi}{3}
 \tightlist
 \item
-  ¿Sera que los departamentos mas frios tienden a tener una proporcion
-  de divorcios mas bajos respecto al matrimonio?
+  ¿Sera que entre mas frios se tiende a tener una proporcion de
+  divorcios mas bajos respecto al matrimonio?
 \end{enumerate}
 
 Al momento que llegamos a ver los clusters podemos ver una tendencia
@@ -2019,69 +2020,195 @@ Como podemos llegar a ver si llega a ver esa tendencia, quitando la
 capital los departamentos mas frios tienden a tener una proporcion de
 divorcios por matrimonios bastante menor.
 
+Para poder respaldar aun mas lo visto, probemos ver si estos valores
+tambien se mantienen entre los meses mas frios.
+
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{matr\_depto\_cat\_mes }\OtherTok{\textless{}{-}}\NormalTok{ matrimonios\_depto }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{filter}\NormalTok{(nivel\_geo }\SpecialCharTok{==} \StringTok{"departamento"}\NormalTok{, }\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(mes))}
+\NormalTok{matrimonios\_mensual }\OtherTok{\textless{}{-}}\NormalTok{ matrimonios\_depto }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(}
+\NormalTok{    nivel\_geo }\SpecialCharTok{==} \StringTok{"departamento"}\NormalTok{,}
+\NormalTok{    departamento }\SpecialCharTok{!=} \StringTok{"guatemala"}\NormalTok{,}
+    \SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(mes),}
+    \SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(departamento)}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{departamento =} \FunctionTok{norm\_depto}\NormalTok{(departamento)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(mes, departamento) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{matrimonios =} \FunctionTok{sum}\NormalTok{(valor, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{), }\AttributeTok{.groups =} \StringTok{"drop"}\NormalTok{)}
 
-\NormalTok{div\_depto\_cat\_mes }\OtherTok{\textless{}{-}}\NormalTok{ divorcios\_depto }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{filter}\NormalTok{(nivel\_geo }\SpecialCharTok{==} \StringTok{"departamento"}\NormalTok{, }\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(mes))}
+\NormalTok{divorcios\_mensual }\OtherTok{\textless{}{-}}\NormalTok{ divorcios\_depto }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(}
+\NormalTok{    nivel\_geo }\SpecialCharTok{==} \StringTok{"departamento"}\NormalTok{,}
+\NormalTok{    departamento }\SpecialCharTok{!=} \StringTok{"guatemala"}\NormalTok{,}
+    \SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(mes),}
+    \SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(departamento)}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{departamento =} \FunctionTok{norm\_depto}\NormalTok{(departamento)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(mes, departamento) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{divorcios =} \FunctionTok{sum}\NormalTok{(valor, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{), }\AttributeTok{.groups =} \StringTok{"drop"}\NormalTok{)}
 
-\NormalTok{tabla\_depto\_matr }\OtherTok{\textless{}{-}}\NormalTok{ matr\_depto\_cat }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{group\_by}\NormalTok{(departamento) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{total =} \FunctionTok{sum}\NormalTok{(valor, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{), }\AttributeTok{.groups =} \StringTok{"drop"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{prop =}\NormalTok{ total }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(total)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{arrange}\NormalTok{(}\FunctionTok{desc}\NormalTok{(total))}
 
-\NormalTok{tabla\_depto\_div }\OtherTok{\textless{}{-}}\NormalTok{ div\_depto\_cat }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{group\_by}\NormalTok{(departamento) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{total =} \FunctionTok{sum}\NormalTok{(valor, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{), }\AttributeTok{.groups =} \StringTok{"drop"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{prop =}\NormalTok{ total }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(total)) }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{arrange}\NormalTok{(}\FunctionTok{desc}\NormalTok{(total))}
-
-\NormalTok{matr\_depto\_cat}
+\NormalTok{matrimonios\_divorcios\_depto\_mes }\OtherTok{\textless{}{-}} \FunctionTok{full\_join}\NormalTok{(}
+\NormalTok{  matrimonios\_mensual,}
+\NormalTok{  divorcios\_mensual,}
+  \AttributeTok{by =} \FunctionTok{c}\NormalTok{(}\StringTok{"mes"}\NormalTok{)}
+\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{ratio\_div\_matr =}\NormalTok{ divorcios }\SpecialCharTok{/}\NormalTok{ matrimonios}
+\NormalTok{  )}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## # A tibble: 308 x 5
-##     anio nivel_geo    departamento    mes valor
-##    <dbl> <chr>        <chr>         <dbl> <dbl>
-##  1  2009 departamento alta verapaz     NA  4300
-##  2  2009 departamento baja verapaz     NA  1334
-##  3  2009 departamento chimaltenango    NA  3099
-##  4  2009 departamento chiquimula       NA  1766
-##  5  2009 departamento el progreso      NA   786
-##  6  2009 departamento escuintla        NA  2859
-##  7  2009 departamento guatemala        NA 11824
-##  8  2009 departamento huehuetenango    NA  5276
-##  9  2009 departamento izabal           NA  1276
-## 10  2009 departamento jalapa           NA  1289
-## # i 298 more rows
+## Warning in full_join(matrimonios_mensual, divorcios_mensual, by = c("mes")): Detected an unexpected many-to-many relationship between `x` and `y`.
+## i Row 1 of `x` matches multiple rows in `y`.
+## i Row 1 of `y` matches multiple rows in `x`.
+## i If a many-to-many relationship is expected, set `relationship =
+##   "many-to-many"` to silence this warning.
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{div\_depto\_cat}
+\NormalTok{mes\_stats }\OtherTok{\textless{}{-}}\NormalTok{ matrimonios\_divorcios\_depto\_mes }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(mes) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}
+    \AttributeTok{avg\_matrimonios =} \FunctionTok{mean}\NormalTok{(matrimonios, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{),}
+    \AttributeTok{avg\_divorcios   =} \FunctionTok{mean}\NormalTok{(divorcios, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{),}
+    \AttributeTok{ratio\_div\_matr  =}\NormalTok{ avg\_divorcios }\SpecialCharTok{/}\NormalTok{ avg\_matrimonios,}
+    \AttributeTok{.groups =} \StringTok{"drop"}
+\NormalTok{  )}
+
+
+\NormalTok{ratio\_df\_mes }\OtherTok{=}\NormalTok{ mes\_stats[}\FunctionTok{c}\NormalTok{(}\StringTok{"ratio\_div\_matr"}\NormalTok{, }\StringTok{"mes"}\NormalTok{)]}
+
+\NormalTok{ratio\_df\_mes}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-## # A tibble: 308 x 5
-##     anio nivel_geo    departamento    mes valor
-##    <dbl> <chr>        <chr>         <dbl> <dbl>
-##  1  2009 departamento alta verapaz     NA   129
-##  2  2009 departamento baja verapaz     NA    66
-##  3  2009 departamento chimaltenango    NA    56
-##  4  2009 departamento chiquimula       NA    91
-##  5  2009 departamento el progreso      NA    47
-##  6  2009 departamento escuintla        NA   160
-##  7  2009 departamento guatemala        NA  1024
-##  8  2009 departamento huehuetenango    NA    84
-##  9  2009 departamento izabal           NA    86
-## 10  2009 departamento jalapa           NA    79
-## # i 298 more rows
+## # A tibble: 12 x 2
+##    ratio_div_matr   mes
+##             <dbl> <dbl>
+##  1         0.0515     1
+##  2         0.0589     2
+##  3         0.0579     3
+##  4         0.0543     4
+##  5         0.0573     5
+##  6         0.0699     6
+##  7         0.0651     7
+##  8         0.0658     8
+##  9         0.0700     9
+## 10         0.0726    10
+## 11         0.0621    11
+## 12         0.0467    12
 \end{verbatim}
+
+Aqui estamos segmentando el data set por meses, pero quitando el gran
+outlier de la capital.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+  \CommentTok{\# Vector de departamentos fríos}
+\NormalTok{meses\_frios\_list }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{11}\NormalTok{,}\DecValTok{12}\NormalTok{,}\DecValTok{1}\NormalTok{)}
+
+\NormalTok{meses\_frios }\OtherTok{=} \FunctionTok{filter}\NormalTok{(ratio\_df\_mes,mes }\SpecialCharTok{\%in\%}\NormalTok{ meses\_frios\_list)}
+
+\NormalTok{resto\_meses }\OtherTok{=} \FunctionTok{filter}\NormalTok{(ratio\_df\_mes,}\SpecialCharTok{!}\NormalTok{mes }\SpecialCharTok{\%in\%}\NormalTok{ meses\_frios\_list)}
+
+\NormalTok{meses\_frios}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 3 x 2
+##   ratio_div_matr   mes
+##            <dbl> <dbl>
+## 1         0.0515     1
+## 2         0.0621    11
+## 3         0.0467    12
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{resto\_meses}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 9 x 2
+##   ratio_div_matr   mes
+##            <dbl> <dbl>
+## 1         0.0589     2
+## 2         0.0579     3
+## 3         0.0543     4
+## 4         0.0573     5
+## 5         0.0699     6
+## 6         0.0651     7
+## 7         0.0658     8
+## 8         0.0700     9
+## 9         0.0726    10
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{datos }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(}
+  \AttributeTok{Resto =}\NormalTok{ resto\_meses}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr,}
+  \AttributeTok{Frios =}\NormalTok{ meses\_frios}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr}
+\NormalTok{)}
+
+\FunctionTok{barplot}\NormalTok{(}
+\NormalTok{  resto\_meses}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr,}
+  \AttributeTok{col =} \StringTok{"orange"}\NormalTok{,}
+  \AttributeTok{names.arg =}\NormalTok{ resto\_meses}\SpecialCharTok{$}\NormalTok{mes,}
+  \AttributeTok{xlab =} \StringTok{"Meses"}\NormalTok{,}
+  \AttributeTok{ylab =} \StringTok{"Proporcion de divorcios por matrimonios"}\NormalTok{,}
+  \AttributeTok{legend.text =} \ConstantTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Analisis_files/figure-latex/unnamed-chunk-27-1.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{barplot}\NormalTok{(}
+\NormalTok{  meses\_frios}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr,}
+  \AttributeTok{col =} \StringTok{"blue"}\NormalTok{,}
+  \AttributeTok{names.arg =}\NormalTok{ meses\_frios}\SpecialCharTok{$}\NormalTok{mes,}
+  \AttributeTok{xlab =} \StringTok{"Meses"}\NormalTok{,}
+  \AttributeTok{ylab =} \StringTok{"Proporcion de divorcios por matrimonios"}\NormalTok{,}
+  \AttributeTok{legend.text =} \ConstantTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Analisis_files/figure-latex/unnamed-chunk-27-2.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(meses\_frios}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.05343807
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(resto\_meses}\SpecialCharTok{$}\NormalTok{ratio\_div\_matr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.06353211
+\end{verbatim}
+
+Aqui podemos ver que en proporcion a la pura temperatura no llega a ser
+tan notable, tambien estamos aqui combinando todos los departamentos, lo
+cual tambien pueda darnos la idea que normalmente los departamentos que
+tienden a climas mas frios tambien tienen otros factores probablemente
+culturales que cambian esta metrica.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 

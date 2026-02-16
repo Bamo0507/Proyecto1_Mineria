@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.16)  16 FEB 2026 09:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.16)  16 FEB 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,22 +556,22 @@ Package pdftex.def Info: Analisis_files/figure-latex/Relation for Marrige and Di
 <Analisis_files/figure-latex/unnamed-chunk-14-1.pdf, id=271, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/unnamed-chunk-14-1.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-14-1.pdf  used on input line 1299.
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-14-1.pdf  used on input line 1300.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [29]
 <Analisis_files/figure-latex/unnamed-chunk-15-1.pdf, id=276, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/unnamed-chunk-15-1.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-15-1.pdf  used on input line 1311.
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-15-1.pdf  used on input line 1312.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [30 <./Analisis_files/figure-latex/unnamed-chunk-14-1.pdf>]
 <Analisis_files/figure-latex/unnamed-chunk-17-1.pdf, id=287, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/unnamed-chunk-17-1.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-17-1.pdf  used on input line 1351.
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-17-1.pdf  used on input line 1352.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [31 <./Analisis_files/figure-latex/unnamed-chunk-15-1.pdf>] [32 <./Analisis_files/figure-latex/unnamed-chunk-17-1.pdf>]
-Overfull \hbox (202.24303pt too wide) in paragraph at lines 1406--1406
+Overfull \hbox (202.24303pt too wide) in paragraph at lines 1407--1407
 []\T1/lmtt/m/n/10 ## Silhouette of 22 units in 3 clusters from silhouette.default(x = kmeans_model$cluster, dist = dist(depto_stats_num_scaled)) :[] 
  []
 
@@ -579,44 +579,61 @@ Overfull \hbox (202.24303pt too wide) in paragraph at lines 1406--1406
 <Analisis_files/figure-latex/capital vs interior-1.pdf, id=328, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/capital vs interior-1.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/capital vs interior-1.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/capital vs interior-1.pdf  used on input line 1612.
+Package pdftex.def Info: Analisis_files/figure-latex/capital vs interior-1.pdf  used on input line 1613.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 <Analisis_files/figure-latex/capital vs interior-2.pdf, id=329, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/capital vs interior-2.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/capital vs interior-2.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/capital vs interior-2.pdf  used on input line 1624.
+Package pdftex.def Info: Analisis_files/figure-latex/capital vs interior-2.pdf  used on input line 1625.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [36 <./Analisis_files/figure-latex/capital vs interior-1.pdf>] [37 <./Analisis_files/figure-latex/capital vs interior-2.pdf>] [38]
 <Analisis_files/figure-latex/divorcios ahora vs hace 10 anios-1.pdf, id=354, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/divorcios ahora vs hace 10 anios-1.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/divorcios ahora vs hace 10 anios-1.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/divorcios ahora vs hace 10 anios-1.pdf  used on input line 1751.
+Package pdftex.def Info: Analisis_files/figure-latex/divorcios ahora vs hace 10 anios-1.pdf  used on input line 1752.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [39 <./Analisis_files/figure-latex/divorcios ahora vs hace 10 anios-1.pdf>] [40]
 <Analisis_files/figure-latex/unnamed-chunk-21-1.pdf, id=368, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/unnamed-chunk-21-1.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 1837.
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 1838.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [41 <./Analisis_files/figure-latex/unnamed-chunk-21-1.pdf>] [42]
 <Analisis_files/figure-latex/unnamed-chunk-24-1.pdf, id=384, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/unnamed-chunk-24-1.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-24-1.pdf  used on input line 1987.
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-24-1.pdf  used on input line 1988.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [43]
 <Analisis_files/figure-latex/unnamed-chunk-24-2.pdf, id=390, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/unnamed-chunk-24-2.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/unnamed-chunk-24-2.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-24-2.pdf  used on input line 2001.
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-24-2.pdf  used on input line 2002.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [44 <./Analisis_files/figure-latex/unnamed-chunk-24-1.pdf>]
 <Analisis_files/figure-latex/unnamed-chunk-24-3.pdf, id=400, 469.755pt x 325.215pt>
 File: Analisis_files/figure-latex/unnamed-chunk-24-3.pdf Graphic file (type pdf)
 <use Analisis_files/figure-latex/unnamed-chunk-24-3.pdf>
-Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-24-3.pdf  used on input line 2016.
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-24-3.pdf  used on input line 2017.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[45 <./Analisis_files/figure-latex/unnamed-chunk-24-2.pdf>] [46 <./Analisis_files/figure-latex/unnamed-chunk-24-3.pdf>] [47]
+[45 <./Analisis_files/figure-latex/unnamed-chunk-24-2.pdf>] [46 <./Analisis_files/figure-latex/unnamed-chunk-24-3.pdf>]
+Overfull \hbox (312.4927pt too wide) in paragraph at lines 2068--2068
+[]\T1/lmtt/m/n/10 ## Warning in full_join(matrimonios_mensual, divorcios_mensual, by = c("mes")): Detected an unexpected many-to-many relationship between `x` and `y`.[] 
+ []
+
+[47]
+<Analisis_files/figure-latex/unnamed-chunk-27-1.pdf, id=423, 469.755pt x 325.215pt>
+File: Analisis_files/figure-latex/unnamed-chunk-27-1.pdf Graphic file (type pdf)
+<use Analisis_files/figure-latex/unnamed-chunk-27-1.pdf>
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-27-1.pdf  used on input line 2170.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[48]
+<Analisis_files/figure-latex/unnamed-chunk-27-2.pdf, id=429, 469.755pt x 325.215pt>
+File: Analisis_files/figure-latex/unnamed-chunk-27-2.pdf Graphic file (type pdf)
+<use Analisis_files/figure-latex/unnamed-chunk-27-2.pdf>
+Package pdftex.def Info: Analisis_files/figure-latex/unnamed-chunk-27-2.pdf  used on input line 2185.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[49 <./Analisis_files/figure-latex/unnamed-chunk-27-1.pdf>] [50 <./Analisis_files/figure-latex/unnamed-chunk-27-2.pdf>]
 
 ! LaTeX Error: Unicode character ≈ (U+2248)
                not set up for use with LaTeX.
@@ -625,17 +642,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2160   correlación positiva moderada (≈
+l.2287   correlación positiva moderada (≈
                                              0.60): cuando hay más matrimon...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
  
 Here is how much of TeX's memory you used:
- 11803 strings out of 469514
- 189449 string characters out of 5468838
+ 11820 strings out of 469514
+ 190314 string characters out of 5468838
  608321 words of memory out of 5000000
- 40208 multiletter control sequences out of 15000+600000
+ 40222 multiletter control sequences out of 15000+600000
  661325 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  89i,6n,93p,448b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
