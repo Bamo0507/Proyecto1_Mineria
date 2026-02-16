@@ -3,17 +3,13 @@ title: "Proyecto 1"
 author: Bryan Martínez, Adriana Palacios, Brandon Rivera, Javier Benítez, y Pedro
   Avila
 date: "`r Sys.Date()`"
-output:
-  pdf_document: default
-  html_document:
-    df_print: paged
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(readr)
 library(dplyr)
-library(tidyverse)
 library(stringr)
 library(ggplot2)  
 library(nortest)
@@ -38,12 +34,6 @@ Al tener acceso a datos oficiales por parte de la INE sobre matrimonios y divorc
 ## **Problema Científico**
 
 No se cuenta con evidencia estadística concluyente sobre si, en Guatemala (2009–2022), han ocurrido cambios significativos en los matrimonios y divorcios, ni si estos cambios se relacionan con la edad de las personas o presentan diferencias relevantes entre departamentos.
-
-------------------------------------------------------------------------
-
-## **Repositorio**
-
-<https://github.com/Bamo0507/Proyecto1_Mineria>
 
 ------------------------------------------------------------------------
 
@@ -108,51 +98,51 @@ divorcios_edad_limpio <- divorcios_edad %>%
 
 Para el análisis de los datos, se estará trabajando con cuatro datasets con información desde 2009 hasta 2022:
 
--   matrimonios_depto_mes: matrimonios registrados en cada mes acorde a cada departamento.
--   matrimonios_edad: matrimonios que ocurrieron en diferentes rangos de edad.
--   divorcios_depto: divorcios almacenados por mes para cada departamento.
--   divorcios_edad: divorcios acontecidos en diferentes rangos de edad.
+- matrimonios_depto_mes: matrimonios registrados en cada mes acorde a cada departamento.
+- matrimonios_edad: matrimonios que ocurrieron en diferentes rangos de edad.
+- divorcios_depto: divorcios almacenados por mes para cada departamento.
+- divorcios_edad: divorcios acontecidos en diferentes rangos de edad.
 
 #### **Variables Compartidas en Todos los Datasets**
 
 **anio**
 
--   Representa el año en que fue registrada la observación.
--   La variable es cuantitativa discreta.
+- Representa el año en que fue registrada la observación.
+- La variable es cuantitativa discreta.
 
 **valor**
 
--   Número de veces que ocurrió un evento, dependiendo del dataset, este puede representar cantidad de matrimonios o divorcios.
--   La variable es cuantitativa discreta.
+- Número de veces que ocurrió un evento, dependiendo del dataset, este puede representar cantidad de matrimonios o divorcios.
+- La variable es cuantitativa discreta.
 
 #### **Variables Compartidas en Datasets con Datos Departamentales**
 
 **nivel_geo**
 
--   Se utiliza para indicar si la observación es de un departamento en específico, o si se tiene registrada a nivel nacional.
--   La variable es cualitativa nominal.
+- Se utiliza para indicar si la observación es de un departamento en específico, o si se tiene registrada a nivel nacional.
+- La variable es cualitativa nominal.
 
 **departamento**
 
--   Es el departamento en donde se registró la observación; este valor puede estar vacío cuando el registro corresponde al total nacional.
--   La variable es cualitativa nominal.
+- Es el departamento en donde se registró la observación; este valor puede estar vacío cuando el registro corresponde al total nacional.
+- La variable es cualitativa nominal.
 
 **mes**
 
--   Muestra el número de mes al que corresponden los datos de la observación.
--   La variable es cualitativa ordinal; aunque se representa como un número en el dataset, se utiliza para indicar la posición del mes dentro del año y no como una magnitud numérica.
+- Muestra el número de mes al que corresponden los datos de la observación.
+- La variable es cualitativa ordinal; aunque se representa como un número en el dataset, se utiliza para indicar la posición del mes dentro del año y no como una magnitud numérica.
 
 #### **Variables Compartidas en Datasets con Datos de Edades**
 
 **edad_mujer_grupo**
 
--   Rango de edad al que pertenece la novia/mujer de la observación.
--   La variable es cualitativa ordinal.
+- Rango de edad al que pertenece la novia/mujer de la observación.
+- La variable es cualitativa ordinal.
 
 **edad_hombre_grupo**
 
--   Rango de edad al que pertence el novio/hombre de la observación.
--   La variable es cualitativa ordinal.
+- Rango de edad al que pertence el novio/hombre de la observación.
+- La variable es cualitativa ordinal.
 
 ### **Cantidad de Variables y Observaciones**
 
@@ -226,19 +216,19 @@ Bajo estos criterios, se obtuvieron los siguientes resultados descriptivos para 
 
 **Matrimonios por departamento (mensuales)**
 
--   Los valores presentan un **mínimo de 8** y un **máximo de 2619 matrimonios**, con una **mediana de 204**. La **media (285.7)** es considerablemente mayor que la mediana, lo que indica una distribución asimétrica hacia la derecha, con la presencia de valores extremos altos. Esto sugiere que existen algunos departamentos con cantidades de matrimonios significativamente mayores al resto, mientras que la mayoría presenta valores más moderados. El máximo de matrimonios mensuales se dio en enero del 2012 en Guatemala.
+- Los valores presentan un **mínimo de 8** y un **máximo de 2619 matrimonios**, con una **mediana de 204**. La **media (285.7)** es considerablemente mayor que la mediana, lo que indica una distribución asimétrica hacia la derecha, con la presencia de valores extremos altos. Esto sugiere que existen algunos departamentos con cantidades de matrimonios significativamente mayores al resto, mientras que la mayoría presenta valores más moderados. El máximo de matrimonios mensuales se dio en enero del 2012 en Guatemala.
 
 **Divorcios por departamento (mensuales)**
 
--   Los valores oscilan entre **0 y 410 divorcios**, con una **mediana de 13** y una **media de 22.34**. Nuevamente, la media supera a la mediana, evidenciando una **asimetría positiva**. Como dato curioso se buscó en el dataset quien era el 410, y fue Guatemala en junio del 2019. En comparación con los matrimonios, los divorcios ocurren en cantidades considerablemente menores, lo cual es coherente con la naturaleza del fenómeno.
+- Los valores oscilan entre **0 y 410 divorcios**, con una **mediana de 13** y una **media de 22.34**. Nuevamente, la media supera a la mediana, evidenciando una **asimetría positiva**. Como dato curioso se buscó en el dataset quien era el 410, y fue Guatemala en junio del 2019. En comparación con los matrimonios, los divorcios ocurren en cantidades considerablemente menores, lo cual es coherente con la naturaleza del fenómeno.
 
 **Matrimonios por rangos de edad**
 
--   Se observa una gran dispersión en los valores, con un **máximo de 14,859 registros**, una **mediana de 62** y una **media de 566.7**. La diferencia marcada entre la mediana y la media confirma la presencia de **grupos de edad con una concentración muy alta de matrimonios**, mientras que otros rangos presentan valores bajos. Esto indica que los matrimonios no se distribuyen uniformemente entre los rangos establecidos por el INE, sino que se concentran en edades específicas. El tope de matrimonios se dio en parejas en donde tanto el novio y la novia estaban entre 20 y 24 años durante el 2021, cuando estuvimos en cuarentena por la mayor parte del tiempo.
+- Se observa una gran dispersión en los valores, con un **máximo de 14,859 registros**, una **mediana de 62** y una **media de 566.7**. La diferencia marcada entre la mediana y la media confirma la presencia de **grupos de edad con una concentración muy alta de matrimonios**, mientras que otros rangos presentan valores bajos. Esto indica que los matrimonios no se distribuyen uniformemente entre los rangos establecidos por el INE, sino que se concentran en edades específicas. El tope de matrimonios se dio en parejas en donde tanto el novio y la novia estaban entre 20 y 24 años durante el 2021, cuando estuvimos en cuarentena por la mayor parte del tiempo.
 
 **Divorcios por rangos de edad**
 
--   Los valores son más bajos en comparación con los matrimonios, con una **mediana de 2** y una **media de 24.1**, y un máximo de **767 divorcios**. La fuerte diferencia entre la media y la mediana refleja una **distribución altamente sesgada**, donde pocos rangos de edad concentran la mayor cantidad de divorcios. Es interesante ver que los 767 divorcios, se dieron con el hombre y mujer estando entre 30 y 34 años, en el año 2022, justo en el año en que estábamos empezando a salir de las restricciones por COVID.
+- Los valores son más bajos en comparación con los matrimonios, con una **mediana de 2** y una **media de 24.1**, y un máximo de **767 divorcios**. La fuerte diferencia entre la media y la mediana refleja una **distribución altamente sesgada**, donde pocos rangos de edad concentran la mayor cantidad de divorcios. Es interesante ver que los 767 divorcios, se dieron con el hombre y mujer estando entre 30 y 34 años, en el año 2022, justo en el año en que estábamos empezando a salir de las restricciones por COVID.
 
 #### **Distribuciones por variables**
 
@@ -486,7 +476,7 @@ to_mid_age <- function(x){
 
 1.  Relacion entre edades de mujeres y hombres en la decision de casarse.
 
--   Al tratarse de datos con valores comunes, no se puede utilizar un gráfico de dispersión “común y corriente”, así que se decidió usar uno de burbujas (tamaño proporcional al conteo). En este gráfico podemos observar que las burbujas más grandes no se encuentran sobre la diagonal de relación, sino más bien en la parte inferior del diagrama, lo cual sugiere que no hay una relación fuerte entre la edad del hombre y la de la mujer al momento de casarse.
+- Al tratarse de datos con valores comunes, no se puede utilizar un gráfico de dispersión “común y corriente”, así que se decidió usar uno de burbujas (tamaño proporcional al conteo). En este gráfico podemos observar que las burbujas más grandes no se encuentran sobre la diagonal de relación, sino más bien en la parte inferior del diagrama, lo cual sugiere que no hay una relación fuerte entre la edad del hombre y la de la mujer al momento de casarse.
 
 ```{r Relation of Age and Marriage}
 matrimonios_edad_plot <- matrimonios_edad %>%
@@ -510,7 +500,7 @@ ggplot(matrimonios_edad_plot, aes(x = edad_h, y = edad_m)) +
 
 2.  Relacion entre edades de mujeres y hombres en la decision de divorciarse
 
--   Al tratarse de datos con valores comunes, no se puede utilizar un gráfico de dispersión “común y corriente”, así que se decidió usar uno de burbujas (tamaño proporcional al conteo). En este gráfico podemos observar que las burbujas más grandes sí se encuentran sobre la diagonal de relación, aunque con cierta dispersión, lo cual sugiere que existe una relación moderada entre la edad del hombre y la de la mujer al momento de divorciarse.
+- Al tratarse de datos con valores comunes, no se puede utilizar un gráfico de dispersión “común y corriente”, así que se decidió usar uno de burbujas (tamaño proporcional al conteo). En este gráfico podemos observar que las burbujas más grandes sí se encuentran sobre la diagonal de relación, aunque con cierta dispersión, lo cual sugiere que existe una relación moderada entre la edad del hombre y la de la mujer al momento de divorciarse.
 
 ```{r Relation of Age and Divorce}
 divorcios_edad_plot <- divorcios_edad %>%
@@ -595,6 +585,7 @@ matrimonios_divorcios_depto_anual <- full_join(
     ratio_div_matr = divorcios / matrimonios
   )
 
+
 depto_stats <- matrimonios_divorcios_depto_anual %>%
   group_by(departamento) %>%
   summarise(
@@ -671,51 +662,51 @@ Tiene una proporción media alta de divorcios con respecto a matrimonios (entre 
 
 Departamentos pertenecientes:
 
--   El Progreso
+- El Progreso
 
--   Zacapa
+- Zacapa
 
--   Izabal
+- Izabal
 
--   Jalapa
+- Jalapa
 
--   Quetzaltenango
+- Quetzaltenango
 
--   Jutiapa
+- Jutiapa
 
--   Retalhuleu
+- Retalhuleu
 
--   Santa Rosa
+- Santa Rosa
 
--   Chiquimula
+- Chiquimula
 
--   Escuintla
+- Escuintla
 
--   Baja Verapaz
+- Baja Verapaz
 
--   Petén
+- Petén
 
--   Sacatepéquez
+- Sacatepéquez
 
 **Cluster 3**
 
 Departamentos con una baja proporción de divorcios respecto a matrimonios (valores menores a 0.059). Cabe destacar que en este grupo aparecen varios departamentos con algunos de los promedios más altos de matrimonios como Huehuetenango y Alta Verapaz.
 
--   Suchitepéquez
+- Suchitepéquez
 
--   San Marcos
+- San Marcos
 
--   Totonicapán
+- Totonicapán
 
--   Huehuetenango
+- Huehuetenango
 
--   Chimaltenango
+- Chimaltenango
 
--   Sololá
+- Sololá
 
--   Quiché
+- Quiché
 
--   Alta Verapaz
+- Alta Verapaz
 
 ### **Preguntas de Investigación**
 
@@ -753,8 +744,8 @@ tabla_top10
 
 2.  ¿La tasa promedio de divorcios por cada 100 matrimonios es mayor en el departamento de Guatemala que en el interior del país?
 
--   La taza de divorcios por cada 100 matrimonios es mucho mayor en la Ciudad de Guatemala a comparacion del interior del país, esto siendo una diferencia casi del doble con 14.87 en guatemala en promedio y 6.03 en el interior de promedio, esto posiblemente nos puede indicar que en la capital el divorcio no es tan mal visto a comparacion del interior.
--   Adicionalmente, para descartar posibles desequilibrios por los promedios, si observamos los graficos de barra podemos confirmar estos numeros viendo que incluso los divorcios de Quetzaltenango no llegan ni siquiera cerca de los que ocurren el la Capital.
+- La taza de divorcios por cada 100 matrimonios es mucho mayor en la Ciudad de Guatemala a comparacion del interior del país, esto siendo una diferencia casi del doble con 14.87 en guatemala en promedio y 6.03 en el interior de promedio, esto posiblemente nos puede indicar que en la capital el divorcio no es tan mal visto a comparacion del interior.
+- Adicionalmente, para descartar posibles desequilibrios por los promedios, si observamos los graficos de barra podemos confirmar estos numeros viendo que incluso los divorcios de Quetzaltenango no llegan ni siquiera cerca de los que ocurren el la Capital.
 
 ```{r capital vs interior}
 divorcios_por_depto <- divorcios_depto_clean |>
@@ -811,7 +802,7 @@ print(paste("Tasa de Divorcios por cada 100 Matrimonios en el resto del país:",
 
 3.  ¿Se observa un incremento en el número promedio anual de divorcios en años recientes (2019–2022) frente a hace una década (2009–2012), lo cual podría sugerir cambios sociales?
 
--   Si observamos las tablas y el gráfico de barras podemos observar que los divorcios de 2019-2022 han incrementado el doble que hace 10 años (2009-2012) lo cual posiblemente nos podría indicar que sí ha habido un cambio social sobre la aceptación del divorcio.
+- Si observamos las tablas y el gráfico de barras podemos observar que los divorcios de 2019-2022 han incrementado el doble que hace 10 años (2009-2012) lo cual posiblemente nos podría indicar que sí ha habido un cambio social sobre la aceptación del divorcio.
 
 ```{r divorcios ahora vs hace 10 anios}
 # divorcios de 2019 a 2022
@@ -905,9 +896,9 @@ ggplot(tabla_resumen, aes(x = categoria, y = promedio_tasa_divorcio, fill = cate
         plot.title = element_text(face = "bold", size = 16))
 ```
 
-5. ¿Será que los departamentos más frios tienden a tener una proporción de divorcios más bajos respecto al matrimonio?
+4.  ¿Sera que entre mas frios se tiende a tener una proporcion de divorcios mas bajos respecto al matrimonio?
 
-Al momento que llegamos a ver los clusters podemos ver una tendencia curiosa, aquellos que están en el cluster tres son departamentos frios respecto a todos los demas.
+Al momento que llegamos a ver los clusters podemos ver una tendencia curiosa, aquellos que estan en el cluster tres son departamentos frios respecto a todos los demas.
 
 Para eso podriamos juntar solo aquellos valores que son parte de estos dos clusters, y viendo cuales son los valores mas bajos entre ellos y si son considerados de lugares los cuales normalmente se consideran mas frios en el pais de guatemala.
 
@@ -922,7 +913,7 @@ ratio_df = cluster_data_set[c("ratio_div_matr", "departamento")]
 ratio_df
 ```
 
-Aquí ya empezamos a mirar una tendencia, por ejemplo los 5 departamentos con la proporcion de divorcios matrimonio son de lugares frios como Alta Verapaz, Solola, Chimaltenango, Huehuetenango, Totonicapan y San Marcos.
+Aqui ya empezamos a mirar una tendencia, por ejemplo los 5 departamentos con la proporcion de divorcios matrimonio son de lugares frios como Alta Verapaz, Solola, Chimaltenango, Huehuetenango, Totonicapan y San Marcos.
 
 Ahora lo que podemos hacerlo es separarlos en departamentos frios y calientes solo entre 2 y el 3.
 
@@ -952,13 +943,27 @@ resto_depts
 Ahora que ya tenemos los dos grupos separados, ahora 'plotemos' estos valores uno encima de otro, para ver cua de los dos grupos tienden a tener una proporcion de divorcios respecto a matrimonios mejor (mas bajo).osea
 
 ```{r}
-# Combine ratios into a matrix
 datos <- rbind(
   Resto = resto_depts$ratio_div_matr,
   Frios = dept_frios$ratio_div_matr
 )
 
-# Create grouped barplot
+barplot(
+  resto_depts$ratio_div_matr,
+  col = "orange",
+  xlab = "Departamentos",
+  ylab = "Proporcion de divorcios por matrimonios",
+  legend.text = TRUE
+)
+
+barplot(
+  dept_frios$ratio_div_matr,
+  col = "blue",
+  xlab = "Departamentos",
+  ylab = "Proporcion de divorcios por matrimonios",
+  legend.text = TRUE
+)
+
 barplot(
   datos,
   beside = TRUE,
@@ -972,6 +977,133 @@ barplot(
 
 Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital los departamentos mas frios tienden a tener una proporcion de divorcios por matrimonios bastante menor.
 
+```{r}
+matr_depto_cat_mes <- matrimonios_depto %>%
+  filter(nivel_geo == "departamento", !is.na(mes))
+
+div_depto_cat_mes <- divorcios_depto %>%
+  filter(nivel_geo == "departamento", !is.na(mes))
+
+
+tabla_mes_matr <- matr_depto_cat_mes %>%
+  group_by(mes) %>%
+  summarise(total = sum(valor, na.rm = TRUE), .groups = "drop") %>%
+  mutate(prop = total / sum(total)) %>%
+  arrange(desc(total))
+
+tabla_mes_div <- div_depto_cat_mes %>%
+  group_by(mes) %>%
+  summarise(total = sum(valor, na.rm = TRUE), .groups = "drop") %>%
+  mutate(prop = total / sum(total)) %>%
+  arrange(desc(total))
+
+tabla_mes_matr
+tabla_mes_div
+
+```
+Para poder respaldar aun mas lo visto, probemos ver si estos valores tambien se mantienen entre los meses mas frios.
+
+```{r}
+
+
+matrimonios_mensual <- matrimonios_depto %>%
+  filter(
+    nivel_geo == "departamento",
+    departamento != "guatemala"
+    !is.na(mes),
+    !is.na(departamento)
+  ) %>%
+  mutate(departamento = norm_depto(departamento)) %>%
+  group_by(mes, departamento) %>%
+  summarise(matrimonios = sum(valor, na.rm = TRUE), .groups = "drop")
+
+divorcios_mensual <- divorcios_depto %>%
+  filter(
+    nivel_geo == "departamento",
+    departamento != "guatemala"
+    !is.na(mes),
+    !is.na(departamento)
+  ) %>%
+  mutate(departamento = norm_depto(departamento)) %>%
+  group_by(mes, departamento) %>%
+  summarise(divorcios = sum(valor, na.rm = TRUE), .groups = "drop")
+
+
+matrimonios_divorcios_depto_mes <- full_join(
+  matrimonios_mensual,
+  divorcios_mensual,
+  by = c("mes")
+) %>%
+  mutate(
+    ratio_div_matr = divorcios / matrimonios
+  )
+
+mes_stats <- matrimonios_divorcios_depto_mes %>%
+  group_by(mes) %>%
+  summarise(
+    avg_matrimonios = mean(matrimonios, na.rm = TRUE),
+    avg_divorcios   = mean(divorcios, na.rm = TRUE),
+    ratio_div_matr  = avg_divorcios / avg_matrimonios,
+    .groups = "drop"
+  )
+
+
+ratio_df_mes = mes_stats[c("ratio_div_matr", "mes")]
+
+ratio_df_mes
+
+```
+Aqui estamos segmentando el data set por meses, pero quitando el gran outlier de la capital.
+```{r}
+  # Vector de departamentos fríos
+meses_frios_list <- c(10,11,12,1,2)
+
+meses_frios = filter(ratio_df_mes,mes %in% meses_frios_list)
+
+resto_meses = filter(ratio_df_mes,!mes %in% meses_frios_list)
+
+meses_frios
+resto_meses
+```
+
+```{r}
+
+tabla_mes_matr
+tabla_mes_div
+
+
+datos <- rbind(
+  Resto = resto_meses$ratio_div_matr,
+  Frios = meses_frios$ratio_div_matr
+)
+
+barplot(
+  resto_meses$ratio_div_matr,
+  col = "orange",
+  xlab = "Departamentos",
+  ylab = "Proporcion de divorcios por matrimonios",
+  legend.text = TRUE
+)
+
+barplot(
+  meses_frios$ratio_div_matr,
+  col = "blue",
+  xlab = "Departamentos",
+  ylab = "Proporcion de divorcios por matrimonios",
+  legend.text = TRUE
+)
+
+barplot(
+  datos,
+  beside = TRUE,
+  col = c("orange", "blue"),
+  xlab = "Departamentos",
+  ylab = "Proporcion de divorcios por matrimonios",
+  legend.text = TRUE
+)
+
+```
+
 ------------------------------------------------------------------------
 
 ## **Hallazgos y Conclusiones**
@@ -980,29 +1112,29 @@ Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital los 
 
 **Estructura del Conjunto de Datos**
 
--   Se trabajó con 4 datasets (2009–2022): matrimonios por departamento/mes, matrimonios por rangos de edad, divorcios por departamento/mes y divorcios por rangos de edad.
--   Cada dataset contiene una variable clave de conteo (valor) que representa la cantidad de eventos (matrimonios o divorcios) para una combinación de variables categóricas (año/mes/departamento/edad).
+- Se trabajó con 4 datasets (2009–2022): matrimonios por departamento/mes, matrimonios por rangos de edad, divorcios por departamento/mes y divorcios por rangos de edad.
+- Cada dataset contiene una variable clave de conteo (valor) que representa la cantidad de eventos (matrimonios o divorcios) para una combinación de variables categóricas (año/mes/departamento/edad).
 
 **Variables Cuantitativas**
 
--   Se analizó principalmente valor, ya que las demás variables numéricas (año/mes) funcionan como identificadores temporales y no como magnitudes interpretables para tendencia central/dispersión.
--   En general, valor muestra asimetría positiva (media \> mediana) y presencia de valores atípicos, especialmente en departamentos con mayor concentración poblacional.
+- Se analizó principalmente valor, ya que las demás variables numéricas (año/mes) funcionan como identificadores temporales y no como magnitudes interpretables para tendencia central/dispersión.
+- En general, valor muestra asimetría positiva (media \> mediana) y presencia de valores atípicos, especialmente en departamentos con mayor concentración poblacional.
 
 **Distribución y Normalidad**
 
--   Los histogramas y boxplots muestran concentración de valores bajos con colas largas (outliers) en los cuatro datasets.
--   La prueba de Lilliefors rechaza normalidad para valor en los datasets analizados (p-value \< 0), confirmando que no siguen distribución normal.
+- Los histogramas y boxplots muestran concentración de valores bajos con colas largas (outliers) en los cuatro datasets.
+- La prueba de Lilliefors rechaza normalidad para valor en los datasets analizados (p-value \< 0), confirmando que no siguen distribución normal.
 
 **Variables Cualitativas**
 
--   Por departamento, Guatemala domina tanto en matrimonios como divorcios, mostrando una diferencia marcada frente al resto.
--   Los matrimonios se concentran principalmente en edades jóvenes adultas (por ejemplo, 20–24 y 25–29).
--   Los divorcios tienden a concentrarse en rangos más altos que los matrimonios (por ejemplo, 25–29, 30–34 y 35–39, dependiendo del sexo).
+- Por departamento, Guatemala domina tanto en matrimonios como divorcios, mostrando una diferencia marcada frente al resto.
+- Los matrimonios se concentran principalmente en edades jóvenes adultas (por ejemplo, 20–24 y 25–29).
+- Los divorcios tienden a concentrarse en rangos más altos que los matrimonios (por ejemplo, 25–29, 30–34 y 35–39, dependiendo del sexo).
 
 **Relaciones entre variables**
 
--   En el análisis por edades (gráfico de burbujas), se observan concentraciones fuertes en combinaciones específicas de edades
--   La relación entre total anual de matrimonios y divorcios muestra una correlación positiva moderada (cercano a 0.60): cuando hay más matrimonios en un año, también suelen registrarse más divorcios, aunque con variabilidad.
+- En el análisis por edades (gráfico de burbujas), se observan concentraciones fuertes en combinaciones específicas de edades
+- La relación entre total anual de matrimonios y divorcios muestra una correlación positiva moderada (≈ 0.60): cuando hay más matrimonios en un año, también suelen registrarse más divorcios, aunque con variabilidad.
 
 ------------------------------------------------------------------------
 
@@ -1010,11 +1142,11 @@ Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital los 
 
 **Cluster 1 — “Outlier (Guatemala)”**
 
--   Característica principal: promedios de matrimonios y divorcios muy superiores al resto, y ratio relativamente alto.
+- Característica principal: promedios de matrimonios y divorcios muy superiores al resto, y ratio relativamente alto.
 
 **Cluster 2 — “Alta proporción de divorcios”**
 
--   Característica principal: ratio divorcios/matrimonios medio–alto (aprox. 0.065 a 0.127).
+- Característica principal: ratio divorcios/matrimonios medio–alto (aprox. 0.065 a 0.127).
 
 **Cluster 3 — “Baja proporción de divorcios”** - Característica principal: ratio divorcios/matrimonios bajo (menor a \~0.059), aunque algunos tienen altos promedios de matrimonios.
 
@@ -1024,27 +1156,35 @@ Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital los 
 
 **Analizar los datos de matrimonios y divorcios en Guatemala para identificar patrones demográficos, diferencias entre departamentos y cambios en la dinámica a lo largo del período.**
 
--   El análisis exploratorio muestra patrones claros de concentración tanto por edad como por departamento, por lo que sí existen diferencias relevantes entre regiones y grupos etarios.
+- El análisis exploratorio muestra patrones claros de concentración tanto por edad como por departamento, por lo que sí existen diferencias relevantes entre regiones y grupos etarios.
 
--   A nivel temporal, los datos sugieren variaciones en la dinámica de divorcios al comparar periodos (por ejemplo, 2019–2022 vs 2009–2012), lo cual es consistente con la hipótesis de cambios sociales en años recientes.
+- A nivel temporal, los datos sugieren variaciones en la dinámica de divorcios al comparar periodos (por ejemplo, 2019–2022 vs 2009–2012), lo cual es consistente con la hipótesis de cambios sociales en años recientes.
 
--   En la relación global, se observó una asociación moderada entre matrimonios y divorcios, en años con más matrimonios, tienden a registrarse más divorcios, aunque con variabilidad.
+- En la relación global, se observó una asociación moderada entre matrimonios y divorcios, en años con más matrimonios, tienden a registrarse más divorcios, aunque con variabilidad.
+
+**Analizar los datos de matrimonios y divorcios en Guatemala para identificar patrones demográficos, diferencias entre departamentos y cambios en la dinámica a lo largo del período.**
+
+- El análisis exploratorio muestra patrones claros de concentración tanto por edad como por departamento, por lo que sí existen diferencias relevantes entre regiones y grupos etarios.
+
+- A nivel temporal, los datos sugieren variaciones en la dinámica de divorcios al comparar periodos (por ejemplo, 2019–2022 vs 2009–2012), lo cual es consistente con la hipótesis de **cambios sociales** en años recientes.
+
+- En la relación global, se observó una asociación moderada entre matrimonios y divorcios, en años con más matrimonios, tienden a registrarse más divorcios, aunque con variabilidad.
 
 **Examinar la distribución de matrimonios y divorcios según rangos de edad, identificando variaciones en las edades donde ocurren estos eventos.**
 
--   Los matrimonios no se distribuyen uniformemente entre rangos de edad: se concentran en rangos específicos (por ejemplo, en el análisis de frecuencias, los mayores registros se ubican en edades jóvenes-adultas como 20–24 y 25–29).
+- Los matrimonios no se distribuyen uniformemente entre rangos de edad: se concentran en rangos específicos (por ejemplo, en el análisis de frecuencias, los mayores registros se ubican en edades jóvenes-adultas como 20–24 y 25–29).
 
--   Los divorcios tienden a concentrarse en rangos mayores respecto a los matrimonios (por ejemplo, rangos como 25–29, 30–34 y 35–39 aparecen con alta presencia), lo que sugiere que el divorcio ocurre con mayor frecuencia después de algunos años de vida en pareja.
+- Los divorcios tienden a concentrarse en rangos mayores respecto a los matrimonios (por ejemplo, rangos como 25–29, 30–34 y 35–39 aparecen con alta presencia), lo que sugiere que el divorcio ocurre con mayor frecuencia después de algunos años de vida en pareja.
 
 **Analizar la distribución de matrimonios y divorcios por departamento para detectar patrones regionales relevantes.**
 
--   Existe una concentración fuerte de eventos en el departamento de Guatemala, que destaca ampliamente tanto en matrimonios como en divorcios (y por proporciones, especialmente en divorcios).
+- Existe una concentración fuerte de eventos en el departamento de Guatemala, que destaca ampliamente tanto en matrimonios como en divorcios (y por proporciones, especialmente en divorcios).
 
--   Al comparar “capital vs interior”, la tasa promedio de divorcios por cada 100 matrimonios fue mayor en Guatemala (14.87) que en el resto del país (6.03), confirmando diferencias regionales relevantes.
+- Al comparar “capital vs interior”, la tasa promedio de divorcios por cada 100 matrimonios fue mayor en Guatemala (≈ 14.87) que en el resto del país (≈ 6.03), confirmando diferencias regionales relevantes.
 
--   El clustering reforzó la existencia de patrones departamentales:
+- El clustering reforzó la existencia de patrones departamentales:
 
-    -   Guatemala se comporta como caso atípico.
+  - Guatemala se comporta como caso atípico.
 
 ------------------------------------------------------------------------
 
