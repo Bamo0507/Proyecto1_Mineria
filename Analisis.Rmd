@@ -910,7 +910,7 @@ ggplot(tabla_resumen, aes(x = categoria, y = promedio_tasa_divorcio, fill = cate
         plot.title = element_text(face = "bold", size = 16))
 ```
 
-5. ¿Sera que los departamentos más frios tienden a tener una proporción de divorcios más bajos respecto al matrimonio?
+5. ¿Será que los departamentos más frios tienden a tener una proporción de divorcios más bajos respecto al matrimonio?
 
 Al momento que llegamos a ver los clusters podemos ver una tendencia curiosa, aquellos que están en el cluster tres son departamentos frios respecto a todos los demas.
 
