@@ -718,6 +718,33 @@ Departamentos con una baja proporción de divorcios respecto a matrimonios (valo
 
 1. ¿Se ha observado un cambio en la edad promedio en la que las personas contraen matrimonio en Guatemala, indicando que se casan a mayor edad?
 
+Se puede observar que se compararon las combinaciones de edad más frecuentes en matrimonios entre los periodos 2009-2012 y 2019-2022. Los resultados muestran que en ambos periodos predominan las parejas en donde el hombre y la mujer tienen entre 20 y 24 años, seguidas por los rangos entre 25 y 29 años. Aunque en el periodo de 2019-2022 se pueden observar algunos rangos ligeramente mayores estos no superan a los grupos principales. 
+Por lo tanto no se identifica un cambio significativo hacia edades más altas en los matrimonios. Por consiguiente no se observa un cambio en la edad promedio en que las personas contraen matrimonio en Guatemala.
+```{r}
+
+#Periodos matrimonios
+matr_periodos <- matrimonios_edad_limpio %>%
+  mutate(
+    periodo = case_when(
+      anio >= 2009 & anio <= 2012 ~ "2009–2012",
+      anio >= 2019 & anio <= 2022 ~ "2019–2022",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(periodo))
+
+# tabla de matrimonios 
+tabla_top10 <- matr_periodos %>%
+  group_by(periodo, edad_mujer_grupo, edad_hombre_grupo) %>%
+  summarise(total_matrimonios = sum(valor, na.rm = TRUE), .groups = "drop") %>%
+  arrange(periodo, desc(total_matrimonios)) %>%
+  group_by(periodo) %>%
+  slice_head(n = 10)
+
+tabla_top10
+
+
+```
 ---
 
 2. ¿La tasa promedio de divorcios por cada 100 matrimonios es mayor en el departamento de Guatemala que en el interior del país?
