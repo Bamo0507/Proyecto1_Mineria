@@ -10,6 +10,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 library(readr)
 library(dplyr)
+library(tidyverse)
 library(stringr)
 library(ggplot2)  
 library(nortest)
@@ -34,6 +35,12 @@ Al tener acceso a datos oficiales por parte de la INE sobre matrimonios y divorc
 ## **Problema Científico**
 
 No se cuenta con evidencia estadística concluyente sobre si, en Guatemala (2009–2022), han ocurrido cambios significativos en los matrimonios y divorcios, ni si estos cambios se relacionan con la edad de las personas o presentan diferencias relevantes entre departamentos.
+
+---
+
+## **Repositorio**
+
+https://github.com/Bamo0507/Proyecto1_Mineria
 
 ---
 
@@ -720,6 +727,7 @@ Departamentos con una baja proporción de divorcios respecto a matrimonios (valo
 
 Se puede observar que se compararon las combinaciones de edad más frecuentes en matrimonios entre los periodos 2009-2012 y 2019-2022. Los resultados muestran que en ambos periodos predominan las parejas en donde el hombre y la mujer tienen entre 20 y 24 años, seguidas por los rangos entre 25 y 29 años. Aunque en el periodo de 2019-2022 se pueden observar algunos rangos ligeramente mayores estos no superan a los grupos principales. 
 Por lo tanto no se identifica un cambio significativo hacia edades más altas en los matrimonios. Por consiguiente no se observa un cambio en la edad promedio en que las personas contraen matrimonio en Guatemala.
+
 ```{r}
 
 #Periodos matrimonios
@@ -745,6 +753,7 @@ tabla_top10
 
 
 ```
+
 ---
 
 2. ¿La tasa promedio de divorcios por cada 100 matrimonios es mayor en el departamento de Guatemala que en el interior del país?
@@ -900,9 +909,10 @@ ggplot(tabla_resumen, aes(x = categoria, y = promedio_tasa_divorcio, fill = cate
   theme(legend.position = "none",
         plot.title = element_text(face = "bold", size = 16))
 ```
-4. ¿Sera que los departamentos mas frios tienden a tener una proporcion de divorcios mas bajos respecto al matrimonio?
 
-Al momento que llegamos a ver los clusters podemos ver una tendencia curiosa, aquellos que estan en el cluster tres son departamentos frios respecto a todos los demas.
+5. ¿Sera que los departamentos más frios tienden a tener una proporción de divorcios más bajos respecto al matrimonio?
+
+Al momento que llegamos a ver los clusters podemos ver una tendencia curiosa, aquellos que están en el cluster tres son departamentos frios respecto a todos los demas.
 
 Para eso podriamos juntar solo aquellos valores que son parte de estos dos clusters, y viendo cuales son los valores mas bajos entre ellos y si son considerados de lugares los cuales normalmente se consideran mas frios en el pais de guatemala.
 
@@ -918,9 +928,10 @@ ratio_df
 ```
 
 
-Aqui ya empezamos a mirar una tendencia, por ejemplo los 5 departamentos con la proporcion de divorcios matrimonio son de lugares frios como Alta Verapaz, Solola, Chimaltenango, Huehuetenango, Totonicapan y San Marcos.
+Aquí ya empezamos a mirar una tendencia, por ejemplo los 5 departamentos con la proporcion de divorcios matrimonio son de lugares frios como Alta Verapaz, Solola, Chimaltenango, Huehuetenango, Totonicapan y San Marcos.
 
 Ahora lo que podemos hacerlo es separarlos en departamentos frios y calientes solo entre 2 y el 3.
+
 ```{r}
 
   # Vector de departamentos fríos
@@ -966,8 +977,6 @@ barplot(
 ```
 Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital los departamentos mas frios tienden a tener una proporcion de divorcios por matrimonios bastante menor.
 
-
-
 ---
 
 ## **Hallazgos y Conclusiones**
@@ -998,7 +1007,7 @@ Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital los 
 **Relaciones entre variables**
 
 - En el análisis por edades (gráfico de burbujas), se observan concentraciones fuertes en combinaciones específicas de edades
-- La relación entre total anual de matrimonios y divorcios muestra una correlación positiva moderada (≈ 0.60): cuando hay más matrimonios en un año, también suelen registrarse más divorcios, aunque con variabilidad.
+- La relación entre total anual de matrimonios y divorcios muestra una correlación positiva moderada (cercano a 0.60): cuando hay más matrimonios en un año, también suelen registrarse más divorcios, aunque con variabilidad.
 
 ---
 
@@ -1045,7 +1054,7 @@ Como podemos llegar a ver si llega a ver esa tendencia, quitando la capital los 
 
 - Existe una concentración fuerte de eventos en el departamento de Guatemala, que destaca ampliamente tanto en matrimonios como en divorcios (y por proporciones, especialmente en divorcios).
     
-- Al comparar “capital vs interior”, la tasa promedio de divorcios por cada 100 matrimonios fue mayor en Guatemala (≈ 14.87) que en el resto del país (≈ 6.03), confirmando diferencias regionales relevantes.
+- Al comparar “capital vs interior”, la tasa promedio de divorcios por cada 100 matrimonios fue mayor en Guatemala (14.87) que en el resto del país (6.03), confirmando diferencias regionales relevantes.
     
 - El clustering reforzó la existencia de patrones departamentales:
     - Guatemala se comporta como caso atípico.
